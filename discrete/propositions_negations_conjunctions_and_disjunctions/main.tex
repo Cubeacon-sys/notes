@@ -1,0 +1,147 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Discrete Math Course}
+\author{Wisam Yassar Mahardika}
+\date{April 4\textsuperscript{th} 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\section{Propositions, Negations, Conjunctions and Disjunctions}
+\subsection{Propositions}
+A \textbf{Proposition} is a declarative statement that is either true or false.
+\begin{itemize}
+\item The sky is blue
+\item The moon is made of cheese
+\item Luke, I am your father
+\item Sit down
+\item $ X + 1 = 2 $ \\
+\end{itemize}
+
+ \textit{Sit down is neither true or false so it is not a proposition text} \\
+\textit{$ X + 1 = 2 $ is also neither true or false because we don't know the value of x}
+\\
+
+\subsection{Constructing Compound Propositions}
+A \textbf{Compound Proposition} is comprised of propositions and one or more of the following connectives:
+\\
+
+
+\begin{itemize}
+\item Negation $ \neg $ ``not`
+\item Conjunction $ \land $     ``and``
+\item Disjunction $ \lor $ ``or``
+\item Implication $ \implies $ ``if, then``
+\item Biconditional $ \Longleftrightarrow{} $ ``if and only if``\\
+\end{itemize}
+
+Each proposition is represented by a propositional variable \textit{p, q, r, s ...}.\\
+
+
+Example: $ p \implies q $
+
+\subsubsection{Negation}
+The \textbf{negation} of the proposition $ p $ is $ \neg p $ (not $p$) \\
+
+
+Example if $ p $ denotes ``The grass is green``, then $ \neg p $ denotes ``it is not the case that the grass is green`` or more simply ``the grass is not green``.\\
+
+
+\begin{itemize}
+\item My dog is the cutest dog  ($ \neg p $ My dog is \textbf{not} the cutest dog)
+\item The door is not open ($ \neg p $ The door \textbf{is} open)
+\item Are we there yet
+\end{itemize}
+\textit{The third statement is not a proposition because it is nor true or false.}
+
+\clearpage
+
+\subsubsection{Truth Table}
+Each row of a \textbf{truth table} gives us one possibility for the truth values of our proposition(s), since each proposition has two possible truth value, \textit{true} or \textit{false}, we will have 2 rows for each propositions (or $ 2^n $ rows where $ n = \# $ of propositions). \\
+
+
+\textit{Truth Table for $ \neg p $} 
+\begin{tabular}{|c|c|}
+\hline
+$ p $ & $ \neg p $ \\
+\hline
+T & F \\
+F & T \\
+\hline
+\end{tabular} \\
+\textit{$ p $ is combinations and $ \neg p $ is connectives} \\
+
+
+\subsubsection{Conjunction}
+The \textbf{conjunction} of propositions $ p $ and $ q $ is denoted  $ p \land q $ and read $ p $ ``and`` $ q $.
+For a conjunction to be true, \textbf{both} propositions must be true. \\
+
+\textit{Truth Table for $ p \land q $} 
+\begin{tabular}{|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \land q $ \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline
+\end{tabular}\\
+
+
+\subsubsection{Disjunction}
+The \textbf{disjunction} of propositions $ p $ and $ q $ is denoted $ p \lor q $ and read $ p $ ``or`` $ q $.
+For a disjunction to be true. \textbf{either} proposition must be true.\\
+
+
+\textit{Truth Table for $ p \lor q $}
+\begin{tabular}{|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \lor q $ \\
+\hline
+T & T & T \\ 
+T & F & T \\
+F & T & T \\
+F & F & F \\
+\hline
+\end{tabular}\\
+
+
+\subsubsection{The Connective ``or`` in English ``xor``}
+\begin{itemize}
+	\item \textbf{Inclusive ``or`` $ p \lor q $}
+	The prerequisite for MA420 is either MA315 or MA335.
+	\item \textbf{Exclusive ``or`` $ p \oplus q $}
+	You get soup or salad with your entree.
+\end{itemize}
+
+
+\textit{Truth Table for $ p \oplus q $}
+\begin{tabular}{|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \oplus q $ \\
+\hline
+T & T & F \\ 
+T & F & T \\
+F & T & T \\
+F & F & F \\
+\hline
+\end{tabular}\\
+
+
+\end{document}
