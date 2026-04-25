@@ -1,0 +1,98 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Discrete Math Course}
+\author{Wisam Yassar Mahardika}
+\date{April 4\textsuperscript{th} 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\section{Implications (converse, inverse, contrapositive) and biconditionals}
+\subsection{Implication (conditional statements)}
+The \textbf{implication} of propositions $ p $ and $ q $ is denoted $ p \implies q $ and read ``if $ p $ then $ q $`` or ``$ p $ implies $ q $``.\\
+
+
+When the hypothesis is true, the conclusion must be true for the implication to be true. when the hypothesis is false, the conclusion is true.\\
+
+
+$ p $ denotes ``It is a holiday`` $ q $ denotes ``The store is closed``. \\
+
+
+\textit{Truth Table for $ p \implies q $}
+\begin{tabular}{|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \implies q $ \\
+\hline
+T & T & T \\ 
+T & F & F \\
+F & T & T \\
+F & F & T \\
+\hline 
+\end{tabular}
+\subsubsection{Converse, Inverse, Contrapositive}
+From our implication, $ p \implies q $, we can construct 3 new conditional statements.
+\begin{enumerate}
+	\item \textbf{Converse: }$ q \implies p $ 
+	\item \textbf{Inverse: }$ \neg p \implies \neg q $
+	\item \textbf{Contrapositive: }$ \neg q \implies \neg p $
+\end{enumerate}
+
+
+\textit{e.g} It is raining is a sufficient condition for me not going to town.
+\begin{itemize}
+	\item in an ``if then`` form it looks like this: \textbf{If} it is raining, \textbf{then} I won't go to town. $ p \implies q $
+	\item In converse it looks like this: \textbf{If} I don't go to town, \textbf{then} it is raining.
+	\item In inverse it looks like this: \textbf{If} it is not raining, \textbf{then} I will go to town.
+	\item In contrapositive it looks like this: \textbf{If} I will go to town, \textbf{then} it is not raining.\\
+\textbf{Note: }Contrapositive always have the same \textit{truth value} as $ p \implies q $.
+\end{itemize}
+\subsection{Biconditional}
+The \textbf{bicondtional} of proposition $ p $ and $ q $ is denoted $ p \Longleftrightarrow{} q $ and read ``$ p $ if and only if $ q $``.\\
+
+
+For a biconditional to be true, both propositions must share the same truth value. \\
+
+
+\textit{Truth Table for $ p \Longleftrightarrow q $}
+\begin{tabular}{|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \Longleftrightarrow q $ \\
+\hline
+T & T & T \\ 
+T & F & F \\
+F & T & F \\
+F & F & T \\
+\hline 
+\end{tabular}
+
+
+Our biconditional $ p \Longleftrightarrow q $ can also be written as a compound proposition. \\
+$ (p \Longleftrightarrow q) \equiv (p \implies q) \land (q \implies p) $ \\
+
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$ p $ & $ q $ & $ p \implies q $ & $ q \implies p $ & $ (p \implies q) \land (q \implies p) $ & $ p \Longleftrightarrow q $ \\
+\hline
+T & T & T & T & T & T \\ 
+T & F & F & T & F & F \\
+F & T & T & F & F & F \\
+F & F & T & T & T & T \\
+\hline 
+\end{tabular}
+\end{document}
