@@ -1,0 +1,132 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Discrete Math Course}
+\author{Wisam Yassar Mahardika}
+\date{May 1\textsuperscript{th} 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\section{Constructing A Truth Table for Compound Propositions}
+\subsection{Compound Proposition Truth Table Walk Thru}
+\begin{itemize}
+	\item \textbf{Rows}
+		\begin{itemize}
+			\item Need a row for every possible combination of value for the compound propositions.
+		\end{itemize}
+	\item \textbf{Columns}
+		\begin{itemize}
+			\item Need a column for each propositional variable
+			\item Need a column for the truth value of each expression that occurs in the compound proposition as it is built up
+			\item Need a column for the compound proposition (usually at far right)
+		\end{itemize}		
+	\item \textbf{Order Of Operations} \\
+		\begin{tabular}{|c|c|}
+			\hline
+			Precedence & Operator\\
+			\hline
+			1 & $ \neg $ \\
+			2 & $ \land $ \\
+			3 & $ \lor $ \\
+			4 & $ \implies $ \\
+			5 & $ \Longleftrightarrow $ \\
+			\hline
+		\end{tabular}
+\end{itemize}
+\subsubsection{Construct a table for $ p \lor q \implies \neg r $}
+\begin{enumerate}
+	\item First, construct columns for each proposition; $ p,q,r $ \textit{these may be referred as atomic propositions} \\
+		
+
+		\begin{tabular}{|c|c|c|}
+			\hline
+			$ p $ & $ q $ & $ r $ \\
+			\hline
+		\end{tabular}
+	\item Next, create a column for each compound proposition; $ p \lor q \implies \neg r $ \\
+		
+
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			$ p $ & $ q $ & $ r $ & $ p \lor q $ & $ \neg r $ \\
+			\hline
+		\end{tabular}
+	\item Lastly, create a column for the final compound proposition \\
+		
+
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			$ p $ & $ q $ & $ r $ & $ p \lor q $ & $ \neg r $ & $ p \lor q \implies \neg r $\\
+			\hline
+		\end{tabular}
+	\item Now create as many rows as necessary for all possible combinations of expressions that occurs in your compound propositions, Because we have 3 propositions, we need $2^3 = 8$ rows. \\
+
+
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			$ p $ & $ q $ & $ r $ & $ p \lor q $ & $ \neg r $ & $ p \lor q \implies \neg r $\\
+			\hline
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			$ $ & $ $ & $ $ & $ $ & $ $ & $ $\\
+			\hline
+		\end{tabular}
+	\item Fill in the table \\
+
+
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			$ p $ & $ q $ & $ r $ & $ p \lor q $ & $ \neg r $ & $ p \lor q \implies \neg r $\\
+			\hline
+			T & T & T & T & F & F\\
+			T & T & F & T & T & T\\
+			T & F & T & T & F & F\\
+			T & F & F & T & T & T\\
+			F & T & T & T & F & F\\
+			F & T & F & T & T & T\\
+			F & F & T & F & F & T\\
+			F & F & F & F & T & T\\
+			\hline
+		\end{tabular}
+\end{enumerate}
+\subsection{Practice}
+Create a truth table for $(p \lor \neg q) \implies (p \land q)$ \\
+
+
+\textbf{Solution:}
+we have 2 variables which is p and q, so $ n = 2 $\\
+$2^2 = 4$\\
+So we need 4 rows \\
+
+
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	$ p $ & $ q $ & $ \neg q $ & $ p \lor \neg q $ & $ p \land q $ & $(p \lor \neg q) \implies (p \land q)$ \\
+	\hline
+	T & T & F & T & T & T \\
+	T & F & T & T & F & F \\
+	F & T & F & F & F & T \\
+	F & F & T & T & F & F \\
+	\hline
+\end{tabular}
+\end{document}
