@@ -1,0 +1,89 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Discrete Math Course}
+\author{Wisam Yassar Mahardika}
+\date{May 2\textsuperscript{th} 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\section{Solving Logic Puzzles}
+\subsection{Knight and Knave}
+An island has two kinds of inhabitants, \textit{knights}, who always tell the truth, and \textit{knaves} who always lie. You go to the island and meet $ A $ and $ B $, $ A $ says ``$ B $ is a \textit{knight}``. $ B $ says ``the two of us are \textbf{opposite} types``. What are $ A $ and $ B $? Let $ p $ represent that $ A $ is a knight and $ q $ represent that $ B $ is a knight.\\
+$ p $: $ A $ is a \textit{knight}. \\
+$ q $: $ B $ is a \textit{knight}. \\
+
+
+There are 4 possibilities: 
+\begin{itemize}
+	\item False: $ p \land q $ $ A $ is a \textit{knight}, $ B $ is a \textit{knight}.
+	\item False: $ p \land \neg q $ $ A $ is a \textit{knight}, $ B $ is a \textit{knave}.
+	\item False: $ \neg p \land q $ $ A $ is a \textit{knave}, $ B $ is a \textit{knight}.
+	\item \textbf{True}: $ \neg p \land \neg q $ $ A $ is a \textit{knave}, $ B $ is a \textit{knave}.
+\end{itemize}
+
+In table form it is: \\
+\begin{center}
+$ p $: $ A $ is a \textit{knight} $ q $: $ B $ is a \textit{knight}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline
+	\multicolumn{2}{|c|}{Possibilities} & \multicolumn{2}{|c|}{$ A $ says $ B $ is a \textit{knight}} & \multicolumn{2}{|c|}{$ B $ says the two are \textbf{opposite} types} \\
+	\hline
+	$ p $ & $ q $ & $ p $ & $ q $ & $ p $ & $ q $ \\
+	\hline
+	\hline
+	T & T & T & T & F & T \\
+	T & F & T & T & F & F \\
+	F & T & F & F & F & T \\
+	F & F & F & F & F & F \\
+	\hline
+\end{tabular}
+\end{center}
+
+\subsection{Party}
+When planning a party, you want to know whom to invite. Among the people you would like to invite are three touchy friends. You know that \textit{Jasmine} attends, she will become unhappy if \textit{Samir} is there, \textit{Samir} will attend only if \textit{Kanti} will be there, and \textit{Kanti} will not attend unless \textit{Jasmine} also does. Which combinations of these three friends can you invite as to not make someone unhappy? \\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\multicolumn{3}{|c|}{  Possibilities  } & \multicolumn{3}{|c|}{  $ j \implies \neg s $  } & \multicolumn{3}{|c|}{  $ s \implies k $  } & \multicolumn{3}{|c|}{$ k \implies j $} \\
+	\hline
+	\hline
+	$ j $ & $ s $ & $ k $ & $ j $ & $ \neg s $ & $ k $ & $ j $ & $ s $ & $ k $ & $ j $ & $ s $ & $ k $  \\ 
+	$ j $ & $ s $ & $ \neg k $ & $ j $ & $ \neg s $ & $ \neg k $ & $ j $ & $ s $ & $ k $ & $ j $ & $ s $ & $ \neg k $  \\ 
+	$ j $ & $ \neg s $ & $ k $ & $ j $ & $ \neg s $ & $ k $ & $ j $ & $ \neg s $ & $ k $ & $ j $ & $ \neg s $ & $ k $  \\ 
+	$ j $ & $ \neg s $ & $ \neg k $ & $ j $ & $ \neg s $ & $ \neg k $ & $ j $ & $ \neg s $ & $ \neg k $ & $ j $ & $ \neg s $ & $ \neg k $  \\ 
+	$ \neg j $ & $ s $ & $ k $ & $ \neg j $ & $ s $ & $ k $ & $ \neg j $ & $ s $ & $ k $ & $ \neg j $ & $ s $ & $ k $  \\ 
+	$ \neg j $ & $ s $ & $ \neg k $ & $ \neg j $ & $ s $ & $ \neg k $ & $ \neg j $ & $ s $ & $ k $ & $ j $ & $ s $ & $ \neg k $  \\ 
+	$ \neg j $ & $ \neg s $ & $ k $ & $ \neg j $ & $ \neg s $ & $ k $ & $ \neg j $ & $ \neg s $ & $ k $ & $ j $ & $ \neg s $ & $ k $  \\ 
+	$ \neg j $ & $ \neg s $ & $ \neg k $ & $ \neg j $ & $ \neg s $ & $ \neg k $ & $ \neg j $ & $ \neg s $ & $ \neg k $ & $ \neg j $ & $ \neg s $ & $ \neg k $  \\ 
+	\hline
+\end{tabular}
+\end{center}
+
+
+The combination that worked out was:
+\begin{enumerate}
+	\item $ j, \neg s, k$
+	\item $ j, \neg s, \neg k$
+	\item $ \neg j, \neg s, \neg k$
+\end{enumerate}
+\end{document}
