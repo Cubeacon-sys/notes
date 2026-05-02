@@ -1,0 +1,69 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Discrete Math Course}
+\author{Wisam Yassar Mahardika}
+\date{May 2\textsuperscript{th} 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+\section{Translating Propositional Logic Statements}
+\begin{enumerate}
+	\item Identify atomic propositions
+	\item Determine apporopriate logical connectives
+\end{enumerate}
+If i go to the store of The movies, i won't do my homework.\\
+$ p $: I go to the store \\
+$ q $: I go to the movies \\
+$ r $: I do my homework \\
+
+
+$(p \lor q) \implies \neg r$
+
+\subsection{Practice}
+\begin{enumerate}
+	\item You can get a free sandwich on thursday if you buy a sandwich or a cup of soup.
+	\item You can get a free sandwich on thursday only if you buy a sandwich or a cup of soup.
+	\item The automated reply can't be sent when the system is full.
+
+\end{enumerate}
+\textbf{Solution:}
+\begin{enumerate}
+	\item $ p $: You can get a free sandwich on thursday \\
+		$ q $: You buy a sandwich \\
+		$ r $: You buy a cup of soup \\
+		$ (q \lor r) \implies p $
+	\item $ p $: You can get a free sandwich on thursday \\
+		$ q $: You buy a sandwich \\
+		$ r $: You buy a cup of soup \\
+		$ p \implies (q \lor r) $
+	\item $ p $: The automated reply can be sent \\
+		$ \neg p $: The automated reply can't be sent \\
+		$ q $: The system is full \\
+		$ q \implies \neg p $
+\end{enumerate}
+\subsection{Translating Propositions}
+$ q $: You can ride the roller coaster \\
+$ r $: You are under 4 feet tall \\
+$ s $: You are older than 16 years old \\
+\textbf{Translate}: $ (r \lor \neg s) \implies \neg q $ \\
+
+
+\textbf{Solution}: (if $ r $ \textbf{or} not $ s $, \textbf{then} not $ q $) \\
+If you are younger \textit{(not older)} than 16 years old or you are 4 feet tall, you cannot ride the roller coaster 
+\end{document}
