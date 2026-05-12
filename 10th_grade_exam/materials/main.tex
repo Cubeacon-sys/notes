@@ -1,0 +1,187 @@
+\documentclass[12pt, a4paper]{article}
+
+% ---- Standard Packages ----
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[bahasa]{babel}
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+% ---- Basic Metadata ----
+\title{MODUL BELAJAR MATEMATIKA KELAS 10\\ \large Persiapan Ulangan Akhir Semester}
+\author{Ringkasan Materi Eksponen, Logaritma, Trigonometri, dan Statistika}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \textbf{Topik Pembahasan:} \\
+    Eksponen $\cdot$ Bentuk Akar $\cdot$ Logaritma $\cdot$ Persamaan Linear \& Kuadrat $\cdot$ Fungsi Kuadrat \\
+    Trigonometri $\cdot$ Barisan \& Deret $\cdot$ Statistika
+\end{center}
+
+\hrule
+\vspace{1em}
+
+\textbf{Sumber Referensi:}
+\begin{itemize}
+    \item Matematika SMA/MA Kelas X --- Kemdikbud (Kurikulum Merdeka 2022) [cite: 51]
+    \item \textit{Mathematics for Senior High School} --- B.K. Noormandiri [cite: 51]
+    \item Khan Academy, Zenius, Ruangguru, dan GeoGebra [cite: 51]
+\end{itemize}
+
+\tableofcontents
+\newpage
+
+% ==============================================================
+\section{EKSPONEN (BILANGAN PANGKAT)}
+% ==============================================================
+
+\subsection{Definisi}
+Untuk $a \in \mathbb{R}$ dan $n \in \mathbb{N}$:
+\[
+  a^n = \underbrace{a \times a \times \cdots \times a}_{n \text{ faktor}}
+\]
+$a$ disebut \textbf{basis} dan $n$ disebut \textbf{eksponen/pangkat}[cite: 52].
+
+\subsection{Sifat-Sifat Eksponen}
+Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[cite: 52]:
+\begin{itemize}
+    \item $a^m \cdot a^n = a^{m+n}$
+    \item $\frac{a^m}{a^n} = a^{m-n}$
+    \item $(a^m)^n = a^{m \cdot n}$
+    \item $(ab)^n = a^n b^n$
+    \item $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$
+    \item $a^0 = 1$
+    \item $a^{-n} = \frac{1}{a^n}$
+    \item $a^{m/n} = \sqrt[n]{a^m}$
+\end{itemize}
+
+\textbf{Contoh Soal:} [cite: 53]
+\begin{enumerate}
+    \item $2^3 \cdot 2^4 = 2^{3+4} = 2^7 = 128$
+    \item $16^{3/4} = \left(\sqrt[4]{16}\right)^3 = 2^3 = 8$
+\end{enumerate}
+
+% ==============================================================
+\section{BENTUK AKAR}
+% ==============================================================
+
+\subsection{Definisi dan Sifat}
+\[ \sqrt[n]{a} = b \iff b^n = a, \quad b \geq 0 \] [cite: 53]
+
+\textbf{Sifat-Sifat Utama:} [cite: 53]
+\begin{itemize}
+    \item $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$
+    \item $\frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}, \quad b > 0$
+    \item $p\sqrt{a} \pm q\sqrt{a} = (p \pm q)\sqrt{a}$
+\end{itemize}
+
+\subsection{Merasionalkan Bentuk Akar}
+\begin{itemize}
+    \item \textbf{Tipe $\frac{p}{\sqrt{a}}$:} $\frac{p}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}} = \frac{p\sqrt{a}}{a}$ [cite: 55]
+    \item \textbf{Tipe $\frac{c}{p + \sqrt{q}}$:} Kalikan dengan sekawan $\frac{p - \sqrt{q}}{p - \sqrt{q}}$ [cite: 55]
+    \item \textbf{Tipe $\frac{c}{\sqrt{a} + \sqrt{b}}$:} Kalikan dengan sekawan $\frac{\sqrt{a} - \sqrt{b}}{\sqrt{a} - \sqrt{b}}$ [cite: 55]
+\end{itemize}
+
+% ==============================================================
+\section{LOGARITMA}
+% ==============================================================
+
+\subsection{Definisi}
+\[ {}^a\!\log b = c \iff a^c = b, \quad a > 0, a \neq 1, b > 0 \] [cite: 56]
+
+\subsection{Sifat-Sifat Logaritma} [cite: 56]
+\begin{itemize}
+    \item ${}^a\!\log (bc) = {}^a\!\log b + {}^a\!\log c$
+    \item ${}^a\!\log \frac{b}{c} = {}^a\!\log b - {}^a\!\log c$
+    \item ${}^a\!\log b^n = n \cdot {}^a\!\log b$
+    \item ${}^a\!\log b \cdot {}^b\!\log c = {}^a\!\log c$
+    \item ${}^{a^m}\!\log b^n = \frac{n}{m}\,{}^a\!\log b$
+\end{itemize}
+
+% ==============================================================
+\section{BARISAN DAN DERET}
+% ==============================================================
+
+\subsection{Aritmatika}
+\begin{itemize}
+    \item \textbf{Suku ke-n:} $U_n = a + (n-1)b$ [cite: 58]
+    \item \textbf{Jumlah n suku pertama:} $S_n = \frac{n}{2}(a + U_n) = \frac{n}{2}(2a + (n-1)b)$ [cite: 58]
+\end{itemize}
+
+\subsection{Geometri}
+\begin{itemize}
+    \item \textbf{Suku ke-n:} $U_n = a \cdot r^{n-1}$ [cite: 60]
+    \item \textbf{Jumlah n suku pertama:} $S_n = \frac{a(r^n - 1)}{r - 1}$ [cite: 60]
+    \item \textbf{Deret Tak Hingga ($|r| < 1$):} $S_\infty = \frac{a}{1 - r}$ [cite: 60]
+\end{itemize}
+
+% ==============================================================
+\section{PERSAMAAN DAN FUNGSI KUADRAT}
+% ==============================================================
+
+\subsection{Persamaan Kuadrat}
+Bentuk umum: $ax^2 + bx + c = 0$. [cite: 70]
+\begin{itemize}
+    \item \textbf{Rumus ABC:} $x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ [cite: 71]
+    \item \textbf{Diskriminan:} $D = b^2 - 4ac$ [cite: 71]
+    \item \textbf{Hubungan Akar:} $x_1 + x_2 = -\frac{b}{a}$ dan $x_1 \cdot x_2 = \frac{c}{a}$ [cite: 71]
+\end{itemize}
+
+\subsection{Fungsi Kuadrat}
+\begin{itemize}
+    \item \textbf{Titik Puncak:} $(x_p, y_p) = \left(-\frac{b}{2a}, -\frac{D}{4a}\right)$ [cite: 73, 74]
+    \item \textbf{Sumbu Simetri:} $x = -\frac{b}{2a}$ [cite: 73]
+\end{itemize}
+
+% ==============================================================
+\section{TRIGONOMETRI}
+% ==============================================================
+
+\subsection{Perbandingan Siku-Siku} [cite: 75]
+\begin{itemize}
+    \item $\sin\theta = \frac{\text{depan}}{\text{hipotenusa}}$, $\cos\theta = \frac{\text{samping}}{\text{hipotenusa}}$, $\tan\theta = \frac{\text{depan}}{\text{samping}}$
+\end{itemize}
+
+\subsection{Aturan Sinus dan Cosinus}
+\begin{itemize}
+    \item \textbf{Aturan Sinus:} $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ [cite: 76]
+    \item \textbf{Aturan Cosinus:} $a^2 = b^2 + c^2 - 2bc\cos A$ [cite: 76]
+\end{itemize}
+
+% ==============================================================
+\section{STATISTIKA}
+% ==============================================================
+
+\subsection{Data Tunggal}
+\begin{itemize}
+    \item \textbf{Mean:} $\bar{x} = \frac{\sum x_i}{n}$ [cite: 81]
+    \item \textbf{Median:} Nilai tengah setelah diurutkan[cite: 81].
+\end{itemize}
+
+\subsection{Data Berkelompok} [cite: 83]
+\begin{itemize}
+    \item \textbf{Mean:} $\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$
+    \item \textbf{Median:} $M_e = L + \left( \frac{\frac{n}{2} - F}{f_m} \right) p$
+    \item \textbf{Modus:} $M_o = L + \left( \frac{d_1}{d_1 + d_2} \right) p$
+\end{itemize}
+
+\newpage
+% ==============================================================
+\section*{SUMBER BELAJAR REFERENSI}
+% ==============================================================
+\begin{enumerate}
+    \item Kemdikbud. \textit{Matematika untuk SMA/MA Kelas X (Kurikulum Merdeka)}. 2022[cite: 86].
+    \item Noormandiri, B.K. \textit{Matematika untuk SMA/MA Kelas X}. Erlangga[cite: 86].
+    \item Khan Academy (\url{https://id.khanacademy.org})[cite: 88].
+    \item GeoGebra (\url{https://www.geogebra.org})[cite: 89].
+\end{enumerate}
+
+\end{document}
