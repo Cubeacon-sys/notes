@@ -13,7 +13,7 @@
 
 % ---- Basic Metadata ----
 \title{MODUL BELAJAR MATEMATIKA KELAS 10\\ \large Persiapan Ulangan Akhir Semester}
-\author{Ringkasan Materi Eksponen, Logaritma, Trigonometri, dan Statistika}
+\author{Ringkasan Materi Komprehensif}
 \date{}
 
 \begin{document}
@@ -26,16 +26,6 @@
     Trigonometri $\cdot$ Barisan \& Deret $\cdot$ Statistika
 \end{center}
 
-\hrule
-\vspace{1em}
-
-\textbf{Sumber Referensi:}
-\begin{itemize}
-    \item Matematika SMA/MA Kelas X --- Kemdikbud (Kurikulum Merdeka 2022) [cite: 51]
-    \item \textit{Mathematics for Senior High School} --- B.K. Noormandiri [cite: 51]
-    \item Khan Academy, Zenius, Ruangguru, dan GeoGebra [cite: 51]
-\end{itemize}
-
 \tableofcontents
 \newpage
 
@@ -44,29 +34,33 @@
 % ==============================================================
 
 \subsection{Definisi}
-Untuk $a \in \mathbb{R}$ dan $n \in \mathbb{N}$:
+Bilangan berpangkat atau eksponen adalah bentuk perkalian berulang dari suatu bilangan sejenis sebanyak pangkatnya. Operasi ini sangat berguna untuk menyederhanakan penulisan bilangan yang sangat besar atau sangat kecil. Untuk bilangan $a \in \mathbb{R}$ dan $n \in \mathbb{N}$, definisi eksponen dinyatakan sebagai berikut:
 \[
   a^n = \underbrace{a \times a \times \cdots \times a}_{n \text{ faktor}}
 \]
-$a$ disebut \textbf{basis} dan $n$ disebut \textbf{eksponen/pangkat}[cite: 52].
+Dalam notasi tersebut, $a$ disebut sebagai \textbf{basis} (bilangan pokok) yang dikalikan, sedangkan $n$ disebut sebagai \textbf{eksponen/pangkat} yang menunjukkan jumlah pengulangan perkalian.
 
 \subsection{Sifat-Sifat Eksponen}
-Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[cite: 52]:
+Untuk menyederhanakan dan menyelesaikan operasi hitung aljabar yang melibatkan bilangan berpangkat, berlaku sifat-sifat dasar berikut dengan syarat $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$:
 \begin{itemize}
-    \item $a^m \cdot a^n = a^{m+n}$
-    \item $\frac{a^m}{a^n} = a^{m-n}$
-    \item $(a^m)^n = a^{m \cdot n}$
-    \item $(ab)^n = a^n b^n$
-    \item $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$
-    \item $a^0 = 1$
-    \item $a^{-n} = \frac{1}{a^n}$
-    \item $a^{m/n} = \sqrt[n]{a^m}$
+    \item \textbf{Perkalian Eksponen:} $a^m \cdot a^n = a^{m+n}$ (Jika basis sama, pangkat dijumlahkan).
+    \item \textbf{Pembagian Eksponen:} $\frac{a^m}{a^n} = a^{m-n}$ (Jika basis sama, pangkat dikurangkan).
+    \item \textbf{Perpangkatan Eksponen:} $(a^m)^n = a^{m \cdot n}$ (Pangkat dipangkatkan, maka pangkat dikalikan).
+    \item \textbf{Perpangkatan Perkalian Suku:} $(ab)^n = a^n b^n$ (Setiap elemen di dalam kurung mendapatkan pangkat).
+    \item \textbf{Perpangkatan Pembagian Suku:} $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ (Pembilang dan penyebut dipangkatkan).
+    \item \textbf{Pangkat Nol:} $a^0 = 1$ (Semua bilangan real bukan nol jika dipangkatkan nol hasilnya satu).
+    \item \textbf{Pangkat Negatif:} $a^{-n} = \frac{1}{a^n}$ (Pangkat negatif diubah menjadi pecahan pangkat positif).
+    \item \textbf{Pangkat Pecahan (Bentuk Akar):} $a^{m/n} = \sqrt[n]{a^m}$ (Pembilang menjadi pangkat dalam, penyebut menjadi akar pangkat luar).
 \end{itemize}
 
-\textbf{Contoh Soal:} [cite: 53]
+\noindent \textbf{Contoh Soal dan Pembahasan:} 
 \begin{enumerate}
-    \item $2^3 \cdot 2^4 = 2^{3+4} = 2^7 = 128$
-    \item $16^{3/4} = \left(\sqrt[4]{16}\right)^3 = 2^3 = 8$
+    \item \textbf{Soal:} Sederhanakan bentuk perkalian pangkat dari $2^3 \cdot 2^4$.\\
+          \textbf{Pembahasan:} Berdasarkan sifat perkalian eksponen, jika bilangan pokoknya sama ($2$), maka pangkatnya cukup dijumlahkan:
+          \[ 2^3 \cdot 2^4 = 2^{3+4} = 2^7 = 128 \] 
+    \item \textbf{Soal:} Hitunglah nilai dari $16^{3/4}$.\\
+          \textbf{Pembahasan:} Menggunakan sifat pangkat pecahan, kita dapat mengubah $16$ menjadi bilangan berpangkat terkecil yaitu $2^4$, kemudian mengalikan pangkatnya:
+          \[ 16^{3/4} = \left(2^4\right)^{3/4} = 2^{4 \cdot \frac{3}{4}} = 2^3 = 8 \] 
 \end{enumerate}
 
 % ==============================================================
@@ -74,20 +68,25 @@ Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[c
 % ==============================================================
 
 \subsection{Definisi dan Sifat}
-\[ \sqrt[n]{a} = b \iff b^n = a, \quad b \geq 0 \] [cite: 53]
+Bentuk akar merupakan akar dari suatu bilangan rasional yang hasilnya berupa bilangan irasional (bilangan yang tidak dapat dinyatakan dalam bentuk pecahan $\frac{a}{b}$). Bentuk akar pada dasarnya merupakan kebalikan (*invers*) dari operasi perpangkatan dua atau lebih. Hubungan antara bentuk akar dan eksponen dinyatakan oleh hubungan rumus berikut:
+\[ \sqrt[n]{a} = b \iff b^n = a, \quad b \geq 0 \] 
 
-\textbf{Sifat-Sifat Utama:} [cite: 53]
+\noindent \textbf{Sifat-Sifat Utama Operasi Aljabar Akar:} 
 \begin{itemize}
-    \item $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$
-    \item $\frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}, \quad b > 0$
-    \item $p\sqrt{a} \pm q\sqrt{a} = (p \pm q)\sqrt{a}$
+    \item \textbf{Perkalian Bentuk Akar:} $\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$ (Akar dapat dikalikan secara langsung jika nilai indeks akarnya sama).
+    \item \textbf{Pembagian Bentuk Akar:} $\frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}, \quad b > 0$ (Pembagian di dalam satu tanda akar tunggal).
+    \item \textbf{Penjumlahan dan Pengurangan:} $p\sqrt{a} \pm q\sqrt{a} = (p \pm q)\sqrt{a}$ (Operasi penjumlahan/pengurangan hanya bisa dilakukan jika angka di dalam akar sejenis).
 \end{itemize}
 
 \subsection{Merasionalkan Bentuk Akar}
+Merasionalkan bentuk akar artinya mengubah pecahan yang memiliki penyebut berupa bilangan irasional (bentuk akar) menjadi penyebut bilangan rasional. Cara merasionalkannya adalah dengan mengalikan pembilang dan penyebut pecahan tersebut dengan bentuk akar sekawannya:
 \begin{itemize}
-    \item \textbf{Tipe $\frac{p}{\sqrt{a}}$:} $\frac{p}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}} = \frac{p\sqrt{a}}{a}$ [cite: 55]
-    \item \textbf{Tipe $\frac{c}{p + \sqrt{q}}$:} Kalikan dengan sekawan $\frac{p - \sqrt{q}}{p - \sqrt{q}}$ [cite: 55]
-    \item \textbf{Tipe $\frac{c}{\sqrt{a} + \sqrt{b}}$:} Kalikan dengan sekawan $\frac{\sqrt{a} - \sqrt{b}}{\sqrt{a} - \sqrt{b}}$ [cite: 55]
+    \item \textbf{Tipe $\frac{p}{\sqrt{a}}$:} Mengalikan bagian atas dan bawah pecahan dengan penyebut akar itu sendiri:
+          \[ \frac{p}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}} = \frac{p\sqrt{a}}{a} \] 
+    \item \textbf{Tipe $\frac{c}{p + \sqrt{q}}$:} Mengalikan pembilang dan penyebut dengan sekawan dari penyebutnya (tanda operasi berubah menjadi kebalikannya, jika positif menjadi negatif):
+          \[ \frac{c}{p + \sqrt{q}} \cdot \frac{p - \sqrt{q}}{p - \sqrt{q}} = \frac{c(p - \sqrt{q})}{p^2 - q} \] 
+    \item \textbf{Tipe $\frac{c}{\sqrt{a} + \sqrt{b}}$:} Sama seperti tipe sebelumnya, kalikan dengan sekawan negatif dari penyebut dua suku berakar tersebut:
+          \[ \frac{c}{\sqrt{a} + \sqrt{b}} \cdot \frac{\sqrt{a} - \sqrt{b}}{\sqrt{a} - \sqrt{b}} = \frac{c(\sqrt{a} - \sqrt{b})}{a - b} \] 
 \end{itemize}
 
 % ==============================================================
@@ -95,15 +94,23 @@ Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[c
 % ==============================================================
 
 \subsection{Definisi}
-\[ {}^a\!\log b = c \iff a^c = b, \quad a > 0, a \neq 1, b > 0 \] [cite: 56]
-
-\subsection{Sifat-Sifat Logaritma} [cite: 56]
+Logaritma adalah operasi kebalikan (*invers*) dari operasi eksponen atau perpangkatan. Jika operasi eksponen digunakan untuk mencari hasil pangkat, maka operasi logaritma digunakan untuk mencari besar pangkat (eksponen) yang belum diketahui dari suatu bilangan pokok. Secara matematis, definisi logaritma dituliskan sebagai berikut:
+\[ {}^a\!\log b = c \iff a^c = b \] 
+\noindent Dengan beberapa syarat mutlak yang harus terpenuhi:
 \begin{itemize}
-    \item ${}^a\!\log (bc) = {}^a\!\log b + {}^a\!\log c$
-    \item ${}^a\!\log \frac{b}{c} = {}^a\!\log b - {}^a\!\log c$
-    \item ${}^a\!\log b^n = n \cdot {}^a\!\log b$
-    \item ${}^a\!\log b \cdot {}^b\!\log c = {}^a\!\log c$
-    \item ${}^{a^m}\!\log b^n = \frac{n}{m}\,{}^a\!\log b$
+    \item $a$ disebut \textbf{basis} atau bilangan pokok logaritma ($a > 0$ dan $a \neq 1$).
+    \item $b$ disebut \textbf{numerus}, yaitu bilangan yang dicari nilai logaritmanya ($b > 0$).
+    \item $c$ disebut \textbf{hasil logaritma} yang merupakan nilai pangkat dari basis.
+\end{itemize}
+
+\subsection{Sifat-Sifat Logaritma}
+Sifat-sifat berikut sangat penting untuk menyederhanakan perhitungan persamaan logaritma yang kompleks:
+\begin{itemize}
+    \item \textbf{Sifat Perkalian:} ${}^a\!\log (bc) = {}^a\!\log b + {}^a\!\log c$ (Perkalian numerus diurai menjadi penjumlahan logaritma).
+    \item \textbf{Sifat Pembagian:} ${}^a\!\log \frac{b}{c} = {}^a\!\log b - {}^a\!\log c$ (Pembagian numerus diurai menjadi pengurangan logaritma).
+    \item \textbf{Sifat Pangkat Numerus:} ${}^a\!\log b^n = n \cdot {}^a\!\log b$ (Pangkat dari numerus maju ke depan sebagai pengali).
+    \item \textbf{Sifat Perkalian Berantai:} ${}^a\!\log b \cdot {}^b\!\log c = {}^a\!\log c$ (Jika numerus pertama sama dengan basis kedua, operasi dapat digabung).
+    \item \textbf{Sifat Pangkat Basis \& Numerus:} ${}^{a^m}\!\log b^n = \frac{n}{m}\,{}^a\!\log b$ (Pangkat numerus dibagi pangkat basis diletakkan di depan).
 \end{itemize}
 
 % ==============================================================
@@ -111,16 +118,25 @@ Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[c
 % ==============================================================
 
 \subsection{Aritmatika}
+Barisan aritmatika adalah barisan bilangan yang memiliki pola tetap di mana selisih (*beda*) antara dua suku yang berurutan selalu konstan.
 \begin{itemize}
-    \item \textbf{Suku ke-n:} $U_n = a + (n-1)b$ [cite: 58]
-    \item \textbf{Jumlah n suku pertama:} $S_n = \frac{n}{2}(a + U_n) = \frac{n}{2}(2a + (n-1)b)$ [cite: 58]
+    \item \textbf{Suku ke-n ($U_n$):} Digunakan untuk mencari nilai suku tertentu pada urutan ke-$n$, dirumuskan:
+          \[ U_n = a + (n-1)b \] 
+          Di mana $a$ adalah suku pertama ($U_1$) dan $b$ adalah beda selisih ($b = U_2 - U_1$).
+    \item \textbf{Jumlah n Suku Pertama ($S_n$):} Disebut sebagai deret aritmatika, yaitu hasil penjumlahan suku pertama sampai suku ke-$n$, dirumuskan:
+          \[ S_n = \frac{n}{2}(a + U_n) = \frac{n}{2}(2a + (n-1)b) \] 
 \end{itemize}
 
 \subsection{Geometri}
+Barisan geometri adalah barisan bilangan yang pola perubahannya diperoleh dari mengalikan suku sebelumnya dengan suatu bilangan tetap yang disebut sebagai rasio ($r$).
 \begin{itemize}
-    \item \textbf{Suku ke-n:} $U_n = a \cdot r^{n-1}$ [cite: 60]
-    \item \textbf{Jumlah n suku pertama:} $S_n = \frac{a(r^n - 1)}{r - 1}$ [cite: 60]
-    \item \textbf{Deret Tak Hingga ($|r| < 1$):} $S_\infty = \frac{a}{1 - r}$ [cite: 60]
+    \item \textbf{Suku ke-n ($U_n$):} Digunakan untuk menentukan nilai suku ke-$n$ barisan geometri, dirumuskan:
+          \[ U_n = a \cdot r^{n-1} \] 
+          Di mana $a$ adalah suku pertama dan $r$ adalah rasio perbandingan ($r = \frac{U_2}{U_1}$).
+    \item \textbf{Jumlah n Suku Pertama ($S_n$):} Merupakan deret geometri yang menjumlahkan suku-suku berasio tetap tersebut, dirumuskan:
+          \[ S_n = \frac{a(r^n - 1)}{r - 1} \quad (\text{untuk } r > 1) \] 
+    \item \textbf{Deret Geometri Tak Hingga ($S_\infty$):} Penjumlahan barisan geometri yang jumlah sukunya tidak terbatas. Jika nilai rasio memenuhi syarat konvergen yaitu $|r| < 1$ (berada di antara $-1 < r < 1$), maka jumlah total deretnya akan memusat menuju satu nilai limit:
+          \[ S_\infty = \frac{a}{1 - r} \] 
 \end{itemize}
 
 % ==============================================================
@@ -128,32 +144,64 @@ Untuk $a, b \in \mathbb{R}$ ($a \neq 0,\, b \neq 0$) dan $m, n \in \mathbb{R}$[c
 % ==============================================================
 
 \subsection{Persamaan Kuadrat}
-Bentuk umum: $ax^2 + bx + c = 0$. [cite: 70]
+Persamaan kuadrat adalah persamaan polinomial satu variabel yang memiliki pangkat tertinggi bernilai dua. 
+Bentuk umum dari persamaan kuadrat adalah:
+\[ ax^2 + bx + c = 0, \quad a \neq 0 \] 
+\noindent Untuk menyelesaikan nilai akar-akar penyelesaian ($x_1$ dan $x_2$), digunakan beberapa metode:
 \begin{itemize}
-    \item \textbf{Rumus ABC:} $x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ [cite: 71]
-    \item \textbf{Diskriminan:} $D = b^2 - 4ac$ [cite: 71]
-    \item \textbf{Hubungan Akar:} $x_1 + x_2 = -\frac{b}{a}$ dan $x_1 \cdot x_2 = \frac{c}{a}$ [cite: 71]
+    \item \textbf{Rumus ABC:} Metode rumus umum mencari akar-akar kuadrat secara langsung:
+          \[ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \] 
+    \item \textbf{Diskriminan ($D$):} Bagian rumus di bawah tanda akar yang menentukan karakteristik/jenis akar:
+          \[ D = b^2 - 4ac \] 
+          \textit{Ketetapan jenis akar:} Jika $D > 0$ maka akar real berbeda; jika $D = 0$ maka akar real kembar/sama; jika $D < 0$ maka akar imajiner (tidak nyata).
+    \item \textbf{Hubungan Akar-Akar (Teorema Vieta):} Hubungan operasi aritmatika dari dua buah akar tanpa perlu mencari nilainya terlebih dahulu:
+          \[ x_1 + x_2 = -\frac{b}{a} \quad \text{dan} \quad x_1 \cdot x_2 = \frac{c}{a} \] 
 \end{itemize}
 
 \subsection{Fungsi Kuadrat}
+Fungsi kuadrat adalah fungsi matematika yang jika digambarkan pada diagram Kartesius akan membentuk kurva melengkung simetris yang disebut parabola. Nilai koefisien $a$ menentukan arah lengkungan (jika $a > 0$ kurva terbuka ke atas, jika $a < 0$ kurva terbuka ke bawah).
 \begin{itemize}
-    \item \textbf{Titik Puncak:} $(x_p, y_p) = \left(-\frac{b}{2a}, -\frac{D}{4a}\right)$ [cite: 73, 74]
-    \item \textbf{Sumbu Simetri:} $x = -\frac{b}{2a}$ [cite: 73]
+    \item \textbf{Titik Puncak/Titik Ekstrem ($x_p, y_p$):} Titik koordinat terendah (minimum) atau tertinggi (maksimum) dari grafik fungsi kuadrat:
+          \[ (x_p, y_p) = \left(-\frac{b}{2a}, -\frac{D}{4a}\right) \] 
+    \item \textbf{Sumbu Simetri ($x$):} Garis lurus vertikal imajiner yang membagi grafik parabola tepat menjadi dua bagian yang simetris
+          \[ x = -\frac{b}{2a} \] 
 \end{itemize}
 
 % ==============================================================
 \section{TRIGONOMETRI}
 % ==============================================================
 
-\subsection{Perbandingan Siku-Siku} [cite: 75]
+\subsection{Perbandingan Siku-Siku}
+Trigonometri mengkaji hubungan fungsional antara besar sudut dengan panjang sisi-sisi pada bangun segitiga. Pada sebuah segitiga siku-siku, perbandingan nilai tiga fungsi utama trigonometri terhadap sudut acuan $\theta$ didefinisikan sebagai berikut
 \begin{itemize}
-    \item $\sin\theta = \frac{\text{depan}}{\text{hipotenusa}}$, $\cos\theta = \frac{\text{samping}}{\text{hipotenusa}}$, $\tan\theta = \frac{\text{depan}}{\text{samping}}$
+    \item $\sin\theta = \frac{\text{depan}}{\text{hipotenusa}}$ (Perbandingan sisi depan sudut dengan sisi miring segitiga)
+    \item $\cos\theta = \frac{\text{samping}}{\text{hipotenusa}}$ (Perbandingan sisi samping sudut dengan sisi miring segitiga)
+    \item $\tan\theta = \frac{\text{depan}}{\text{samping}}$ (Perbandingan sisi depan sudut dengan sisi samping sudut)
 \end{itemize}
 
+\subsection{Tabel Nilai Perbandingan Sudut Istimewa}
+Untuk mempermudah perhitungan, berikut adalah tabel nilai perbandingan fungsi trigonometri dasar pada sudut-sudut istimewa kuadran I:
+\begin{center}
+    \begin{tabular}{cccccc}
+        \toprule
+        $\theta$ & $0^\circ$ & $30^\circ$ & $45^\circ$ & $60^\circ$ & $90^\circ$ \\
+        \midrule
+        $\sin\theta$ & 0 & $\frac{1}{2}$ & $\frac{1}{2}\sqrt{2}$ & $\frac{1}{2}\sqrt{3}$ & 1 \\
+        \midrule
+        $\cos\theta$ & 1 & $\frac{1}{2}\sqrt{3}$ & $\frac{1}{2}\sqrt{2}$ & $\frac{1}{2}$ & 0 \\
+        \midrule
+        $\tan\theta$ & 0 & $\frac{1}{3}\sqrt{3}$ & 1 & $\sqrt{3}$ & $\infty$ \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+
 \subsection{Aturan Sinus dan Cosinus}
+Aturan ini diaplikasikan untuk menghitung panjang sisi atau besar sudut yang belum diketahui pada segitiga sembarang (segitiga non-siku-siku):
 \begin{itemize}
-    \item \textbf{Aturan Sinus:} $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ [cite: 76]
-    \item \textbf{Aturan Cosinus:} $a^2 = b^2 + c^2 - 2bc\cos A$ [cite: 76]
+    \item \textbf{Aturan Sinus:} Menyatakan kesebandingan nilai panjang sisi dengan fungsi sinus dari sudut yang menghadap sisi tersebut
+          \[ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} \] 
+    \item \textbf{Aturan Cosinus:} Digunakan jika diketahui hubungan dua sisi dan satu sudut yang diapitnya untuk mencari panjang sisi ketiga
+          \[ a^2 = b^2 + c^2 - 2bc\cos A \] 
 \end{itemize}
 
 % ==============================================================
@@ -161,27 +209,24 @@ Bentuk umum: $ax^2 + bx + c = 0$. [cite: 70]
 % ==============================================================
 
 \subsection{Data Tunggal}
+Statistika data tunggal digunakan ketika sekumpulan data mentah yang diperoleh berukuran kecil atau sedikit sehingga tidak perlu dimasukkan ke dalam tabel interval kelas
 \begin{itemize}
-    \item \textbf{Mean:} $\bar{x} = \frac{\sum x_i}{n}$ [cite: 81]
-    \item \textbf{Median:} Nilai tengah setelah diurutkan[cite: 81].
+    \item \textbf{Mean (Rata-rata Hitung - $\bar{x}$):} Jumlah total nilai seluruh data dibagi dengan banyaknya data yang diamati
+          \[ \bar{x} = \frac{\sum x_i}{n} \] 
+    \item \textbf{Median ($M_e$):} Nilai tengah dari sekumpulan data mentah setelah diurutkan dari nilai terkecil hingga terbesar. Jika datanya ganjil, median tepat di tengah; jika genap, rata-rata dua angka tengah.
 \end{itemize}
 
-\subsection{Data Berkelompok} [cite: 83]
+\subsection{Data Berkelompok}
+Data berkelompok adalah data yang telah diolah dan disusun ke dalam bentuk tabel distribusi frekuensi menggunakan rentang kelas interval tertentu karena jumlah datanya besar
 \begin{itemize}
-    \item \textbf{Mean:} $\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$
-    \item \textbf{Median:} $M_e = L + \left( \frac{\frac{n}{2} - F}{f_m} \right) p$
-    \item \textbf{Modus:} $M_o = L + \left( \frac{d_1}{d_1 + d_2} \right) p$
+    \item \textbf{Mean (Rata-rata Berkelompok):} Dihitung dengan mengalikan frekuensi masing-masing kelas dengan titik tengah kelasnya ($x_i$), lalu dibagi total frekuensi:
+          \[ \bar{x} = \frac{\sum f_i x_i}{\sum f_i} \] 
+    \item \textbf{Median ($M_e$):} Ditentukan dengan rumus interpolasi di kelas median tempat $\frac{1}{2}n$ berada:
+          \[ M_e = L + \left( \frac{\frac{n}{2} - F}{f_m} \right) p \] 
+          \textit{Keterangan komponen:} $L$ = tepi bawah kelas median ($L = \text{Batas bawah} - 0,5$), $n$ = total seluruh data, $F$ = frekuensi kumulatif sebelum kelas median, $f_m$ = frekuensi murni kelas median, dan $p$ = panjang interval kelas.
+    \item \textbf{Modus ($M_o$):} Nilai yang paling sering muncul pada sekumpulan data berkelompok, dihitung pada kelas berfrekuensi tertinggi:
+          \[ M_o = L + \left( \frac{d_1}{d_1 + d_2} \right) p \] 
+          \textit{Keterangan komponen:} $d_1$ = selisih frekuensi kelas modus dengan kelas sebelumnya, $d_2$ = selisih frekuensi kelas modus dengan kelas sesudahnya.
 \end{itemize}
-
-\newpage
-% ==============================================================
-\section*{SUMBER BELAJAR REFERENSI}
-% ==============================================================
-\begin{enumerate}
-    \item Kemdikbud. \textit{Matematika untuk SMA/MA Kelas X (Kurikulum Merdeka)}. 2022[cite: 86].
-    \item Noormandiri, B.K. \textit{Matematika untuk SMA/MA Kelas X}. Erlangga[cite: 86].
-    \item Khan Academy (\url{https://id.khanacademy.org})[cite: 88].
-    \item GeoGebra (\url{https://www.geogebra.org})[cite: 89].
-\end{enumerate}
 
 \end{document}
