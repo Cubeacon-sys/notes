@@ -1,0 +1,530 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{angles, quotes, calc, positioning}
+\pgfplotsset{compat=1.18}
+
+% Mengatur Margin
+\geometry{left=2cm, right=2cm, top=2.5cm, bottom=2.5cm}
+
+% Mengatur format tabel agar lebih estetis
+\renewcommand{\arraystretch}{1.4}
+\rowcolors{2}{cyan!5}{white}
+
+\begin{document}
+
+\begin{center}
+    \Large \textbf{\textsf{Latihan Soal Matematika SMK Kelas X}}\\
+    \normalsize \textsf{Kurikulum Merdeka / Kurikulum 2013}
+    \vspace{0.2cm}\\
+    \rule{0.8\textwidth}{0.8pt}
+\end{center}
+\vspace{0.5cm}
+
+\begin{enumerate}[itemsep=2ex]
+    % 1. Eksponen
+    \item Bentuk sederhana dari $\displaystyle \frac{(a^3 b^2)^2}{a^4 b^3}$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $a b$
+        \item $a^2 b$
+        \item $a b^2$
+        \item $a^2 b^2$
+        \item $a^{-1} b$
+    \end{enumerate}
+    \end{multicols}
+
+    % 2. Logaritma
+    \item Nilai dari ${}^3\log 27 + {}^2\log 4 - {}^7\log 1$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $2$
+        \item $3$
+        \item $4$
+        \item $5$
+        \item $6$
+    \end{enumerate}
+    \end{multicols}
+
+    % 3. SPLDV
+    \item Diketahui sistem persamaan linear dua variabel $3x + y = 8$ dan $x - y = 4$. Nilai dari $x - 2y$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $3$
+        \item $4$
+        \item $5$
+        \item $6$
+        \item $7$
+    \end{enumerate}
+    \end{multicols}
+
+    % 4. Persamaan linear 1 variabel
+    \item Penyelesaian dari persamaan linear $2(3x - 2) = 4x + 6$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $x = 2$
+        \item $x = 3$
+        \item $x = 4$
+        \item $x = 5$
+        \item $x = 6$
+    \end{enumerate}
+    \end{multicols}
+
+    % 5. SPLTV
+    \item Diberikan sistem persamaan linear tiga variabel berikut:
+    \begin{align*}
+        x + y + z &= 9 \\
+        x - y + z &= 5 \\
+        x + y - z &= 1
+    \end{align*}
+    Nilai dari $x \cdot y \cdot z$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $12$
+        \item $18$
+        \item $20$
+        \item $24$
+        \item $30$
+    \end{enumerate}
+    \end{multicols}
+
+    % 6. Bentuk umum fungsi kuadrat
+    \item Di antara bentuk persamaan berikut, yang merupakan bentuk umum fungsi kuadrat adalah \dots
+    \begin{enumerate}[label=\Alph*.]
+        \item $f(x) = ax + b$
+        \item $f(x) = ax^2 + bx + c$, dengan $a \neq 0$
+        \item $f(x) = a^x$
+        \item $f(x) = \log(x)$
+        \item $f(x) = \frac{a}{x} + b$
+    \end{enumerate}
+
+    % 7. Sumbu simetri
+    \item Sumbu simetri dari grafik fungsi kuadrat $f(x) = x^2 - 8x + 12$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $x = -8$
+        \item $x = -4$
+        \item $x = 2$
+        \item $x = 4$
+        \item $x = 8$
+    \end{enumerate}
+    \end{multicols}
+
+    % 8. Titik puncak dan arah parabola (Divisualisasikan secara estetis)
+    \item Perhatikan grafik fungsi kuadrat berikut!
+    \begin{center}
+    \begin{tikzpicture}[>=stealth]
+    \begin{axis}[
+        width=8cm, height=7cm,
+        axis lines=center,
+        grid=both,
+        grid style={dashed, gray!30},
+        xmin=-0.5, xmax=5.5,
+        ymin=-1.5, ymax=4.5,
+        xtick={1,2,3,4,5},
+        ytick={-1, 1, 2, 3, 4},
+        xlabel={$x$},
+        ylabel={$y$},
+        xlabel style={anchor=west},
+        ylabel style={anchor=south},
+        samples=100,
+        tick label style={font=\footnotesize}
+    ]
+    % Kurva parabola
+    \addplot[thick, smooth, blue!80!black, domain=0.8:5.2] {x^2 - 6*x + 8};
+    % Garis putus-putus ke titik puncak
+    \addplot[dashed, thick, red!70!black] coordinates {(3,0) (3,-1) (0,-1)};
+    % Titik puncak
+    \filldraw[red!80!black] (3,-1) circle (2pt) node[anchor=north west, font=\footnotesize, text=red!80!black] {Titik Puncak};
+    % Titik potong sumbu X
+    \filldraw[blue!80!black] (2,0) circle (1.5pt);
+    \filldraw[blue!80!black] (4,0) circle (1.5pt);
+    \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Titik puncak minimum dari grafik parabola di atas adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $(4, 0)$
+        \item $(3, -1)$
+        \item $(2, 0)$
+        \item $(0, 8)$
+        \item $(-1, 3)$
+    \end{enumerate}
+    \end{multicols}
+
+    % 9. Langkah menggambar grafik
+    \item Langkah pertama yang paling tepat dilakukan dalam menggambar grafik fungsi kuadrat adalah \dots
+    \begin{enumerate}[label=\Alph*.]
+        \item Langsung menggambar kurva secara acak
+        \item Menentukan nilai maksimum dan minimum saja
+        \item Menentukan titik potong terhadap sumbu $X$ dan sumbu $Y$
+        \item Menghitung luas daerah di bawah kurva
+        \item Mencari turunan pertama fungsi
+    \end{enumerate}
+
+    % 10. Nilai sin, cos, tan
+    \item Nilai dari $\sin 90^\circ + \cos 0^\circ - \tan 45^\circ$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $-1$
+        \item $0$
+        \item $1$
+        \item $2$
+        \item $\sqrt{2}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 11. Trigonometri (Visualisasi Segitiga Siku-siku yang Estetis)
+    \item Perhatikan gambar segitiga siku-siku $ABC$ berikut!
+    \begin{center}
+    \begin{tikzpicture}[scale=0.9, >=stealth, line join=round]
+        \coordinate (B) at (0,0);
+        \coordinate (A) at (5.2,0);
+        \coordinate (C) at (0,3);
+
+        % Warna dasar segitiga
+        \fill[cyan!10] (A) -- (B) -- (C) -- cycle;
+        \draw[thick, blue!80!black] (A) -- (B) -- (C) -- cycle;
+
+        % Tanda sudut siku-siku
+        \draw[thick, blue!80!black] (0.4,0) |- (0,0.4);
+        % Tanda sudut 30 derajat
+        \fill[red!20] (4.2,0) arc (180:150:1) -- (A) -- cycle;
+        \draw[thick, red!80!black] (4.2,0) arc (180:150:1);
+        \node[red!80!black, font=\small\bfseries] at (3.7, 0.35) {$30^\circ$};
+        % Label Titik
+        \node[below right, font=\bfseries] at (A) {$A$};
+        \node[below left, font=\bfseries] at (B) {$B$};
+        \node[above left, font=\bfseries] at (C) {$C$};
+        % Label Panjang Sisi
+        \node[left, font=\bfseries, blue!80!black] at (0, 1.5) {$8$ cm};
+    \end{tikzpicture}
+    \end{center}
+    Diketahui segitiga siku-siku di $B$ dengan $\angle A = 30^\circ$ dan panjang sisi $BC = 8$ cm. Panjang sisi $AC$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $4$ cm
+        \item $8\sqrt{2}$ cm
+        \item $8\sqrt{3}$ cm
+        \item $16$ cm
+        \item $16\sqrt{3}$ cm
+    \end{enumerate}
+    \end{multicols}
+
+    % 12. Sudut elevasi (Visualisasi lebih detail)
+    \item Seorang anak mengamati puncak tiang bendera dengan sudut elevasi seperti pada gambar.
+    \begin{center}
+    \begin{tikzpicture}[>=stealth]
+        % Tanah
+        \draw[thick, brown!80!black] (-1,0) -- (7,0);
+        \fill[brown!20] (-1,-0.3) rectangle (7,0);
+
+        % Tiang Bendera
+        \fill[gray!40] (5,0) rectangle (5.2, 4);
+        \draw[thick, gray!80!black] (5,0) rectangle (5.2, 4);
+        
+        % Bendera
+        \fill[red!80] (5.2, 3.4) rectangle (6.5, 4);
+        \fill[white] (5.2, 2.8) rectangle (6.5, 3.4);
+        \draw[thick, gray!80!black] (5.2, 2.8) rectangle (6.5, 4);
+        % Titik Pengamat (Anak)
+        \fill[blue!80!black] (0,0) circle (2.5pt) node[above left, font=\footnotesize] {Pengamat};
+        % Garis Pandang
+        \draw[dashed, thick, orange!80!black] (0,0) -- (5.1, 4);
+        % Sudut Elevasi
+        \draw[thick, orange!80!black, ->] (1.5,0) arc (0:38:1.5);
+        \node[orange!80!black, font=\bfseries] at (1.9, 0.6) {$45^\circ$};
+
+        % Keterangan Jarak
+        \draw[<->, thick] (0,-0.6) -- (5,-0.6) node[midway, fill=white, font=\footnotesize] {$15$ meter};
+        \draw[dashed, gray] (0,0) -- (0,-0.8);
+        \draw[dashed, gray] (5,0) -- (5,-0.8);
+    \end{tikzpicture}
+    \end{center}
+    Jika jarak anak tersebut ke tiang bendera adalah 15 meter dan tinggi anak dari tanah ke mata diabaikan, tinggi tiang bendera tersebut adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $10$ m
+        \item $15$ m
+        \item $15\sqrt{2}$ m
+        \item $15\sqrt{3}$ m
+        \item $30$ m
+    \end{enumerate}
+    \end{multicols}
+
+    % 13. Sudut depresi
+    \item Dari atas sebuah gedung dengan ketinggian 90 meter, seseorang melihat sebuah mobil di jalan dengan sudut depresi $30^\circ$. Jarak mobil terhadap dasar gedung adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $30\sqrt{3}$ m
+        \item $45\sqrt{3}$ m
+        \item $90$ m
+        \item $90\sqrt{2}$ m
+        \item $90\sqrt{3}$ m
+    \end{enumerate}
+    \end{multicols}
+
+    % 14. Menyajikan data
+    \item Bentuk penyajian data statistik yang paling tepat digunakan untuk menunjukkan persentase bagian dari keseluruhan data adalah \dots
+    \begin{enumerate}[label=\Alph*.]
+        \item Diagram garis
+        \item Diagram batang
+        \item Histogram
+        \item Diagram lingkaran (Pie chart)
+        \item Poligon frekuensi
+    \end{enumerate}
+
+    % 15. Menentukan panjang interval kelas
+    \item Dalam suatu data berkelompok, diketahui nilai jangkauan (range) data adalah 48 dan akan dibuat menjadi 8 kelas interval. Panjang interval kelas yang sesuai adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 4
+        \item 5
+        \item 6
+        \item 7
+        \item 8
+    \end{enumerate}
+    \end{multicols}
+
+    % 16. Menganalisis histogram
+    \item Perbedaan utama antara histogram dan diagram batang biasa terletak pada \dots
+    \begin{enumerate}[label=\Alph*.]
+        \item Histogram menggunakan garis, diagram batang menggunakan kotak
+        \item Batang pada histogram saling berimpit, sedangkan pada diagram batang memiliki celah
+        \item Histogram hanya untuk data kualitatif, diagram batang untuk kuantitatif
+        \item Histogram menggunakan lingkaran, diagram batang menggunakan balok
+        \item Tidak ada perbedaan antara keduanya
+    \end{enumerate}
+
+    % 17. Mencari nilai modus data tunggal
+    \item Modus dari kumpulan data tunggal $7, 8, 9, 7, 8, 10, 7, 6, 9$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 6
+        \item 7
+        \item 8
+        \item 9
+        \item 10
+    \end{enumerate}
+    \end{multicols}
+
+    % 18. Rata-rata nilai data kelompok (Tabel Estetis)
+    \item Perhatikan tabel distribusi frekuensi nilai ulangan berikut!\\
+    \begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{cyan!20}
+    \textbf{Interval Nilai} & \textbf{Frekuensi} \\
+    \hline
+    $1 - 5$ & $1$ \\
+    $6 - 10$ & $5$ \\
+    $11 - 15$ & $3$ \\
+    $16 - 20$ & $1$ \\
+    \hline
+    \end{tabular}
+    \end{center}
+    Rata-rata (mean) dari data pada tabel di atas adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $8,0$
+        \item $9,0$
+        \item $9,5$
+        \item $10,0$
+        \item $10,5$
+    \end{enumerate}
+    \end{multicols}
+
+    % 19. Nilai modus data kelompok (Histogram Estetis)
+    \item Perhatikan histogram berat badan (dalam kg) sekelompok siswa berikut!
+    \begin{center}
+    \begin{tikzpicture}
+    \begin{axis}[
+        ybar interval,
+        width=10cm, height=6.5cm,
+        ymin=0, ymax=18,
+        xmin=44.5, xmax=74.5,
+        ylabel={\textbf{Frekuensi}},
+        xlabel={\textbf{Berat Badan (kg)}},
+        xtick={44.5, 49.5, 54.5, 59.5, 64.5, 69.5, 74.5},
+        ymajorgrids=true,
+        grid style={dashed, gray!50},
+        tick label style={font=\small},
+        axis x line=bottom,
+        axis y line=left,
+        enlarge x limits=false
+    ]
+    % Data histogram
+    \addplot[
+        fill=teal!40, 
+        draw=teal!90!black, 
+        thick
+    ] coordinates {
+        (44.5, 3)
+        (49.5, 6)
+        (54.5, 16)
+        (59.5, 6)
+        (64.5, 3)
+        (69.5, 0)
+        (74.5, 0)
+    };
+    \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Nilai modus dari data pada histogram di atas adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $55,0$ kg
+        \item $56,0$ kg
+        \item $57,0$ kg
+        \item $58,0$ kg
+        \item $59,0$ kg
+    \end{enumerate}
+    \end{multicols}
+
+    % 20. Faktorial
+    \item Nilai dari $\displaystyle \frac{8!}{6! \cdot 2!}$ adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 14
+        \item 28
+        \item 56
+        \item 84
+        \item 112
+    \end{enumerate}
+    \end{multicols}
+
+    % 21. Permutasi
+    \item Dari 7 orang siswa, akan dipilih seorang ketua, sekretaris, dan bendahara. Banyaknya susunan pengurus yang mungkin terbentuk adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 35
+        \item 120
+        \item 210
+        \item 343
+        \item 840
+    \end{enumerate}
+    \end{multicols}
+
+    % 22. Titik sampel
+    \item Banyaknya titik sampel pada pelemparan 5 keping uang logam secara bersamaan adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 5
+        \item 10
+        \item 16
+        \item 32
+        \item 64
+    \end{enumerate}
+    \end{multicols}
+
+    % 23. Peluang (1)
+    \item Peluang munculnya mata dadu kurang dari 5 pada pelemparan sebuah dadu adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $\frac{1}{6}$
+        \item $\frac{1}{3}$
+        \item $\frac{1}{2}$
+        \item $\frac{2}{3}$
+        \item $\frac{5}{6}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 24. Peluang (2)
+    \item Tiga keping uang logam dilempar undi bersama-sama satu kali. Peluang munculnya paling sedikit satu Angka adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $\frac{1}{8}$
+        \item $\frac{3}{8}$
+        \item $\frac{1}{2}$
+        \item $\frac{5}{8}$
+        \item $\frac{7}{8}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 25. Peluang (3)
+    \item Dua buah dadu dilemparkan secara bersamaan. Peluang munculnya jumlah kedua mata dadu sama dengan 9 adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $\frac{3}{36}$
+        \item $\frac{4}{36}$
+        \item $\frac{5}{36}$
+        \item $\frac{6}{36}$
+        \item $\frac{7}{36}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 26. Peluang (4)
+    \item Di dalam sebuah kotak terdapat 5 bola merah dan 4 bola biru. Jika diambil 2 bola sekaligus secara acak, peluang terambilnya keduanya bola merah adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $\frac{2}{9}$
+        \item $\frac{5}{18}$
+        \item $\frac{1}{3}$
+        \item $\frac{7}{18}$
+        \item $\frac{4}{9}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 27. Peluang (5)
+    \item Dari seperangkat kartu bridge (tanpa joker) diambil satu kartu secara acak. Peluang yang terambil adalah kartu bernomor 7 atau kartu bernomor 8 adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item $\frac{2}{52}$
+        \item $\frac{4}{52}$
+        \item $\frac{6}{52}$
+        \item $\frac{8}{52}$
+        \item $\frac{10}{52}$
+    \end{enumerate}
+    \end{multicols}
+
+    % 28. Frekuensi harapan
+    \item Sebuah dadu dilemparkan sebanyak 180 kali. Frekuensi harapan munculnya mata dadu lebih dari 4 adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 30 kali
+        \item 45 kali
+        \item 60 kali
+        \item 90 kali
+        \item 120 kali
+    \end{enumerate}
+    \end{multicols}
+
+    % 29. Kombinasi (1)
+    \item Dari 9 orang pelamar kerja, akan diterima 4 orang. Banyak cara memilih pelamar yang diterima adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 63
+        \item 84
+        \item 126
+        \item 252
+        \item 504
+    \end{enumerate}
+    \end{multicols}
+
+    % 30. Kombinasi (2)
+    \item Dalam sebuah pertemuan terdapat 12 orang yang saling berjabat tangan. Jika setiap orang hanya berjabat tangan tepat satu kali dengan orang lainnya, maka banyak jabat tangan yang terjadi adalah \dots
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\Alph*.]
+        \item 24
+        \item 45
+        \item 66
+        \item 132
+        \item 144
+    \end{enumerate}
+    \end{multicols}
+
+\end{enumerate}
+
+\end{document}
