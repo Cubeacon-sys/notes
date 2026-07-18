@@ -153,7 +153,8 @@
 				    grid style = {dashed, gray!30},
 				    axis equal
 				]
-				    \addplot [domain=-5:5, samples=100, thick, blue] {1/x};
+					\addplot [domain=-5:-0.1, samples=100, thick, blue] {1/x};
+				    \addplot [domain=0.1:5, samples=100, thick, blue] {1/x};
 				\end{axis}
 			\end{tikzpicture}
 			\end{center}
