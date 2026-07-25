@@ -130,23 +130,23 @@
                 \draw[->, thick] (0,0) -- (7.2,0) node[right, font=\tiny] {time};
                 \draw[->, thick] (0,0) -- (0,4.2) node[above, font=\tiny] {divergence \%};
 
-                % Alpha attractor field line (upper, dashed red)
-                \draw[KurisuRed, thick, dashed] (0,3.4) .. controls (2,3.2) and (3,2.7) .. (4,2.4)
-                    .. controls (5,2.1) and (6,2.0) .. (7,2.0);
-                \node[KurisuRed, font=\tiny] at (5.6,2.6) {Alpha Attractor Field};
-
                 % Beta attractor field line (middle, dotted blue)
-                \draw[LabDeepBlue, thick, dotted] (0,1.7) .. controls (1.5,1.6) and (3,1.55) .. (4.2,1.4)
-                    .. controls (5,1.3) and (6,1.05) .. (7,1.0);
-                \node[LabDeepBlue, font=\tiny] at (5.6,1.5) {Beta Attractor Field};
+                \draw[LabDeepBlue, thick, dotted] (0,3.4) .. controls (2,3.2) and (3,2.7) .. (4,2.4)
+                    .. controls (5,2.1) and (6,2.0) .. (7,2.0);
+                \node[LabDeepBlue, font=\tiny] at (5.6,2.6) {Beta Attractor Field};
 
                 % Steins Gate world line (lower, solid green, converging)
-                \draw[CRTGreen!70!black, thick] (0,0.9) .. controls (2,0.6) and (3.5,0.3) .. (5,0.15)
+                \draw[CRTGreen!70!black, thick] (0,1.7) .. controls (1.5,1.6) and (3,1.55) .. (4.2,1.4)
+                    .. controls (5,1.3) and (6,1.05) .. (7,1.0);
+                \node[CRTGreen!50!black, font=\tiny\bfseries] at (5.6,1.5) {Steins;Gate World Line};
+
+                % Alpha attractor field line (upper, dashed red)
+                \draw[KurisuRed, thick, dashed] (0,0.9) .. controls (2,0.6) and (3.5,0.3) .. (5,0.15)
                     .. controls (6,0.08) and (6.6,0.05) .. (7,0.048596);
-                \node[CRTGreen!50!black, font=\tiny\bfseries] at (5.5,0.5) {Steins;Gate World Line};
+                \node[KurisuRed, font=\tiny] at (5.5,0.5) {Alpha Attractor Field};
 
                 % Marker at the reading
-                \filldraw[CRTGreen!50!black] (7,0.048596) circle (2pt);
+                \filldraw[CRTGreen!50!black] (7,1.0) circle (2pt);
             \end{tikzpicture}
         \end{column}
         \begin{column}{0.45\textwidth}
@@ -188,7 +188,7 @@
     \begin{columns}[c]
         \begin{column}{0.55\textwidth}
             \begin{center}
-                \includegraphics[width=0.98\textwidth]{graphics/kurisu_reboot.jpeg}
+                \includegraphics[width=0.98\textwidth]{graphics/kurisu_reboot.png}
             \end{center}
         \end{column}
         \begin{column}{0.45\textwidth}
