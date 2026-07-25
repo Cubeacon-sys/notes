@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Essential Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm} % Core math packages
+\usepackage{geometry}                  % Page layout
+\usepackage{xcolor}                    % Colors for highlights
+\usepackage{thmtools}                  % Advanced theorem styling
+\usepackage{hyperref}                  % Clickable links & TOC
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{euler}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% --- Page Setup ---
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+% --- Custom Math Shortcuts ---
+\newcommand{\R}{\mathbb{R}} % Real numbers
+\newcommand{\N}{\mathbb{N}} % Natural numbers
+\newcommand{\Z}{\mathbb{Z}} % Integers
+\newcommand{\Q}{\mathbb{Q}} % Rational numbers
+\newcommand{\C}{\mathbb{C}} % Complex numbers
+
+% --- Styled Theorem & Definition Boxes ---
+\declaretheoremstyle[
+    headfont=\bfseries\color{blue!70!black},
+    notefont=\bfseries, notebraces={(}{)},
+    bodyfont=\normalfont,
+    postheadspace=0.5em,
+    spaceabove=1em, spacebelow=1em
+]{mystyle}
+
+\declaretheorem[style=mystyle, name=Definition, numberwithin=section]{definition}
+\declaretheorem[style=mystyle, name=Theorem, numberwithin=section]{theorem}
+\declaretheorem[style=mystyle, name=Example, numberwithin=section]{example}
+
+% --- Section Header Styling ---
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                    {2.3ex \@plus .2ex}%
+                                    {\normalfont\Large\bfseries\scshape}}
+
+% --- Table of Contents Styling ---
+\makeatletter
+\renewcommand{\l@section}[2]{%
+	\ifnum \c@tocdepth >\z@
+		\addpenalty{\@secpenalty}%
+		\addvspace{1.0em plus 1pt}%
+		\setlength\@tempdima{1.5em}%
+		\noindent
+		{\bfseries #1}\nobreak
+		\leaders\hbox{$\mathsurround\z@\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
+		\nobreak{\normalfont #2}\par
+	\fi
+}
+
+\renewcommand{\l@subsection}{\@dottedtocline{2}{1.5em}{2.3em}}
+\makeatother
+
+% --- Title ---
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter							% Title
+\def\printtitle{%						
+    {\centering \@title\par}}
+\makeatother									
+
+\makeatletter							% Author
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother							
+
+\title{	\normalsize \textsc{\textit{``Di atas dasar Pancasila, kita mendirikan negara Indonesia yang kekal dan abadi.''\\- Ir.Soekarno } } 	% Subtitle
+		 	\\[2.0cm]								% 2cm spacing
+			\HRule{0.5pt} \\						% Upper rule
+			\LARGE \textbf{\uppercase{Tugas Kelompok Pendidikan Pancasila dan Kewarganegaraan}}	% Title
+			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+			\normalsize \today			% Todays date
+		}
+
+\author{
+		Wisam Yassar Mahardika\\	
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+\setlength{\headheight}{13.59999pt}.
+\pagenumbering{roman}
+
+\printtitle
+  	\vfill
+\printauthor
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\vspace{2cm}
+\hrule
+\vspace{2cm}
+\newpage
+\pagenumbering{arabic}
+
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter4}
+\include{chapters/chapter3}
+\include{chapters/chapter5}
+\include{chapters/chapter6}
+
+\begin{thebibliography}{9}
+   \bibitem{bumiaksara}
+    Tim Penulis.
+    \newblock \textit{Pendidikan Pancasila untuk SMK/MAK Kelas XI (Kurikulum Merdeka)}.
+    \newblock Jakarta: PT Bumi Aksara.
+
+    \bibitem{mpr}
+    Sekretariat Jenderal MPR RI.
+    \newblock \textit{Undang-Undang Dasar Negara Republik Indonesia Tahun 1945}.
+\end{thebibliography}
+
+\end{document}
+

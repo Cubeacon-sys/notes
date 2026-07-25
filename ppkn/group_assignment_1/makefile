@@ -18,7 +18,7 @@ all: materials presentation
 materials:
 	@mkdir -p $(BUILD_DIR)
 	@echo "Compiling Materials..."
-	cd $(MAT_DIR) && $(LATEX) $(LATEX_FLAGS) -output-directory=../$(BUILD_DIR) materials.tex
+	cd $(MAT_DIR) && $(LATEX) $(LATEX_FLAGS) -output-directory=../$(BUILD_DIR) main.tex
 
 # Compile the presentation document
 presentation:
