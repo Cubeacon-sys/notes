@@ -53,48 +53,48 @@ Seorang guru ingin menentukan nilai huruf (grade) seorang siswa berdasarkan nila
 
 \begin{center}
 \begin{tikzpicture}[
-    node distance=1cm and 1.6cm,
+    scale=0.92, every node/.style={transform shape},
     terminator/.style={ellipse, draw, minimum width=2.4cm, minimum height=1cm, align=center},
     io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, minimum width=2.6cm, minimum height=1cm, align=center},
     process/.style={rectangle, draw, minimum width=2.6cm, minimum height=1cm, align=center},
-    decision/.style={diamond, draw, aspect=2, minimum width=2.8cm, minimum height=1.4cm, align=center, inner sep=1pt},
+    decision/.style={diamond, draw, aspect=2, minimum width=3cm, minimum height=1.5cm, align=center, inner sep=1pt},
     arrow/.style={-{Stealth}}
 ]
 
-\node[terminator] (start) {Mulai};
-\node[io, below=of start] (input) {Input nilai};
-\node[decision, below=1.2cm of input] (dec1) {nilai $\geq$ 85?};
-\node[process, right=of dec1] (gA) {grade = A};
+% ---- kolom utama (x = 0) ----
+\node[terminator]                 (start) at (0, 0)    {Mulai};
+\node[io]                         (input) at (0,-1.6)  {Input nilai};
+\node[decision]                   (dec1)  at (0,-3.7)  {nilai $\geq$ 85?};
+\node[decision]                   (dec2)  at (0,-6.4)  {nilai $\geq$ 70?};
+\node[decision]                   (dec3)  at (0,-9.1)  {nilai $\geq$ 55?};
+\node[process]                    (gD)    at (0,-11.3) {grade = D};
+\node[io]                         (output) at (0,-13.3) {Cetak grade};
+\node[terminator]                 (end)    at (0,-14.9) {Selesai};
 
-\node[decision, below=1.6cm of dec1] (dec2) {nilai $\geq$ 70?};
-\node[process, right=of dec2] (gB) {grade = B};
+% ---- kotak hasil grade, masing-masing di kanan diamond-nya ----
+\node[process] (gA) at (3.6,-3.7) {grade = A};
+\node[process] (gB) at (3.6,-6.4) {grade = B};
+\node[process] (gC) at (3.6,-9.1) {grade = C};
 
-\node[decision, below=1.6cm of dec2] (dec3) {nilai $\geq$ 55?};
-\node[process, right=of dec3] (gC) {grade = C};
-
-\node[process, below=1.6cm of dec3] (gD) {grade = D};
-
-\node[io, below=1.4cm of gD] (output) {Cetak grade};
-\node[terminator, below=of output] (end) {Selesai};
-
+% ---- alur utama (garis lurus ke bawah) ----
 \draw[arrow] (start) -- (input);
 \draw[arrow] (input) -- (dec1);
-
-\draw[arrow] (dec1) -- node[above]{Ya} (gA);
 \draw[arrow] (dec1) -- node[left]{Tidak} (dec2);
-
-\draw[arrow] (dec2) -- node[above]{Ya} (gB);
 \draw[arrow] (dec2) -- node[left]{Tidak} (dec3);
-
-\draw[arrow] (dec3) -- node[above]{Ya} (gC);
 \draw[arrow] (dec3) -- node[left]{Tidak} (gD);
-
-\draw[arrow] (gA) |- (output);
-\draw[arrow] (gB) |- (output);
-\draw[arrow] (gC) |- (output);
 \draw[arrow] (gD) -- (output);
-
 \draw[arrow] (output) -- (end);
+
+% ---- cabang "Ya" ke masing-masing kotak grade ----
+\draw[arrow] (dec1) -- node[above]{Ya} (gA);
+\draw[arrow] (dec2) -- node[above]{Ya} (gB);
+\draw[arrow] (dec3) -- node[above]{Ya} (gC);
+
+% ---- garis balik dari tiap kotak grade menuju "Cetak grade", ----
+% ---- masing-masing dengan jalur x berbeda agar tidak menembus kotak lain ----
+\draw[arrow] (gA.east) -- ++(2.6,0) |- (output.east);
+\draw[arrow] (gB.east) -- ++(1.6,0) |- (output.east);
+\draw[arrow] (gC.east) -- ++(0.6,0) |- (output.east);
 
 \end{tikzpicture}
 \end{center}
