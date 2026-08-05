@@ -15,6 +15,8 @@
 \usepackage{euler}
 \usepackage{fancyhdr}
 \usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
 \pgfplotsset{compat=1.18}
 
 % --- Page Setup ---
@@ -79,10 +81,10 @@
     {\centering \large \@author}}				
 \makeatother							
 
-\title{	\normalsize \textsc{\textit{``99.9\% of science is boring.''\\- Makise Kurisu} } 	% Subtitle
+\title{	\normalsize \textsc{\textit{``Who'll eat a pervert's banana anyway?''\\- Makise Kurisu} } 	% Subtitle
 		 	\\[2.0cm]								% 2cm spacing
 			\HRule{0.5pt} \\						% Upper rule
-			\LARGE \textbf{\uppercase{Precalculus}}	% Title
+			\LARGE \textbf{\uppercase{Matematika}}	% Title
 			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
 			\normalsize \today			% Todays date
 		}
@@ -97,7 +99,7 @@
 \fancyhead[R]{\thepage}
 
 % ============================= 
-% \includeonly{chapters/quadratics/chapter9}
+% \includeonly{chapters/chapter1}
 % =============================
 
 \begin{document}
@@ -117,39 +119,7 @@
 \newpage
 \pagenumbering{arabic}
 
-% Functions
-\include{chapters/functions/chapter1}
-\include{chapters/functions/chapter2}
-\include{chapters/functions/chapter3}
-\include{chapters/functions/chapter4}
-\include{chapters/functions/chapter5}
-\include{chapters/functions/chapter6}
-\include{chapters/functions/chapter7}
-\include{chapters/functions/chapter8}
-\include{chapters/functions/chapter9}
-\include{chapters/functions/chapter10}
-\include{chapters/functions/chapter11}
-\include{chapters/functions/chapter12}
-
-% Graph Transformations
-\include{chapters/graph_transformations/chapter1}
-\include{chapters/graph_transformations/chapter2}
-
-% Quadratics
-\include{chapters/quadratics/chapter1}
-\include{chapters/quadratics/chapter2}
-\include{chapters/quadratics/chapter3}
-\include{chapters/quadratics/chapter4}
-\include{chapters/quadratics/chapter5}
-\include{chapters/quadratics/chapter6}
-\include{chapters/quadratics/chapter7}
-\include{chapters/quadratics/chapter8}
-
-% Functions intersection
-\include{chapters/functions_intersections/chapter1}
-
-% Solving non quadratics with substituions
-\include{chapters/solving_with_substitutions/chapter1}
+\include{chapters/chapter1}
 
 \end{document}
 
