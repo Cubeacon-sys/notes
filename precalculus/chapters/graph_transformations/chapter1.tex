@@ -1,217 +1,217 @@
 \section{Graphical Transformations}
 \subsection{Introduction To Graphical Transformations}
 \begin{definition}[Graphical Transformations]
-	A mathematical operation that alters the position, size or orientation of a function's graph on a coordinate plane, without changing its basic shape.
+  A mathematical operation that alters the position, size or orientation of a function's graph on a coordinate plane, without changing its basic shape.
 \end{definition}
-	\subsubsection{Vertical}
-		\begin{definition}[Vertical Transformation]
-		\hfill
-			$$f(x) + k \quad \text{Shift Up}$$
-			$$f(x) - k \quad \text{Shift Down}$$
-		\end{definition}
-		\begin{example}[Vertical Transformation]
-		\hfill
-			$$f(x) = x^2 + 3$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $f(x)$,
-				    xmin = -4, xmax = 4,
-				    ymin = -1, ymax = 7,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=-5:5, samples=100, thick, blue] {x^2 + 3};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-			\textbf{Note: } Key points are $(1, 1) \, , (0, 0) \, , (-1, 1)$.
-		\end{example}
-	\subsubsection{Horizontal}
-		\begin{definition}[Horizontal Transformation]
-			$$f(x + h) \quad \text{Shift Left}$$
-			$$f(x - h) \quad \text{Shift Right}$$
-		\end{definition}
-		\begin{example}[Horizontal Transformation]
-			$$f(x) = |x + 2|$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $f(x)$,
-				    xmin = -6, xmax = 2,
-				    ymin = -4, ymax = 4,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=-7:5, samples=100, thick, blue] {abs(x + 2)};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-			\textbf{Note: } Key points are $(1, 1) \, , (0, 0) \, , (-1, 1)$.
-		\end{example}
+\subsubsection{Vertical}
+\begin{definition}[Vertical Transformation]
+  \hfill
+  $$f(x) + k \quad \text{Shift Up}$$
+  $$f(x) - k \quad \text{Shift Down}$$
+\end{definition}
+\begin{example}[Vertical Transformation]
+  \hfill
+  $$f(x) = x^2 + 3$$
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+	  axis lines = center,
+	  xlabel = $x$,
+	  ylabel = $f(x)$,
+	  xmin = -4, xmax = 4,
+	  ymin = -1, ymax = 7,
+	  grid = both,
+	  grid style = {dashed, gray!30},
+	  axis equal
+	]
+	\addplot [domain=-5:5, samples=100, thick, blue] {x^2 + 3};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+  \textbf{Note: } Key points are $(1, 1) \, , (0, 0) \, , (-1, 1)$.
+\end{example}
+\subsubsection{Horizontal}
+\begin{definition}[Horizontal Transformation]
+  $$f(x + h) \quad \text{Shift Left}$$
+  $$f(x - h) \quad \text{Shift Right}$$
+\end{definition}
+\begin{example}[Horizontal Transformation]
+  $$f(x) = |x + 2|$$
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+	  axis lines = center,
+	  xlabel = $x$,
+	  ylabel = $f(x)$,
+	  xmin = -6, xmax = 2,
+	  ymin = -4, ymax = 4,
+	  grid = both,
+	  grid style = {dashed, gray!30},
+	  axis equal
+	]
+	\addplot [domain=-7:5, samples=100, thick, blue] {abs(x + 2)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+  \textbf{Note: } Key points are $(1, 1) \, , (0, 0) \, , (-1, 1)$.
+\end{example}
 \begin{example}[Examples]
-	\hfill
-	\begin{enumerate}
-		\item $$f(x) = (x + 1)^3 - 1$$
-			$$f(x) = (x + 1)^3 - 1$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $f(x)$,
-				    xmin = -5, xmax = 3,
-				    ymin = -5, ymax = 3,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=-2.5:1.5, samples=100, thick, blue] {(x+1)^3-1};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-		\item $$g(x) = \sqrt{x - 2} + 3$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $g(x)$,
-				    xmin = -2, xmax = 6,
-				    ymin = -1, ymax = 7,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=2:7, samples=100, thick, blue] {sqrt(x-2)+3};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-	\end{enumerate}
+  \hfill
+  \begin{enumerate}
+  \item $$f(x) = (x + 1)^3 - 1$$
+    $$f(x) = (x + 1)^3 - 1$$
+    \begin{center}
+      \begin{tikzpicture}
+	\begin{axis}[
+	    axis lines = center,
+	    xlabel = $x$,
+	    ylabel = $f(x)$,
+	    xmin = -5, xmax = 3,
+	    ymin = -5, ymax = 3,
+	    grid = both,
+	    grid style = {dashed, gray!30},
+	    axis equal
+	  ]
+	  \addplot [domain=-2.5:1.5, samples=100, thick, blue] {(x+1)^3-1};
+	\end{axis}
+      \end{tikzpicture}
+    \end{center}
+  \item $$g(x) = \sqrt{x - 2} + 3$$
+    \begin{center}
+      \begin{tikzpicture}
+	\begin{axis}[
+	    axis lines = center,
+	    xlabel = $x$,
+	    ylabel = $g(x)$,
+	    xmin = -2, xmax = 6,
+	    ymin = -1, ymax = 7,
+	    grid = both,
+	    grid style = {dashed, gray!30},
+	    axis equal
+	  ]
+	  \addplot [domain=2:7, samples=100, thick, blue] {sqrt(x-2)+3};
+	\end{axis}
+      \end{tikzpicture}
+    \end{center}
+  \end{enumerate}
 \end{example}
 \subsubsection{Vertical Stretch/Compression}
 \begin{definition}[Vertical Stretch/Compression]
-	$$y = a \, f(x)$$
-	$$a > 1 \quad \text{Stretch Narrow}$$
-	$$a < 1 \quad \text{Compression Wide}$$
+  $$y = a \, f(x)$$
+  $$a > 1 \quad \text{Stretch Narrow}$$
+  $$a < 1 \quad \text{Compression Wide}$$
 \end{definition}
 \begin{example}[Vertical Strectch/Compression]
-	\hfill
-	\begin{enumerate}
-		\item $$f(x) = 2x^2$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $f(x)$,
-				    xmin = -4, xmax = 4,
-				    ymin = -1, ymax = 7,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=-3:3, samples=100, thick, blue] {2*x^2};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-			\textbf{Note: }We just multiply our outputs by 2.
-		\item $$f(x) = \frac{1}{2}x^3$$
-			\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				    axis lines = center,
-				    xlabel = $x$,
-				    ylabel = $f(x)$,
-				    xmin = -2, xmax = 2,
-				    ymin = -2, ymax = 2,
-				    grid = both,
-				    grid style = {dashed, gray!30},
-				    axis equal
-				]
-				    \addplot [domain=-3:3, samples=100, thick, blue] {0.5*x^3};
-				\end{axis}
-			\end{tikzpicture}
-			\end{center}
-	\end{enumerate}
+  \hfill
+  \begin{enumerate}
+  \item $$f(x) = 2x^2$$
+    \begin{center}
+      \begin{tikzpicture}
+	\begin{axis}[
+	    axis lines = center,
+	    xlabel = $x$,
+	    ylabel = $f(x)$,
+	    xmin = -4, xmax = 4,
+	    ymin = -1, ymax = 7,
+	    grid = both,
+	    grid style = {dashed, gray!30},
+	    axis equal
+	  ]
+	  \addplot [domain=-3:3, samples=100, thick, blue] {2*x^2};
+	\end{axis}
+      \end{tikzpicture}
+    \end{center}
+    \textbf{Note: }We just multiply our outputs by 2.
+  \item $$f(x) = \frac{1}{2}x^3$$
+    \begin{center}
+      \begin{tikzpicture}
+	\begin{axis}[
+	    axis lines = center,
+	    xlabel = $x$,
+	    ylabel = $f(x)$,
+	    xmin = -2, xmax = 2,
+	    ymin = -2, ymax = 2,
+	    grid = both,
+	    grid style = {dashed, gray!30},
+	    axis equal
+	  ]
+	  \addplot [domain=-3:3, samples=100, thick, blue] {0.5*x^3};
+	\end{axis}
+      \end{tikzpicture}
+    \end{center}
+  \end{enumerate}
 \end{example}
 \subsubsection{Horizontal Stretch/Compression}
 \begin{definition}[Horizontal Stretch/Compression]
-	$$y = f(a\,x)$$
-	$$a > 1 \quad \text{Horizontal Compression}$$
-	$$a < 1 \quad \text{Horizontal Stretch}$$
-	\textbf{Note: } Most of the time we can change horizontal stretch/compressions into vertical stretch/compressions respectively.
+  $$y = f(a\,x)$$
+  $$a > 1 \quad \text{Horizontal Compression}$$
+  $$a < 1 \quad \text{Horizontal Stretch}$$
+  \textbf{Note: } Most of the time we can change horizontal stretch/compressions into vertical stretch/compressions respectively.
 \end{definition}
 \begin{example}[Horizonal Stretch/Compression]
-	$$f(x) = (3x)^2 \to 9x^2$$
-	\begin{center}
-	\begin{tikzpicture}
-		\begin{axis}[
-		    axis lines = center,
-		    xlabel = $x$,
-		    ylabel = $f(x)$,
-		    xmin = -4, xmax = 4,
-		    ymin = -1, ymax = 7,
-		    grid = both,
-		    grid style = {dashed, gray!30},
-		    axis equal
-		]
-		    \addplot [domain=-3:3, samples=100, thick, blue] {(3*x)^2};
-		\end{axis}
-	\end{tikzpicture}
-	\end{center}
+  $$f(x) = (3x)^2 \to 9x^2$$
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+	  axis lines = center,
+	  xlabel = $x$,
+	  ylabel = $f(x)$,
+	  xmin = -4, xmax = 4,
+	  ymin = -1, ymax = 7,
+	  grid = both,
+	  grid style = {dashed, gray!30},
+	  axis equal
+	]
+	\addplot [domain=-3:3, samples=100, thick, blue] {(3*x)^2};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
 \end{example}
 \subsubsection{Reflection}
 \begin{definition}[Reflection About x Axis]
-	$$y = -f(x)$$
+  $$y = -f(x)$$
 \end{definition}
 \begin{example}[Reflection About x Axis]
-	$$f(x) = -\sqrt[3]{x}$$
-	\hfill
-	\begin{center}
-	\begin{tikzpicture}
-		\begin{axis}[
-		    axis lines = center,
-		    xlabel = $x$,
-		    ylabel = $y$,
-		    xmin = -4, xmax = 4,
-		    ymin = -4, ymax = 4,
-		    grid = both,
-		    grid style = {dashed, gray!30},
-		    axis equal
-		]
-			% Equivalent to cubic root
-		    \addplot [domain=-5:5, samples=100, thick, blue] {-sign(x)*abs(x)^(1/3)};
-		\end{axis}
-	\end{tikzpicture}
-	\end{center}
+  $$f(x) = -\sqrt[3]{x}$$
+  \hfill
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+	  axis lines = center,
+	  xlabel = $x$,
+	  ylabel = $y$,
+	  xmin = -4, xmax = 4,
+	  ymin = -4, ymax = 4,
+	  grid = both,
+	  grid style = {dashed, gray!30},
+	  axis equal
+	]
+	% Equivalent to cubic root
+	\addplot [domain=-5:5, samples=100, thick, blue] {-sign(x)*abs(x)^(1/3)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
 \end{example}
 \begin{definition}[Reflection About y Axis]
-	$$y = f(-x)$$
+  $$y = f(-x)$$
 \end{definition}
 \begin{example}[Reflection About y Axis]
-	$$f(x) = \sqrt{-x}$$
-	\hfill
-	\begin{center}
-	\begin{tikzpicture}
-		\begin{axis}[
-		    axis lines = center,
-		    xlabel = $x$,
-		    ylabel = $y$,
-		    xmin = -4, xmax = 4,
-		    ymin = -4, ymax = 4,
-		    grid = both,
-		    grid style = {dashed, gray!30},
-		    axis equal
-		]
-		    \addplot [domain=-5:0, samples=100, thick, blue] {sqrt{abs(x))}};
-		\end{axis}
-	\end{tikzpicture}
-	\end{center}
+  $$f(x) = \sqrt{-x}$$
+  \hfill
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+	  axis lines = center,
+	  xlabel = $x$,
+	  ylabel = $y$,
+	  xmin = -4, xmax = 4,
+	  ymin = -4, ymax = 4,
+	  grid = both,
+	  grid style = {dashed, gray!30},
+	  axis equal
+	]
+	\addplot [domain=-5:0, samples=100, thick, blue] {sqrt{abs(x))}};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
 \end{example}

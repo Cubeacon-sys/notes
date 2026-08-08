@@ -1,134 +1,134 @@
 \subsection{Factoring Method for Quadratics}
 \begin{definition}[Factoring]
-	Factoring a quadratic is the process of rewriting a standard quadratic expression $ax^2 + bx + c$ as the product of its linear factors, like $(x - p)(x - 1)$.
+  Factoring a quadratic is the process of rewriting a standard quadratic expression $ax^2 + bx + c$ as the product of its linear factors, like $(x - p)(x - 1)$.
 \end{definition}
 \begin{example}[Factoring]
-	\hfill
-	\begin{enumerate}
-		\item $f(x) = x^2 + 7x + 6$ \\
-			$x^2 + 7x + 6 = 0$ \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {7};
-					\node at (0, -0.6) {6};
-					\node at (-0.6, 0) {+1};
-					\node at (0.6, 0) {+6};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-			$x^2 + 1x + 6x + 6 = 0$ \\
-			$x(x + 1) + 6(x + 1) = 0 \to (x + 1)(x + 6) = 0$ \\
-			$x + 1 = 0 \land x + 6 = 0$ \\
-			$x = -1 \land x = -6$
-		\item $g(x) = 3x(x - 4) - 36$ \\
-			$3x(x - 4) - 36 = 0$ \\
-			$3x^2 - 12x - 36 = 0$ \\
-			$3(x^2 - 4x - 12) = 0$ \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {-4};
-					\node at (0, -0.6) {-12};
-					\node at (-0.6, 0) {-6};
-					\node at (0.6, 0) {+2};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-			$3(x^2 - 6x + 2x - 12) = 0$ \\
-			$3[x(x - 6) 2(x - 6)] = 0$ \\
-			$3(x - 6)(x + 2) = 0$ \\
-			$x - 6 = 0 \land x + 2 = 0$ \\
-			$x = 6 \land x = -2$
-		\item $g(x) = 3x^2 + 2 + 5x$ \\
-			$3x^2 + 5x + 2 = 0$ \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {5};
-					\node at (0, -0.6) {6};
-					\node at (-0.6, 0) {+2};
-					\node at (0.6, 0) {+3};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-			$3x^2 + 3x + 2x + 2 = 0$ \\
-			$3x(x + 1) + 2(x + 1) = 0$ \\
-			$(x + 1) (3x + 2) = 0$ \\
-			$x + 1 = 0 \land 3x + 2 = 0$ \\
-			$x = -1 \land x = -\frac{2}{3}$ \\
-			\textbf{Note: } The full Shortcut is (We need to divide the factors by a): \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {5};
-					\node at (0, -0.6) {6};
-					\node at (-0.6, 0) {$\frac{3}{3}$};
-					\node at (0.6, 0) {$\frac{2}{3}$};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-		\item $h(x) = -2x^2 - 5x + 12$ \\
-			$-2x^2 - 5x + 12 = 0$ \\
-	 		\textbf{Note: } We can change the signs here. \\
-			$2x^2 + 5x - 12 = 0$ \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {5};
-					\node at (0, -0.6) {-24};
-					\node at (-0.6, 0) {$\frac{8}{2}$};
-					\node at (0.6, 0) {$-\frac{3}{2}$};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-			$2x^2 + 8x - 3x - 12 = 0$ \\
-			$2x(x + 4) - 3(x + 4) = 0$ \\
-			$(x + 4)(2x - 3) = 0$ \\
-			$x + 4 = 0 \land 2x - 3 = 0$ \\
-			$x = -4 \land x = \frac{3}{2}$
-	\end{enumerate}
+  \hfill
+  \begin{enumerate}
+  \item $f(x) = x^2 + 7x + 6$ \\
+    $x^2 + 7x + 6 = 0$ \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {7};
+	\node at (0, -0.6) {6};
+	\node at (-0.6, 0) {+1};
+	\node at (0.6, 0) {+6};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+    $x^2 + 1x + 6x + 6 = 0$ \\
+    $x(x + 1) + 6(x + 1) = 0 \to (x + 1)(x + 6) = 0$ \\
+    $x + 1 = 0 \land x + 6 = 0$ \\
+    $x = -1 \land x = -6$
+  \item $g(x) = 3x(x - 4) - 36$ \\
+    $3x(x - 4) - 36 = 0$ \\
+    $3x^2 - 12x - 36 = 0$ \\
+    $3(x^2 - 4x - 12) = 0$ \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {-4};
+	\node at (0, -0.6) {-12};
+	\node at (-0.6, 0) {-6};
+	\node at (0.6, 0) {+2};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+    $3(x^2 - 6x + 2x - 12) = 0$ \\
+    $3[x(x - 6) 2(x - 6)] = 0$ \\
+    $3(x - 6)(x + 2) = 0$ \\
+    $x - 6 = 0 \land x + 2 = 0$ \\
+    $x = 6 \land x = -2$
+  \item $g(x) = 3x^2 + 2 + 5x$ \\
+    $3x^2 + 5x + 2 = 0$ \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {5};
+	\node at (0, -0.6) {6};
+	\node at (-0.6, 0) {+2};
+	\node at (0.6, 0) {+3};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+    $3x^2 + 3x + 2x + 2 = 0$ \\
+    $3x(x + 1) + 2(x + 1) = 0$ \\
+    $(x + 1) (3x + 2) = 0$ \\
+    $x + 1 = 0 \land 3x + 2 = 0$ \\
+    $x = -1 \land x = -\frac{2}{3}$ \\
+    \textbf{Note: } The full Shortcut is (We need to divide the factors by a): \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {5};
+	\node at (0, -0.6) {6};
+	\node at (-0.6, 0) {$\frac{3}{3}$};
+	\node at (0.6, 0) {$\frac{2}{3}$};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+  \item $h(x) = -2x^2 - 5x + 12$ \\
+    $-2x^2 - 5x + 12 = 0$ \\
+    \textbf{Note: } We can change the signs here. \\
+    $2x^2 + 5x - 12 = 0$ \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {5};
+	\node at (0, -0.6) {-24};
+	\node at (-0.6, 0) {$\frac{8}{2}$};
+	\node at (0.6, 0) {$-\frac{3}{2}$};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+    $2x^2 + 8x - 3x - 12 = 0$ \\
+    $2x(x + 4) - 3(x + 4) = 0$ \\
+    $(x + 4)(2x - 3) = 0$ \\
+    $x + 4 = 0 \land 2x - 3 = 0$ \\
+    $x = -4 \land x = \frac{3}{2}$
+  \end{enumerate}
 \end{example}
 \begin{example}[Special Cases]
-	\hfill
-	\begin{enumerate}
-		\item \textbf{1 Solution.} \\
-		$f(x) = -12x + 9 + 4x^2$ \\
-			$4x^2 - 12x + 9 = 0$ \\
-			\begin{center}
-				\begin{tikzpicture}[scale=1.5, auto, >=stealth]
-					\draw[thick, blue] (-1, 1) -- (1, -1);
-					\draw[thick, blue] (-1, -1) -- (1, 1);
-					\node at (0, 0.6) {-12};
-					\node at (0, -0.6) {36};
-					\node at (-0.6, 0) {$-\frac{6}{4}$};
-					\node at (0.6, 0) {$-\frac{6}{4}$};
-					\node at (0, 0.6) [above=2pt] {\small Add};
-					\node at (0, -0.6) [below=2pt] {\small Multiply};
-				\end{tikzpicture}
-			\end{center}
-			$(2x - 3)(2x - 3) = 0$ \\
-			$(2x - 3)^2 = 0$ \\
-			\textbf{Note: } We can do the square root method here. \\
-			$\sqrt{(2x - 3)^2} = \pm \sqrt{0}$ \\
-			$2x - 3 = \pm \sqrt{0}$ \\
-			$(x = \frac{3}{2}) (x = \frac{3}{2}) = 0$ \\
-			$x = \frac{3}{2} \land x = \frac{3}{2}$
-		\item \textbf{1 Solution.} \\
-			$g(x) = x^2 - 5$ \\
-			$x^2 - 5 = 0$ \\
-			$x^2 - (\sqrt{5})^2 = 0$ \\
-			$(x - \sqrt{5})(x - \sqrt{5}) = 0$ \\
-			$x = \sqrt{5} \land x = \sqrt{5}$
-	\end{enumerate}
+  \hfill
+  \begin{enumerate}
+  \item \textbf{1 Solution.} \\
+    $f(x) = -12x + 9 + 4x^2$ \\
+    $4x^2 - 12x + 9 = 0$ \\
+    \begin{center}
+      \begin{tikzpicture}[scale=1.5, auto, >=stealth]
+	\draw[thick, blue] (-1, 1) -- (1, -1);
+	\draw[thick, blue] (-1, -1) -- (1, 1);
+	\node at (0, 0.6) {-12};
+	\node at (0, -0.6) {36};
+	\node at (-0.6, 0) {$-\frac{6}{4}$};
+	\node at (0.6, 0) {$-\frac{6}{4}$};
+	\node at (0, 0.6) [above=2pt] {\small Add};
+	\node at (0, -0.6) [below=2pt] {\small Multiply};
+      \end{tikzpicture}
+    \end{center}
+    $(2x - 3)(2x - 3) = 0$ \\
+    $(2x - 3)^2 = 0$ \\
+    \textbf{Note: } We can do the square root method here. \\
+    $\sqrt{(2x - 3)^2} = \pm \sqrt{0}$ \\
+    $2x - 3 = \pm \sqrt{0}$ \\
+    $(x = \frac{3}{2}) (x = \frac{3}{2}) = 0$ \\
+    $x = \frac{3}{2} \land x = \frac{3}{2}$
+  \item \textbf{1 Solution.} \\
+    $g(x) = x^2 - 5$ \\
+    $x^2 - 5 = 0$ \\
+    $x^2 - (\sqrt{5})^2 = 0$ \\
+    $(x - \sqrt{5})(x - \sqrt{5}) = 0$ \\
+    $x = \sqrt{5} \land x = \sqrt{5}$
+  \end{enumerate}
 \end{example}
