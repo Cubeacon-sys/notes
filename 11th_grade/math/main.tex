@@ -33,11 +33,11 @@
 
 % --- Styled Theorem & Definition Boxes ---
 \declaretheoremstyle[
-    headfont=\bfseries\color{blue!70!black},
-    notefont=\bfseries, notebraces={(}{)},
-    bodyfont=\normalfont,
-    postheadspace=0.5em,
-    spaceabove=1em, spacebelow=1em
+  headfont=\bfseries\color{blue!70!black},
+  notefont=\bfseries, notebraces={(}{)},
+  bodyfont=\normalfont,
+  postheadspace=0.5em,
+  spaceabove=1em, spacebelow=1em
 ]{mystyle}
 
 \declaretheorem[style=mystyle, name=Definition, numberwithin=section]{definition}
@@ -47,22 +47,22 @@
 % --- Section Header Styling ---
 \makeatletter
 \renewcommand\section{\@startsection{section}{1}{\z@}%
-                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
-                                    {2.3ex \@plus .2ex}%
-                                    {\normalfont\Large\bfseries\scshape}}
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus .2ex}%
+  {\normalfont\Large\bfseries\scshape}}
 
 % --- Table of Contents Styling ---
 \makeatletter
 \renewcommand{\l@section}[2]{%
-	\ifnum \c@tocdepth >\z@
-		\addpenalty{\@secpenalty}%
-		\addvspace{1.0em plus 1pt}%
-		\setlength\@tempdima{1.5em}%
-		\noindent
-		{\bfseries #1}\nobreak
-		\leaders\hbox{$\mathsurround\z@\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
-		\nobreak{\normalfont #2}\par
-	\fi
+  \ifnum \c@tocdepth >\z@
+  \addpenalty{\@secpenalty}%
+  \addvspace{1.0em plus 1pt}%
+  \setlength\@tempdima{1.5em}%
+  \noindent
+      {\bfseries #1}\nobreak
+      \leaders\hbox{$\mathsurround\z@\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
+      \nobreak{\normalfont #2}\par
+      \fi
 }
 
 \renewcommand{\l@subsection}{\@dottedtocline{2}{1.5em}{2.3em}}
@@ -73,24 +73,24 @@
 
 \makeatletter							% Title
 \def\printtitle{%						
-    {\centering \@title\par}}
+  {\centering \@title\par}}
 \makeatother									
 
 \makeatletter							% Author
 \def\printauthor{%					
-    {\centering \large \@author}}				
+  {\centering \large \@author}}				
 \makeatother							
 
 \title{	\normalsize \textsc{\textit{``Who'll eat a pervert's banana anyway?''\\- Makise Kurisu} } 	% Subtitle
-		 	\\[2.0cm]								% 2cm spacing
-			\HRule{0.5pt} \\						% Upper rule
-			\LARGE \textbf{\uppercase{Matematika}}	% Title
-			\HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
-			\normalsize \today			% Todays date
-		}
+  \\[2.0cm]								% 2cm spacing
+  \HRule{0.5pt} \\						% Upper rule
+  \LARGE \textbf{\uppercase{Matematika}}	% Title
+  \HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
+  \normalsize \today			% Todays date
+}
 
 \author{
-		Wisam Yassar Mahardika\\	
+  Wisam Yassar Mahardika\\	
 }
 
 \pagestyle{fancy}
@@ -107,7 +107,7 @@
 \pagenumbering{roman}
 
 \printtitle
-  	\vfill
+\vfill
 \printauthor
 \thispagestyle{empty}
 \newpage
