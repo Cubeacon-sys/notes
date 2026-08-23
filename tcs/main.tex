@@ -15,8 +15,7 @@
 \usepackage{euler}
 \usepackage{fancyhdr}
 \usepackage{pgfplots}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric}
+\usepackage{polynom}
 \pgfplotsset{compat=1.18}
 
 % --- Page Setup ---
@@ -81,10 +80,10 @@
   {\centering \large \@author}}				
 \makeatother							
 
-\title{	\normalsize \textsc{\textit{``People's feelings are memories that transcend time'\\- Makise Kurisu} } 	% Subtitle
+\title{	\normalsize \textsc{\textit{``99.9\% of science is boring.''\\- Makise Kurisu} } 	% Subtitle
   \\[2.0cm]								% 2cm spacing
   \HRule{0.5pt} \\						% Upper rule
-  \LARGE \textbf{\uppercase{Pemrograman}}	% Title
+  \LARGE \textbf{\uppercase{Theoretical Computer Science}}	% Title
   \HRule{2pt} \\ [0.5cm]		% Lower rule + 0.5cm spacing
   \normalsize \today			% Todays date
 }
@@ -99,7 +98,7 @@
 \fancyhead[R]{\thepage}
 
 % ============================= 
-% \includeonly{chapters/chapter1}
+% \includeonly{}
 % =============================
 
 \begin{document}
@@ -119,8 +118,6 @@
 \newpage
 \pagenumbering{arabic}
 
-\include{chapters/chapter1}
-\include{chapters/chapter2}
+\include{chapters/introduction/chapter1.tex}
 
 \end{document}
-
