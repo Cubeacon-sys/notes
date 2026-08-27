@@ -1,2 +1,74 @@
-\section{Model Transmisi Data}
+\section{Media Transmisi dan Topologi}
+\subsection{Media Transmisi}
+Sarana atau jalur fisik yang digunakan untuk mengirimkan data/informasi dari sumber pengirim ke perangkat penerima.
 
+\subsection{Klasifikasi Media Transmisi}
+$$\text{Media Transmisi}
+\begin{cases}
+  \text{Kabel (Wired)} \\
+  \text{Tanpa Kabel (Wireless)}
+\end{cases}
+$$
+
+\subsubsection{Kabel (Wired)}
+Menggunakan kabel sebagai media penghubung, sinyal dihantarkan melalui media fisik. Biasanya digunakan hanya pada area lokal saja.
+
+
+\textbf{Contoh media transmisi yang menggunakan kabel:}
+\begin{enumerate}
+\item Twisted Pair (UTP/STP) \\
+  Terdiri atas beberapa pasang kabel tembaga yang dipilin (twisted), menggunakan konektor RJ45.
+\item Fiber Optic \\
+  Terbuat dari serat kaca, menggunakan cahaya untuk mentransmisikan data. Lapisannya terdiri atas:
+  \begin{enumerate}
+  \item Core.
+  \item Cladding.
+  \item Coating.
+  \item Strength Member.
+  \item Outer Jacket.
+  \end{enumerate}
+\item Coaxial \\
+  Memiliki satu konduktor tembaga di bagian tengah yang dikelilingi lapisan isolator.
+\end{enumerate}
+
+\textbf{Karakteristik: }
+\begin{table}[H]
+  \centering
+  \begin{tabular}{cccc}
+    \toprule
+    \textbf{Jenis} & \textbf{Kecepatan} & \textbf{Jarak} & \textbf{Ketahanan Terhadap Interferensi} \\
+    \midrule
+    UTP & Rendah hingga 1 gbps & $\pm$ 100 Meter & Rendah  \\
+    STP & Rendah hingga 1 gbps & $\pm$ 100 Meter & Sedang - Tinggi  \\
+    Coaxial & Sedang hingga 10 gbps & $\pm$ 500 Meter & Sedang  \\
+    Fiber Optik & Sangat Tinggi hingga 100 gbps & Puluhan Kilometer & Tinggi \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Nirkabel (Wireless)}
+Teknologi yang memungkinkan transfer data tanpa kabel.
+\begin{enumerate}
+\item Gelombang Radio \\
+  Gelombang yang merambat di udara auat ruang hampa pada kecepatan cahaya dan dimanfaatkan secara luas (omnidirectional).
+\item Komunikasi Satelit \\
+  Satelit di luar angkasa yang berfungsi sebatai repeater untuk menerima, memperkuat dan memancarkan sinyal untuk dipantulkan kembali ke bumi. Mampu menjangkau wilayah yang sangat luas.
+\item Inframerah \\
+  Media transmisi jarak dekat, membutuhkan posisi line-of-sight, tidak dapat menembuh dinding atau penghalang padat.
+\end{enumerate}
+
+\subsection{Perbandingan Antara Kabel dan Nirkabel}
+\subsubsection{Kabel}
+\begin{enumerate}
+\item Kecepatan tinggi dan stabilitas tinggi.
+\item Tahan interferensi eksternal.
+\item Instalasi kurang fleksibel.
+\item Terbatas oleh panjang kabel.
+\end{enumerate}
+\subsubsection{Nirkabel}
+\begin{enumerate}
+\item Fleksibel dan mudah dipasang.
+\item Menjangkau wilayah luas dan terpencil.
+\item Rentan gangguan dan cuaca.
+\item Lebih rawan disadap.
+\end{enumerate}
