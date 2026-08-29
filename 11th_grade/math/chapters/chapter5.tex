@@ -1,0 +1,37 @@
+\subsection{Mencari Fungsi Asal pada Fungsi Komposisi}
+\begin{definition}[Kasus 1]
+  Diketahui $g(x)$ dan $f \circ g(x) \implies$ dicari $f(x)$ misalkan $g(x) = ax + b$ dan $f \circ g(x) = \text{rumus yang diketahui}$.
+\end{definition}
+
+\begin{example}[Kasus 1]
+  \[f \circ g(x) = 4x^2 + 2x - 5\]
+  \[g(x) = 2x + 1\]
+  Tentukan $f(x)$! \\
+  $f \circ g(x) = 4x^2 + 2x - 5$ \\
+  $f(g(x)) = 4x^2 + 2x - 5$ \\
+  $f(2x + 1) = 4x^2 + 2x - 5$ \\
+  $\text{Misalkan } 2x + 1 = y$ \\
+  $2x + 1 = y$ \\
+  $2x = y - 1$ \\
+  $x = \frac{y - 1}{2}$ \\
+  $f(y) = 4 \left(\frac{y - 1}{2}\right)^2 + 2\left(\frac{y - 1}{2}\right) - 5$ \\
+  $4 \left(\frac{y^2 - 2y + 1}{4}\right) + y - 1 - 5$ \\
+  $y^2 - 2y + 1 + y - 6$ \\
+  $y^2 - y - 5 \implies \text{ubah y menjadi x}$ \\
+  $f(x) = x^2 - x - 5$
+\end{example}
+
+\begin{definition}[Kasus 2]
+  Diketahui $f(x)$ dan $f \circ g(x) \implies$ dicari $g(x)$. Misalkan $g(x) = ax + b$, masukan ke dalam rumus $f$ lalu samakan dengan $f \circ g(x)$ yang diketahui. lalu cari nilai $a$ dan $b$.
+\end{definition}
+
+\begin{example}[Kasus 2]
+  \[f \circ g(x) = x^2 - 2x + 3\]
+  \[f(x) = x - 4\]
+  Tentukan $g(x)$! \\
+  $f \circ g(x) = x^2 - 2x + 3$ \\
+  $f(g(x)) = x^2 - 2x + 3$ \\
+  $g(x) - 4 = x^2 - 2x + 3$ \\
+  $g(x) = x^2 - 2x + 3 + 4$ \\
+  $g(x) = x^2 - 2x + 7$
+\end{example}
