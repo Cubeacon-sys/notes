@@ -1,4 +1,4 @@
-\section{Penalaran Umum}
+\section{Penalaran Logis}
 \subsection{Logika Proposional (Hubungan Sebab-Akibat)}
 Di dalam logika proposional biner, kalimat bahasa indonesia direduksi menjadi variabel proposisi $p, q, r \dots \in \{B, S\}$.
 
@@ -57,7 +57,7 @@ Gunakan skema deduktif formal di bawah ini. Jika premis soal dapat disusun menja
 \[ \frac{p \implies q, \quad p}{\therefore q}\]
 
 \subsubsection{Modus Tollens}
-\[ \frac{p \implies q, \quad q \implies r}{\therefore \neg p}\]
+\[ \frac{p \implies q, \neg q}{\therefore \neg p}\]
 
 \subsubsection{Silogisme Hipotetis (Rantai Transitif Proposisi)}
 \[ \frac{p \implies q, \quad q \implies r}{\therefore p \implies r \equiv \neg r \implies \neg p}\]
@@ -66,7 +66,7 @@ Gunakan skema deduktif formal di bawah ini. Jika premis soal dapat disusun menja
 \[ \frac{p \lor q, \quad \neg p}{\therefore q} \qquad \text{dan} \qquad \frac{p \lor q, \quad \neg q}{\therefore p} \]
 
 \subsubsection{Pola Divergen (Satu Anteseden, Dua Konsekuen)}
-\[ \frac{p \implies q, \quad p \implies r}{\therefore p \implies (q land r)} \]
+\[ \frac{p \implies q, \quad p \implies r}{\therefore p \implies (q \land r)} \]
 
 \subsubsection{Silogisme Kuantor Transitif (Semua + Semua)}
 \[ \frac{\forall x \, (A(x) \implies B(x)), \quad \forall x \, (B(x) \implies C(x))}{\therefore \forall x \, (A(x) \implies C(x)) \quad \iff \quad A \subseteq C} \]

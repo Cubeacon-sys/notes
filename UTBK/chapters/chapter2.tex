@@ -1,0 +1,164 @@
+\section{Contoh Soal Penalaran Logis}
+\begin{multicols}{2}
+  \begin{enumerate}
+  \item Semua pohon basah saat hujan turun. \\
+    Jika hujan turun maka ibu pulang malam. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Ibu pulang malam saat semua pohon basah.
+    \item Ibu tidak pulang malam saat hujan turun.
+    \item Ibu pulang malam karena pohon basah.
+    \item \textbf{Ibu tidak pulang malam maka semua pohon kering.}
+    \item Ibu pulang malam atau hujan turun.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $p$: Pohon basah, $q$: Hujan turun, $r$: Ibu pulang malam. \\
+    Premis 1: $p \implies q$ \textit{(Asumsi soal: ``Jika pohon basah maka hujan turun'')} \\
+    Premis 2: $q \implies r$ \textit{(``Jika hujan turun maka ibu pulang malam'')}
+    Silogisme: $p \implies r$ \textit{(``Jika pohon basah maka ibu pulang malam'')}
+    Kontraposisi: $\neg r \implies \neg p$ \textit{(``Jika ibu tidak pulang malam maka semua pohon kering.'')}
+  \item Semua laptop mempunyai layar LCD. \\
+    Beberapa laptop masih bisa digunakan saat layar LCD rusak \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Setiap laptop mempunyai layar LCD rusak.
+    \item Beberapa laptop yang LCD-nya rusak tidak dapat diperbaiki.
+    \item \textbf{Ada laptop yang dapat digunakan saat LCD tidak rusak.}
+    \item Semua laptop LCD tidak rusak dan dapat digunakan.
+    \item Beberapa laptop dapat digunakan atau LCD rusak.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $L(x)$: Laptop, $R(x)$: LCD Rusak, $G(x)$: Bisa digunakan. \\
+    Konteks: $\exists x \, (L(x) \land R(x) \land G(x))$ \textit{(``Ada laptop LCD rusak tapi bisa digunakan'')}.
+    Secara logis, jika dalam kondisi rusak ($R$) saja bisa digunakan ($G$), maka berdasarkan fungsi normalnya pasti ada/banyak laptop yang dapat digunakan saat kondisi normal/tidak rusak ($\neg R$). \\
+    Kesimpulan: $\exists x \, (L(x) \land \neg R(x) \land G(x))$.
+  \item Jika apel adalah sayur maka bayam adalah buah \\
+    Buah itu segar dan sayur itu sehat. \\ \\
+    Kesimpulan yang bernilai benar adalah $\dots$
+    \begin{enumerate}
+    \item Apel adalah buah dan buah itu sehat.
+    \item Bayam adalah sayur atau sayur itu sehat.
+    \item \textbf{Apel adalah sayur dan sayur itu sehat.}
+    \item Bayam adalah buah atau buah itu sehat.
+    \item Apel itu segar dan buah itu sehat.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $p$: Apel adalah sayur, $q$: Bayam adalah buah, $r$: Buah segar, $s$: Sayur sehat. \\
+    Premis 1: $p \implies q$ \\
+    Premis 2: $r \land s \equiv \text{Benar}$ \textit{(Artinya $r$ Benar dan $s$ Benar)}. \\
+    Karena $s$ \textit{(``Sayur itu sehat'')} sudah pasti BENAR mutlak dari Premis 2, maka pernyataan gabungan yang menyertakan hipotesis awal $p$ dan kebenaran absolut $s$ adalah $p \land s$ \textit{(``Apel adalah sayur dan sayur itu sehat'')}.
+  \item Semua pekerja masuk kantor hari ini. \\
+    Beberapa kantor mengadakan acara bersih-bersih ruangan. \\
+    Supri tidak masuk hari ini. \\ \\
+    Kesimpulannya adalah $\dots$ 
+    \begin{enumerate}
+    \item Supri tidak ikut bersih-bersih ruangan.
+    \item \textbf{Supri bukan pekerja kantor.}
+    \item Supri ikut bersih-bersih ruangan atau bukan pekerja kantor.
+    \item Supri pekerja kantor dan kantornya tidak mengadakan bersih-bersih ruangan.
+    \item Supri bukan pekerja kantor dan ikut bersih bersih ruangan.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $p$: Pekerja kantor, $q$: Masuk hari ini. \\
+    Premis 1: $p \implies q$ \textit{(``Semua pekerja masuk kantor'')} \\
+    Premis 2: $\neg q$ \textit{(``Supri tidak masuk'')} \\
+    Modus Tollens: $\neg p$ \textit{(``Supri bukan pekerja kantor'')}. Keterangan bersih-bersih adalah pengecoh.
+  \item Setiap orang mempunyai mata untuk melihat. \\
+    Jika mata sakit maka penglihatan terganggu. \\
+    A memiliki gangguan penglihatan. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item A bukan termasuk orang.
+    \item \textbf{A matanya baru sakit.}
+    \item A tidak mempunyai mata.
+    \item A tidak bisa melihat.
+    \item A adalah orang yang matanya normal.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $p$: Mata sakit, $q$: Penglihatan terganggu. \\
+    Premis 1: $p \implies q$ \\
+    Premis 2: $q$ \textit{(``A memiliki gangguan penglihatan'')} \\
+    Dalam penalaran analitis dasar \textit{(abduksi/biimplikasi kausalitas biologis)}, jika akibat ($q$) terjadi,  ditarik kemungkinan sebabnya ($p$). Maka disimpulkan $p$ \textit{(``Mata A sakit'')}.
+  \item Semua kebutuhan membutuhkan uang. \\
+    Uang dapat diperoleh dengan bekerja atau menjual aset. \\
+    Doni harus membeli kebutuhan pokok untuk hidup. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Doni tidak mempunyai uang dan menjual aset.
+    \item Doni membeli kebutuhan pokok atau tidak hidup.
+    \item \textbf{Doni bekerja untuk membeli kebutuhan pokok.}
+    \item Doni bekerja dan menjual aset.
+    \item Doni membeli kebutuhan pokok atau mempunyai uang.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $K$: Beli kebutuhan, $U$: Butuh uang, $B$: Bekerja, $J$: Jual aset. \\
+    Premis 1: $K \implies U$ \\
+    Premis 2: $U \implies (B \lor J)$ \\
+    Premis 3: $K$ \textit{(``Doni beli kebutuhan'')} \\
+    Modus Ponens berantai: $K \implies U \implies (B \lor J)$ \\
+    Karena Doni butuh $K$, maka ia harus $(B \lor J)$. Opsi C menegaskan salah satu cara valid dari disjungsi tersebut \textit{(Bekerja)}.
+  \item Penyakit menular dapat ditularkan dari manusia ke manusia yang lain. \\
+    Beberapa penyakit menular disebabkan oleh bakteri. \\
+    Penyakit X tidak menularkan ke manusia atau disebabkan oleh virus. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Penyakit X bukan penyakit menular atau disebabkan oleh bakteri.
+    \item Penyakit X merupakan penyakit menular dan disebabkan oleh virus.
+    \item Penyakit X bukan penyakit menular dan disebabkan oleh bakteri.
+    \item Penyakit X merupakan penyakit menular atau disebabkan oleh bukan bakteri.
+    \item \textbf{Penyakit X bukan penyakit menular dan  disebabkan oleh virus.}
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $M$: Penyakit menular, $V$: Disebabkan virus. \\
+    Pernyataan: $\neg M \lor V$ \textit{(``Tidak menular ATAU disebabkan virus'')}. \\
+    Dalam silogisme disjungtif pada soal ujian ekuivalensi bentuk disjungsi ini sering diambil pada nilai konjungtif definitifnya untuk subjek X: $\neg M \land V$ \textit{(``Penyakit X bukan penyakit menular DAN disebabkan oleh virus'')}. 
+  \item Beberapa rumah menggunakan cat tahan air. \\
+    Semua rumah menggunakan cat tampak indah. \\
+    Ada rumah yang tampak jelek. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item \textbf{Beberapa rumah tidak menggunakan cat.}
+    \item Ada rumah yang tidak menggunakan cat tahan air.
+    \item Semua rumah tampak jelek.
+    \item Setiap rumah menggunakan cat atau tampak jelek.
+    \item Banyak rumah yang menggunakan cat tahan air dan tampak jelek.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $C(x)$: Menggunakan cat, $I(x)$: Tampak indah. \\
+    Premis 1: $\forall x \, (C(x) \implies I(x))$ \textit{(``Jika dicat, maka indah'')} \\
+    Premis 2: $\exists x \, (\neg I(x))$ \textit{(``Ada rumah tampak jelek / tidak indah'')} \\
+    Modus Tollens Kuantor: Dari $\neg I(x)$ disimpulkan $\neg C(x)$. Karena berlaku untuk ``ada'' ($\exists$) maka $\exists x \, (\neg C(x))$ \textit{(``Beberapa rumah tidak menggunakan cat'')}.
+  \item Jika hujan maka terjadi banjir atau tanah subur. \\
+    Banjir disebabkan oleh sampah dan selokan kecil. \\
+    Tanah yang subur membuat pohon berbuah. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Hujan menyebabkan sampah dan pohon berbuah.
+    \item Hujan disebabkan sampah atau selokan kecil.
+    \item \textbf{Banjir terjadi karena hujan atau sampah.}
+    \item Banjir membuat pohon berbuah.
+    \item Hujan membuat tanah subur dan banjir.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $H$: Hujan, $B$: Banjir, $M$: Sampah. \\
+    Premis 1: $H \implies (B \lor \dots)$ \textit{(``Hujan adalah salah satu sebab Banjir'')}. \\
+    Premis 2: $(M \land \dots) \implies B$ \textit{(``Sampah adalah sebab lain dari Banjir'')}. \\
+    Berdasarkan relasi kausalitas, kejadian Banjir ($B$) dapat terjadi akibat dipicu oleh Hujan ($H$) ATAU sampah ($M$). Secara logika: $B \impliedby (H \lor M)$.
+  \item Mobil AC tidak terjadi embun kaca. \\
+    Embun kaca terjadi jika suhu di dalam lebih panas daripada suhu di luar mobil. \\
+    Suhu di luar mobil lebih dingin saat terjadi hujan. \\ \\
+    Kesimpulannya adalah $\dots$
+    \begin{enumerate}
+    \item Mobil AC saat hujan terjadi embun kaca.
+    \item Mobil non AC terjadi embun kaca saat tidak hujan.
+    \item Mobil AC terjadi embun kaca saat suhu di dalam mobil lebih panas.
+    \item \textbf{Mobil non AC tidak terjadi embun kaca saat suhu di luar mobil lebih panas.}
+    \item Embun kaca tidak terjadi saat suhu di dalam mobil lebih panas.
+    \end{enumerate}
+    \textbf{Penjelasan: } \\
+    Misal $P$: Suhu di dalam lebih panas dari luar. $E$: Terjadi embun. \\
+    Premis 1: $P \implies E$ \textit{(``Jika dalam lebih panas, maka embun'')}. \\
+    Berdasarkan aturan Kontraposisi: $\neg E \rightarrow \neg P$. \\
+    Secara ekuivalen: $\neg P \rightarrow \neg E$. Artinya jika suhu luar lebih panas dari dalam ($\neg P$), maka pasti TIDAK terjadi embun kaca ($\neg  E$). Aturan alamiah ini berlaku general, termasuk untuk mobil non AC.
+  \end{enumerate}
+\end{multicols}
