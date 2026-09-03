@@ -2,12 +2,14 @@
 \subsection{Logika Proposional (Hubungan Sebab-Akibat)}
 Di dalam logika proposional biner, kalimat bahasa indonesia direduksi menjadi variabel proposisi $p, q, r \dots \in \{B, S\}$.
 
-\subsubsection{Impilkasi Kondisional}
-Bentuk ini menyatakan hubungan syarat (anteseden) dan konsekuensei (konsekuen).
+\subsubsection{Implikasi Kondisional}
+Bentuk ini menyatakan hubungan syarat (anteseden) dan konsekuensi (konsekuen).
 \begin{itemize}
 \item \textbf{Ekstraksi Kalimat: } ``Jika $p$ maka $q$'', ``$q$ saat $p$'', ``$q$ apabila $p$'', ``Setiap kali $p$ terjadi, maka $q$ terjadi''.
 \item \textbf{Notasi Formal: } \[p \implies q \]
 \item \textbf{Ekuivalensi Tautologis (Hukum Kontraposisi \& Disjungsi: )} \[p \implies q \equiv \neg q \implies \neg p \equiv \neg p \lor q \]
+\item \textbf{Aturan Negasi (Hukum Negasi Implikasi): } \[ \neg (p \implies q) \equiv p \land \neg q \]
+\textit{(Perhatian: Pengecoh sering menyatakan negasinya adalah $\neg p \implies \neg q$, yang mana bernilai salah secara logika.)}
 \end{itemize}
 
 \subsubsection{Konjungsi}
@@ -50,14 +52,23 @@ Menyatakan setidaknya ada minimal satu objek dalam semesta pembicaraan yang meme
   \textit{(Dibaca: ``Semua A bukan B'')}
 \end{itemize}
 
+\subsubsection{Kuantor Bersyarat Kompleks}
+Seringkali semesta pembicaraan memiliki dua syarat (konjungsi) sebelum dikenai konsekuensi.
+\begin{itemize}
+\item \textbf{Ekstraksi Kalimat: } ``Semua $A$ yang juga $B$ memiliki sifat $C$''.
+\item \textbf{Notasi Logika Predikat: } \[ \forall x \, ((A(x) \land B(x)) \implies C(x)) \]
+\item \textbf{Aturan Negasi: } \[ \neg \big[ \forall x \, ((A(x) \land B(x)) \implies C(x)) \big] \equiv \exists x \, (A(x) \land B(x) \land \neg C(x)) \]
+\textit{(Dibaca: ``Ada A yang juga B, tetapi BUKAN C'')}
+\end{itemize}
+
 \subsection{Aturan Inferensi (Mesin Penarikan Kesimpulan)}
-Gunakan skema deduktif formal di bawah ini. Jika premis soal dapat disusun menjadi bentuk di atas garis, make kesimpulan di bawah tanda $\therefore$ adalah jawaban mutlak yang valid.
+Gunakan skema deduktif formal di bawah ini. Jika premis soal dapat disusun menjadi bentuk di atas garis, maka kesimpulan di bawah tanda $\therefore$ adalah jawaban mutlak yang valid.
 
 \subsubsection{Modus Ponens}
 \[ \frac{p \implies q, \quad p}{\therefore q}\]
 
 \subsubsection{Modus Tollens}
-\[ \frac{p \implies q, \neg q}{\therefore \neg p}\]
+\[ \frac{p \implies q, \quad \neg q}{\therefore \neg p}\]
 
 \subsubsection{Silogisme Hipotetis (Rantai Transitif Proposisi)}
 \[ \frac{p \implies q, \quad q \implies r}{\therefore p \implies r \equiv \neg r \implies \neg p}\]
@@ -75,6 +86,8 @@ Gunakan skema deduktif formal di bawah ini. Jika premis soal dapat disusun menja
 \subsubsection{Silogisme Kuantor Partikular (Semua + Sebagian)}
 \[ \frac{\forall x \, (A(x) \implies B(x)), \quad \exists x \, (C(x) \land A(x))}{\therefore \exists x \, (C(x) \land B(x)) \quad \iff \quad C \cap B \neq \emptyset} \]
 \textit{(Dibaca: ``Sebagian C Adalah B'')}
+
+\newpage
 
 \subsection{Tabel Fallacy}
 Opsi pengecoh di UTBK selalu dibuat menggunakan pola inferensi yang cacat secara formal (\textit{invalid argument}). Jangan pernah memilih opsi yang memiliki pola berikut:

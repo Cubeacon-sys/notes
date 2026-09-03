@@ -1,0 +1,244 @@
+\documentclass[11pt, openany]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage[indonesian]{babel}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{lettrine}
+
+\geometry{
+    paperwidth=148mm,
+    paperheight=210mm,
+    top=30mm,
+    bottom=25mm,
+    left=25mm,
+    right=25mm,
+    headheight=15pt,
+    headsep=15pt
+}
+
+\nopartblankpage
+\captiontitlefont{\normalfont}
+\let\cleardoublepage\clearpage
+
+\makechapterstyle{cerpenestetis}{%
+  \chapterstyle{default}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\printchapternum}{}
+  \renewcommand{\afterchapternum}{}
+  \renewcommand{\chaptitlefont}{\normalfont\Huge\centering\scshape}
+}
+\chapterstyle{cerpenestetis}
+
+\makepagestyle{estetis}
+\makeevenhead{estetis}{\thepage}{}{\small\scshape Labirin Pikiran 25}
+\makeoddhead{estetis}{\small\scshape\leftmark}{}{\thepage}
+\makeevenfoot{estetis}{}{}{}
+\makeoddfoot{estetis}{}{}{}
+\pagestyle{estetis}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2.5em}
+\setlength{\parskip}{0ex}
+
+\newcommand{\penulis}[1]{%
+    \nopagebreak
+    \vspace{-1.2em}%
+    \begin{center}%
+        {\large\itshape Oleh #1}\\[0.5em]%
+        \rule{2.5cm}{0.4pt}%
+    \end{center}%
+    \vspace{1.5em}%
+}
+
+\newcommand{\awalcerpen}[2]{%
+    \lettrine[lines=3, findent=2pt]{#1}{#2}%
+}
+
+\newcommand{\jedacerita}{%
+    \fancybreak{\vspace{0.8em}\textasteriskcentered\quad\textasteriskcentered\quad\textasteriskcentered\vspace{0.8em}}%
+}
+
+\newcommand{\jedahias}{%
+    \fancybreak{\vspace{0.8em}$\diamondsuit\quad\diamondsuit\quad\diamondsuit$\vspace{0.8em}}%
+}
+
+\newcommand{\batin}[1]{{\itshape #1}}
+
+\newcommand{\catatanpenulis}[1]{%
+    \par\vspace{1.5em}%
+    \noindent\rule{\linewidth}{0.2pt}\\[0.5em]%
+    {\small\itshape #1}\par%
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+    \vfill
+    {\Large\scshape Tugas ASTS Kelas XI A2 TKJ} \\[0.5cm]
+    \rule{\linewidth}{1pt} \\[0.8cm]
+    {\Huge\bfseries LABIRIN PIKIRAN DUA PULUH LIMA} \\[0.4cm]
+    {\large\itshape Antologi Cerpen Bersama} \\[0.8cm]
+    \rule{\linewidth}{1pt} \\
+    \vfill
+    {\small\scshape Editor:}\\
+    {\large Wisam Yassar Mahardika}
+    \vfill
+    \vfill
+    {\small\scshape \today}
+    \vspace*{1cm}
+\end{center}
+\clearpage
+
+\frontmatter
+\pagestyle{plain}
+
+\chapter*{Kata Pengantar}
+\addcontentsline{toc}{chapter}{Kata Pengantar}
+
+Puji dan syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa, karena atas rahmat-Nya, buku antologi cerpen berjudul \textit{Ambang Batas Angin} ini dapat diselesaikan dengan baik. Buku ini merupakan wadah kreativitas bagi para penulis untuk menuangkan gagasan, emosi, dan imajinasi mereka ke dalam jalinan kisah pendek yang bermakna.
+
+Setiap cerita di dalam antologi ini membawa warna tersendiri. Pembaca akan diajak mengarungi berbagai sudut pandang kehidupan—mulai dari kisah tentang penantian, kehilangan, hingga harapan yang tumbuh di tempat-tempat tak terduga. Kami berharap kumpulan karya ini tidak hanya menjadi bahan bacaan yang menghibur, tetapi juga memberikan kesan mendalam di hati para pembaca.
+
+Terima kasih yang sebesar-besarnya kami sampaikan kepada seluruh penulis yang telah berkontribusi, serta tim editor yang bekerja keras hingga buku ini siap didekap oleh pembaca sekalian. Selamat membaca.
+
+\vspace{2em}
+\begin{flushright}
+    Bandung, \today \\
+    \vspace{1.5em}
+    \textbf{Editor}
+\end{flushright}
+\clearpage
+
+{
+\renewcommand{\contentsname}{\normalfont\Huge\centering\scshape Daftar Isi}
+\tableofcontents*
+}
+\clearpage
+
+\mainmatter
+\pagestyle{estetis}
+
+\chapter{Just Friend}
+\penulis{Reka Rizki Pradana}
+
+\awalcerpen{S}{uatu pagi disebuah sekolah}, Raka terlihat tidur diatas meja diiringi berisiknya kelas di jam itu. Hanya satu dipikiran Raka saat ini, yaitu Pulang, alih alih memikirkan percintaan seperti teman temannya, yang ia pikirkan hanya ingin segera meluluskan sekolahnya lalu mendapat penghasilan. Tetapi hari itu terasa berbeda bagi Aura, seorang perempuan kelas sebelah yang selalu terlihat ceria dan energik. 
+
+
+Tiba tiba, meja Raka digebrak pelan “Ka, masih pagi loh ini, udah ngantuk aja, semalem ngapain aja lo?” kata Dimas, teman sebangku Raka, “Apasih, kan belum bel dim!, Santai aja kali.” Ucap Raka, Dimas terkejut, tak seperti biasanya Raka menjawab dengan nada seperti itu, “Lo kenapa ka?, Ada masalah ya? Apa gara gara lo gagal deketin cewe?” ucap Dimas ke Raka dengan nada kebingungan. “Pikiran lo aja tuh cewe semua, buat apa juga gua deketin cewe, cuma bisa bikin cape doang.” Jawab Raka sambil berdiri dari kursinya. Tak lama, Bel terdengar dan menandakan kegiatan membaca Quran di mushola akan segera dimulai.
+
+
+Raka berjalan melewati lorong sekolah dengan tatapan kosong tanpa melihat kekiri dan ke kanan sedikit pun, Tak berselang lama, Aura memanggil Raka dari belakang. “Raka!” ucap Aura. “Kenapa?” jawab Raka dengan nada dingin sambil menoleh kebelakang. “Nanti sore jangan dulu pulang ya, kumpul dulu eskul musik!” Kata Aura, Raka tak menjawab apapun dan pergi meninggalkan Aura tanpa sepatah kata pun. Hanya satu yang ada diotak Raka saat itu, Pulang.
+
+
+Setelah mengikuti seluruh kegiatan pembelajaran di Sekolah, Raka pun bersemangat untuk pulang, namun Aura sudah mengetahui bahwa Raka tidak akan mengikuti kumpul Ekskul.
+
+
+“Akhirnya pulang juga.” Kata Raka sambil berjalan keluar kelas, “Mau kemana Ka?, Kumpul dulu.” Dihadangnya Raka didepan pintu kelasnya oleh Aura. Alih alih melawan seperti biasanya, Raka malah memilih untuk menturuti apa yang Aura perintah, “Iya iya ini juga mau ra, ngapain sih lo pake ngehadang hadang segala.” Kata Raka, “Ya biar lo ga kabur lah!, gua udah tau ya lo bakalan kabur.” Jawab Aura.
+
+
+Sesampainya diruangan di lantai 3, Mereka langsung bergabung bersama teman teman lainnya untuk mengikuti kumpul ekskul, tanpa Aura ketahui, ternyata dia baru saja menarik perhatian dari Raka, seorang yang tidak terlalu perduli dengan percintaan.
+
+
+“Eh pulangnya bikin video dulu yuk!” Kata Aura ke teman teman yang lainnya, banyak yang setuju namun berbeda dengan Raka. “Ah, ngapain sih?!, gua pengen pulang cepet, ngapain harus bikin video segala sih?!” Jawab Raka dengan nada sedikit emosi. “Sebentar doang Ka elah!, ga bikin lo miskin juga bikin video gini!” Jawab Aura dengan muka kesal. Lalu akhirnya Raka menturuti apa kata Aura. Akhirnya, setelah membuat video bersama teman temannya, Raka dan Aura pun pulang kerumahnya masing masing.
+
+
+Sesampainya dirumah, Raka langsung terbayang bayang oleh cantik dan baiknya Aura, namun Raka tidak terlalu memperdulikannya karna tujuan dia hanya ingin segera lulus dari sekolah itu.
+
+
+Sesampainya dirumah, Raka langsung terbayang bayang oleh cantik dan baiknya Aura, namun Raka tidak terlalu memperdulikannya karna tujuan dia hanya ingin segera lulus dari sekolah itu.
+
+
+Aura : P, Ini Rakha?
+
+
+Raka : Iya, Siapa ya?
+
+
+Aura : Save Aura Yaa!
+
+
+Raka : Oh lo, kirain siapa.
+
+
+Aura : Emang kenapa?
+
+
+Raka : Gapapa si, Tumben aja malem malem hp gua bunyi wkwk
+
+
+Aura : HAHAHA, keliatan banget kesepiannya..
+
+
+Raka : Hahaha, bisa aja lo, eh btw, nama gua Raka, Gapake H
+
+
+Aura : Oh salah ya.. Sorry
+
+
+Raka : Oke aman aja gapapa
+
+
+Seperti itulah awal mula mereka bertemu. Tak lama kemudian, Raka pun mulai membuka topik untuk menarik perhatian Aura yang telah menjadi seseorang yang disukai oleh Raka.
+
+
+Keesokan harinya, Raka bertemu Aura disekolah saat Les Inggris, dan Raka pun mulai terlihat aktif ketika bertemu Aura.
+
+
+Keesokan harinya, Raka bertemu Aura disekolah saat Les Inggris, dan Raka pun mulai terlihat aktif ketika bertemu Aura.
+
+
+Beberapa hari berlalu, Raka dan Aura semakin dekat, Mereka seringkali terlihat mengobrol ketika pulang sekolah, terkadang Raka terlihat mengantar pulang Aura, namun satu hal dihati Raka yang masih menjadi pertanyaan.
+
+
+Suatu hari, Raka sudah tidak tahan menahan rasa penasarannya, ia pun memberanikan diri dengan menanyakan hal ini kepada Aura. “Ra, sebenernya kita ini apasih?” Kata Raka, “Kita? Yaa kita kan temen ka?, Emangnya kenapa?” Jawab Aura, hati Raka langsung terasa pecah berkeping keping, namun setelah mendengar jawaban tersebut, bukannya Raka pergi meninggalkan Aura, namun Raka semakin memperkuat “Effort” nya agar dapat menjadi “Pacar” dari Aura.
+
+
+Setelah beberapa minggu menjalani hubungan “Justfriend” itu, Aura menyadari bahwa Raka lah yang terbaik untuk dirinya, Akhirnya tanpa gengsi Aura memberikan jawaban pasti kepada Raka bahwa dirinya bersedia menjadi Pacar dari dirinya.
+
+\jedahias
+
+\chapter{Cangkang Kosong}
+\penulis{Wisam Yassar Mahardika}
+
+\awalcerpen{S}etiap pagi, Rio terbangun tepat pada pukul enam. Ia melihat apartemennya yang terlihat sangat steril, dingin, dan tenggelam dalam kesunyiannya. Ia tidak memiliki hubungan dengan siapapun dan juga tidak memiliki satupun hewan peliharaan. Ia kemudian menonton TV untuk melihat berita yang dia juga tidak pernah suka, sekadar mengisi ruang hampa di ruangan itu.
+
+
+``Inflasi mata uang kita meningkat 0.5\%''
+
+
+Ia melihat berita tersebut sembari menyeduh kopi instan dan juga menunggu mie instan matang. ``Rasa rendang enak kayaknya buat mie,'' ucap Rio sembari matanya fokus kepada berita tersebut. Dia mencoba untuk peduli terhadap berita tersebut, namun akhirnya, sebuah rasa pahit menghantamnya: dia sadar bahwa dia memang tidak terlalu peduli tentang apapun lagi.
+
+
+Jam pun menunjuk pada angka tujuh. Dia sadar bahwa dia harus bekerja sekarang. Dia pun berjalan menuju halte bis. ``Langit lumayan cerah. Kayaknya harinya bakal bagus,'' ucap Rio sembari berjalan melihat langit. Walaupun dia berkata seperti itu, hampir tidak ada harapan bahwa harinya memang akan bagus. Itu hanya mekanisme koping, sebuah kebohongan kecil untuk membuat hari-harinya yang hampa terasa lebih menarik.
+
+
+Rio pun pergi bekerja. Dia adalah seorang \textit{software engineer} yang berfokus pada \textit{web development}. Dulu ia sempat memiliki cita-cita untuk menjadi seseorang yang membuat alat yang bisa membantu orang banyak. Akan tetapi, sekarang, mimpinya terkubur jauh di dalam lautan \textit{meeting} dan birokrasi yang dia pun tidak tahu tujuannya kemana. Walaupun pekerjaannya memiliki gaji yang lumayan besar, dia hanya bisa memikirkan tentang betapa payahnya dia karena mengorbankan masa mudanya untuk pekerjaan yang membunuh gairahnya.
+
+
+``Kenapa saya memilih untuk melakukan ini...'' gumam Rio sambil memegang kepalanya dengan kedua tangan. Dia tidak sedang melakukan hal yang rumit, tetapi dikarenakan dia memang tidak memiliki gairah lagi untuk melakukan apapun.
+
+
+Setelah beberapa jam bergulat dengan pekerjaannya, dia dipanggil oleh manajernya untuk keluar dari kubikelnya. ``Hey! Kamu! Rio kan? Kenapa performamu turun belakangan ini?'' ucap manajernya. ``Oh kayaknya cuman fluktuasi \textit{mood} Pak.. Maaf ya jika kurang memuaskan. Saya akan berusaha untuk memperbaikinya,'' jawab Rio. ``Kamu.. Gak kenapa kenapa kan?'' tanya manajernya yang kelihatan khawatir. ``Gapapa Pak,'' jawab Rio.
+
+
+Akhirnya jam pulang pun tiba. Rio pergi pulang melewati sebuah kursi taman. Dia pergi menoleh ke belakang dan bergumam, ``Duduk sebentar disini kayaknya lumayan.'' Dia pun duduk di kursi taman itu.
+
+
+Rio melihat orang lalu lalang lalu teringat masa kuliahnya. Dulu dia adalah seseorang yang ingin mengubah dunia pada masa kuliah. Mungkin mimpinya terlalu naif, tetapi ada rasa nostalgia yang sangat erat dan menyengat pada itu. ``Andai saya melakukan hal itu,'' Rio berkata sambil menyeringai getir.
+
+
+Tetapi, pertahanannya perlahan runtuh. Rio pun mulai menangis. Bukan tangisan yang penuh penderitaan, tetapi tangisan yang penuh penyesalan yang mendalam. Dia bergumam, ``Kenapa.. kenapa harus saya..'' sambil mencoba menahan tangisannya di kursi taman tersebut.
+
+
+Suasana pada taman itu menenangkan. Akan tetapi ironisnya, ketika orang lain mungkin bahagia dan merasa tenang pada tempat itu, Rio malah menangisi kehidupannya yang sungguh penuh penyesalan dan tanpa seorangpun di sisinya.
+
+
+Rio pun pergi pulang ke apartemennya dan kembali tidur. Semua ini sudah terasa biasa baginya. Dia memejamkan mata sembari berharap besok akan lebih baik.
+
+\jedahias
+
+\end{document}
