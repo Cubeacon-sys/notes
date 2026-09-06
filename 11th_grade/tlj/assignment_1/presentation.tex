@@ -1,0 +1,182 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+\metroset{block=fill, sectionpage=progressbar, progressbar=foot}
+
+% Language and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+% Presentation Meta Information
+\title{Sejarah dan Evolusi Internet Mobile}
+\subtitle{Perjalanan Teknologi Jaringan dari Generasi ke Generasi}
+\author{
+  Wisam Yassar Mahardika \and Hadjar Azriel Miftahul Khoir \\
+  M. Ikhsan Fadilah \and Devant Fadhillah \and Regita Dwi Putri
+}
+\institute{SMK PLUS PRATAMA ADI --- KOTA BANDUNG}
+\date{2026}
+
+\begin{document}
+
+% Slide Title
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Slide Agenda / TOC
+\begin{frame}{Daftar Isi}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ====================================================
+\section{Pendahuluan}
+% ====================================================
+
+\begin{frame}{Latar Belakang}
+  \begin{itemize}
+    \item \textbf{Era 1990-an -- 2000-an:} Akses internet sangat tergantung pada infrastruktur kabel fisik (LAN, Dial-up) yang membatasi mobilitas.
+    \item \textbf{Disrupsi Mobile Broadband:} Tuntutan konektivitas tinggi mendorong transisi cepat ke pita lebar nirkabel.
+    \item \textbf{Tulang Punggung Digital:} Pita lebar nirkabel bertransformasi menjadi fondasi komunikasi \textit{real-time} dan efisiensi lintas sektor.
+    \item \textbf{Urgensi Analisis:} Membedah evolusi teknis 3G menuju 4G LTE sangat esensial untuk memahami arsitektur sosio-ekonomi modern.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Rumusan Masalah \& Tujuan Penulisan}
+  \begin{block}{Rumusan Masalah}
+    \begin{enumerate}
+      \item Bagaimana dinamika teknis perkembangan pita lebar nirkabel dari era 3G ke 4G LTE sejak awal 2000-an?
+      \item Sejauh mana transisi tersebut mendisrupsi ekosistem perangkat cerdas dan aplikasi harian?
+    \end{enumerate}
+  \end{block}
+
+  \begin{block}{Tujuan Penulisan}
+    \begin{itemize}
+      \item Membedah kronologi evolusi pita lebar seluler (3G $\rightarrow$ 4G LTE).
+      \item Menganalisis dampak struktural jaringan terhadap perangkat cerdas, aplikasi \textit{on-demand}, dan ekonomi digital.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% ====================================================
+\section{Era 3G: Fondasi Pita Lebar Seluler}
+% ====================================================
+
+\begin{frame}{Transisi Spesifikasi 2G menuju 3G}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+      \begin{block}{Era 2G (GPRS / EDGE)}
+        \begin{itemize}
+          \item Kecepatan: \textbf{56 -- 384 kbps}
+          \item Terbatas pada pesan teks pendek, surel tanpa lampiran, dan WAP sederhana.
+        \end{itemize}
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{Era 3G (UMTS / W-CDMA)}
+        \begin{itemize}
+          \item Standar IMT-2000 (ITU) dengan kecepatan awal \textbf{2 Mbps}.
+          \item HSDPA/HSUPA \& HSPA+ Dual-Carrier mencapai puncak hingga \textbf{42 Mbps}.
+        \end{itemize}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.8em}
+  \textbf{Dampak Utama:} Mengubah fungsi esensial seluler dari sekadar transmisi suara menjadi kanal pita lebar berkecepatan tinggi.
+\end{frame}
+
+\begin{frame}{Proliferasi Perangkat Cerdas}
+  \begin{itemize}
+    \item \textbf{Katalis Hardware:} Stabilitas pita lebar 3G memicu integrasi prosesor tinggi, layar sentuh tajam, dan OS tangguh.
+    \item \textbf{Ekspansi Pasar (2008--Sekarang):} Peluncuran iPhone dan adopsi masif Android mendorong ekspansi \textit{smartphone} global.
+    \item \textbf{Perubahan Perilaku Konsumen:}
+      \begin{itemize}
+        \item Ponsel bertransformasi menjadi komputer portabel.
+        \item Navigasi web penuh, surel berbasis lampiran multimedia, dan konsumsi media alir (\textit{streaming}).
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+% ====================================================
+\section{Era 4G LTE: Akselerasi \& Efisiensi Spektral}
+% ====================================================
+
+\begin{frame}{Kematangan Arsitektur 4G LTE}
+  \begin{itemize}
+    \item \textbf{Solusi Kongesti Network:} 3GPP merilis standar \textit{Long Term Evolution} (LTE) Release 8 \& Release 10 (LTE-Advanced).
+    \item \textbf{Arsitektur Full-IP:} Integrasi transmisi suara lewat \textit{Voice over LTE} (VoLTE).
+    \item \textbf{Efisiensi Spektral:} Penggunaan teknik modulasi \textbf{OFDM} dan teknologi antena \textbf{MIMO}.
+    \item \textbf{Performa Transmisi:}
+      \begin{itemize}
+        \item Kecepatan unduh: \textbf{100 Mbps -- 1 Gbps}
+        \item Latensi ultra-rendah: \textbf{$<$ 30 ms}
+        \item Mengungguli dominasi internet kabel (ADSL) konvensional.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Kelahiran Ekosistem Digital Modern}
+  \begin{description}
+    \item[Layanan On-Demand] Sensor GPS presisi + 4G mematangkan ekosistem Gojek \& Grab (\textit{real-time tracking} tanpa jeda).
+    \item[Media Alir Interaktif] Streaming resolusi HD/4K tanpa latensi; mendorong tren video pendek \& \textit{live streaming} (TikTok, Instagram).
+    \item[Fintech \& E-Commerce] Enkripsi tingkat lanjut mengamankan pembayaran digital, e-wallet, dan m-banking dalam hitungan mikrodetik.
+  \end{description}
+\end{frame}
+
+% ====================================================
+\section{Analisis Kronologis \& Transformasi}
+% ====================================================
+
+\begin{frame}{Lini Masa Evolusi Infrastruktur}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llp{6.5cm}}
+    \toprule
+    \textbf{Tahun} & \textbf{Tonggak Teknologi} & \textbf{Karakteristik \& Dampak Sistemik} \\
+    \midrule
+    2000--2001 & Komersialisasi 3G W-CDMA & Kecepatan puncak 2 Mbps; menginisiasi komunikasi video \& data. \\
+    2006--2007 & HSDPA / HSPA & Transmisi meningkat hingga 7,2 Mbps; navigasi web seluler. \\
+    2007--2008 & Ecosystem iOS \& Android & Sentralisasi aplikasi digital (App Store / Play Store). \\
+    2009 & Jaringan Komersial 4G LTE & Kecepatan $>$100 Mbps berlandaskan Full-IP \& OFDM. \\
+    2014--2015 & Ekspansi 4G Nasional (ID) & Reokasi spektrum 900, 1800, dan 2100 MHz. \\
+    2016--2019 & Puncak LTE-Advanced & Adopsi maksimal pada fintech, logistik app, \& media 4K. \\
+    2020--Kini & Migrasi Infrastruktur 5G & Optimalisasi pita lebar ultracepat \& latensi ekstrem (IoT/AI). \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{frame}
+
+\begin{frame}{Restrukturisasi Pola Hidup dan Ekonomi}
+  \begin{enumerate}
+    \item \textbf{Depresiasi Saluran Konvensional:} Telepon suara tradisional dan SMS tergeser mutlak oleh layanan \textit{Over-The-Top} (OTT) berbasis IP (WhatsApp, Telegram).
+    \item \textbf{Inklusi Finansial \& UMKM:} Penetrasi pita lebar mereduksi \textit{barrier to entry}; UMKM dapat mengintegrasikan e-commerce tanpa aset fisik besar.
+    \item \textbf{Gig Economy \& Kerja Terdesentralisasi:} Fleksibilitas konektivitas melahirkan model kerja terdesentralisasi dan penyerapan tenaga kerja informal digital.
+  \end{enumerate}
+\end{frame}
+
+% ====================================================
+\section{Kesimpulan}
+% ====================================================
+
+\begin{frame}{Kesimpulan \& Strategi Prioritas}
+  \begin{block}{Ringkasan Ringkas}
+    Transisi dari 3G ke 4G LTE berfungsi sebagai determinan utama pembentukan arsitektur digital kontemporer, mengubah ponsel dari alat portabel biasa menjadi pusat transaksi dan komunikasi interaktif.
+  \end{block}
+
+  \begin{block}{Dua Strategi Prioritas Masa Depan}
+    \begin{enumerate}
+      \item \textbf{Ekstensifikasi Daerah 3T:} Pemerataan pita lebar ke wilayah Tertinggal, Terdepan, dan Terluar untuk menekan disparitas digital.
+      \item \textbf{Fiberisasi Backhaul \& Efisiensi Spektrum:} Penguatan jaringan serat optik sebagai fondasi teknis esensial untuk implementasi masif \textbf{5G} dan \textbf{IoT}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}[standout]
+  Terima Kasih!
+  \vspace{1em}
+  {\small Ada Pertanyaan?}
+\end{frame}
+
+\end{document}
