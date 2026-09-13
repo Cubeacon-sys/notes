@@ -1,28 +1,36 @@
-TARGET = main
+# --- Configuration ---
+MAIN = main
 BUILD_DIR = build
+CHAPTERS_DIR = chapters
 
-COMPILER = latexmk
-FLAGS    = -pdf -halt-on-error -interaction=nonstopmode -output-directory=$(BUILD_DIR)
+# Tools
+LATEXMK = latexmk
+FLAGS = -pdf -output-directory=$(BUILD_DIR) -use-make
 
-.PHONY: all clean cleanall open
+# --- Recipes ---
 
-all: $(BUILD_DIR)/$(TARGET).pdf
+.PHONY: all clean view
 
-$(BUILD_DIR)/$(TARGET).pdf: $(TARGET).tex
-	mkdir -p $(BUILD_DIR)
-	$(COMPILER) $(FLAGS) $(TARGET).tex
+# --- Default target: builds the PDF ---
+all: $(BUILD_DIR)/$(MAIN).pdf
+	@echo "Build successful! PDF is located at: $(BUILD_DIR)/$(MAIN).pdf"
 
+# --- Compiles the document and handles nested build directories ---
+$(BUILD_DIR)/$(MAIN).pdf: $(MAIN).tex $(shell find $(CHAPTERS_DIR) -name "*.tex" 2>/dev/null)
+	@mkdir -p $(BUILD_DIR)
+	@# This line automatically replicates your chapters directory structure inside the build folder
+	@find $(CHAPTERS_DIR) -type d -exec mkdir -p $(BUILD_DIR)/{} \;
+	$(LATEXMK) $(FLAGS) $(MAIN).tex
+
+# --- Cleans up all auxiliary and PDF files ---
 clean:
-	$(COMPILER) -c -output-directory=$(BUILD_DIR)
-	rm -f $(BUILD_DIR)/*.bbl $(BUILD_DIR)/*.bcf $(BUILD_DIR)/*.run.xml
-
-cleanall: clean
 	rm -rf $(BUILD_DIR)
+	@echo "Cleaned up all build files."
 
-open: all
-	@if [ -f $(BUILD_DIR)/$(TARGET).pdf ]; then \
-		echo "Membuka $(BUILD_DIR)/$(TARGET).pdf..."; \
-		xdg-open $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1 || open $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1 || start $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1; \
-	else \
-		echo "File PDF tidak ditemukan. Silakan jalankan 'make' terlebih dahulu."; \
+# --- Opens the generated PDF ---
+view: all
+	@if [ "$$(uname)" = "Darwin" ]; then \
+		open $(BUILD_DIR)/$(MAIN).pdf; \
+	elif [ "$$(uname)" = "Linux" ]; then \
+		xdg-open $(BUILD_DIR)/$(MAIN).pdf; \
 	fi
