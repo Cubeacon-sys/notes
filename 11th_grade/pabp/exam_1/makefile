@@ -1,28 +1,17 @@
-TARGET = main
-BUILD_DIR = build
+MAIN = main
+BUILDDIR = build
 
-COMPILER = latexmk
-FLAGS    = -pdf -halt-on-error -interaction=nonstopmode -output-directory=$(BUILD_DIR)
+all: $(BUILDDIR)/$(MAIN).pdf
 
-.PHONY: all clean cleanall open
-
-all: $(BUILD_DIR)/$(TARGET).pdf
-
-$(BUILD_DIR)/$(TARGET).pdf: $(TARGET).tex
-	mkdir -p $(BUILD_DIR)
-	$(COMPILER) $(FLAGS) $(TARGET).tex
+$(BUILDDIR)/%.pdf: %.tex
+	mkdir -p $(BUILDDIR)
+	latexmk -pdf -outdir=$(BUILDDIR) $<
 
 clean:
-	$(COMPILER) -c -output-directory=$(BUILD_DIR)
-	rm -f $(BUILD_DIR)/*.bbl $(BUILD_DIR)/*.bcf $(BUILD_DIR)/*.run.xml
+	latexmk -c -outdir=$(BUILDDIR) $(MAIN).tex
 
-cleanall: clean
-	rm -rf $(BUILD_DIR)
+cleanall:
+	latexmk -C -outdir=$(BUILDDIR) $(MAIN).tex
+	rm -rf $(BUILDDIR)
 
-open: all
-	@if [ -f $(BUILD_DIR)/$(TARGET).pdf ]; then \
-		echo "Membuka $(BUILD_DIR)/$(TARGET).pdf..."; \
-		xdg-open $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1 || open $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1 || start $(BUILD_DIR)/$(TARGET).pdf > /dev/null 2>&1; \
-	else \
-		echo "File PDF tidak ditemukan. Silakan jalankan 'make' terlebih dahulu."; \
-	fi
+.PHONY: all clean cleanall

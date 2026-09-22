@@ -1,252 +1,297 @@
-\documentclass[11pt, openany]{memoir}
-
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{fourier}
 \usepackage[indonesian]{babel}
-\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{geometry}
-\usepackage{lettrine}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fourier}
 
-\geometry{
-  paperwidth=148mm,
-  paperheight=210mm,
-  top=30mm,
-  bottom=25mm,
-  left=25mm,
-  right=25mm,
-  headheight=15pt,
-  headsep=15pt
-}
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
 
-\nopartblankpage
-\captiontitlefont{\normalfont}
-\let\cleardoublepage\clearpage
-
-\makechapterstyle{cerpenestetis}{%
-  \chapterstyle{default}
-  \renewcommand{\printchaptername}{}
-  \renewcommand{\printchapternum}{}
-  \renewcommand{\afterchapternum}{}
-  \renewcommand{\chaptitlefont}{\normalfont\Huge\centering\scshape}
-}
-\chapterstyle{cerpenestetis}
-
-\makepagestyle{estetis}
-\makeevenhead{estetis}{\thepage}{}{\small\scshape Labirin Pikiran 25}
-\makeoddhead{estetis}{\small\scshape\leftmark}{}{\thepage}
-\makeevenfoot{estetis}{}{}{}
-\makeoddfoot{estetis}{}{}{}
-\pagestyle{estetis}
-
-\usepackage{indentfirst}
-\setlength{\parindent}{2.5em}
-\setlength{\parskip}{0ex}
-
-\newcommand{\penulis}[1]{%
-  \nopagebreak
-  \vspace{-1.2em}%
-  \begin{center}%
-    {\large\itshape Oleh #1}\\[0.5em]%
-    \rule{2.5cm}{0.4pt}%
-  \end{center}%
-  \vspace{1.5em}%
-}
-
-\newcommand{\awalcerpen}[2]{%
-  \lettrine[lines=3, findent=2pt]{#1}{#2}%
-}
-
-\newcommand{\jedacerita}{%
-  \fancybreak{\vspace{0.8em}\textasteriskcentered\quad\textasteriskcentered\quad\textasteriskcentered\vspace{0.8em}}%
-}
-
-\newcommand{\jedahias}{%
-  \fancybreak{\vspace{0.8em}$\diamondsuit\quad\diamondsuit\quad\diamondsuit$\vspace{0.8em}}%
-}
-
-\newcommand{\batin}[1]{{\itshape #1}}
-
-\newcommand{\catatanpenulis}[1]{%
-  \par\vspace{1.5em}%
-  \noindent\rule{\linewidth}{0.2pt}\\[0.5em]%
-                {\small\itshape #1}\par%
-}
+\pagestyle{empty}
 
 \begin{document}
 
-\thispagestyle{empty}
 \begin{center}
-  \vfill
-      {\Large\scshape Tugas ASTS Kelas XI A2 TKJ} \\[0.5cm]
-      \rule{\linewidth}{1pt} \\[0.8cm]
-           {\Huge\bfseries LABIRIN PIKIRAN DUA PULUH LIMA} \\[0.5cm]
-           {\large\itshape Antologi Cerpen Bersama} \\[0.8cm]
-           \rule{\linewidth}{1pt} \\
-           \vfill
-               {\small\scshape Editor:}\\
-               {\large Wisam Yassar Mahardika}
-               \vfill
-               \vfill
-                   {\small\scshape \today}
-                   \vspace*{1cm}
+  \textbf{\Large Latihan Soal Ulangan ASTS PABP}
 \end{center}
-\clearpage
-
-\frontmatter
-\pagestyle{plain}
-
-\chapter*{Kata Pengantar}
-\addcontentsline{toc}{chapter}{Kata Pengantar}
-
-Puji dan syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa, karena atas rahmat-Nya, buku antologi cerpen berjudul \textit{Labirin Pikiran Dua Puluh Lima} ini dapat diselesaikan dengan baik. Buku ini merupakan wadah kreativitas bagi para penulis untuk menuangkan gagasan, emosi, dan imajinasi mereka ke dalam kisah kisah pendek yang bermakna.
-
-
-Terima kasih yang sebesar-besarnya saya sampaikan kepada guru bahasa indonesia yang telah memberi wawasan, serta para penulis yang bekerja keras agar bisa menyampaikan cerita yang bermakna. Selamat membaca.
-
-\vspace{2em}
-\begin{flushright}
-  Bandung, \today \\
-  \vspace{1.5em}
-  \textbf{Editor}
-\end{flushright}
-\clearpage
-
-{
-  \renewcommand{\contentsname}{\normalfont\Huge\centering\scshape Daftar Isi}
-  \tableofcontents*
-}
-\clearpage
-
-\mainmatter
-\pagestyle{estetis}
-
-\chapter{Just Friend}
-\penulis{Reka Rizki Pradana}
-
-\awalcerpen{S}{uatu pagi disebuah sekolah}, Raka terlihat tidur diatas meja diiringi berisiknya kelas di jam itu. Hanya satu dipikiran Raka saat ini, yaitu Pulang, alih alih memikirkan percintaan seperti teman temannya, yang ia pikirkan hanya ingin segera meluluskan sekolahnya lalu mendapat penghasilan. Tetapi hari itu terasa berbeda bagi Aura, seorang perempuan kelas sebelah yang selalu terlihat ceria dan energik. 
-
-
-Tiba tiba, meja Raka digebrak pelan “Ka, masih pagi loh ini, udah ngantuk aja, semalem ngapain aja lo?” kata Dimas, teman sebangku Raka, “Apasih, kan belum bel dim!, Santai aja kali.” Ucap Raka, Dimas terkejut, tak seperti biasanya Raka menjawab dengan nada seperti itu, “Lo kenapa ka?, Ada masalah ya? Apa gara gara lo gagal deketin cewe?” ucap Dimas ke Raka dengan nada kebingungan. “Pikiran lo aja tuh cewe semua, buat apa juga gua deketin cewe, cuma bisa bikin cape doang.” Jawab Raka sambil berdiri dari kursinya. Tak lama, Bel terdengar dan menandakan kegiatan membaca Quran di mushola akan segera dimulai.
-
-
-Raka berjalan melewati lorong sekolah dengan tatapan kosong tanpa melihat kekiri dan ke kanan sedikit pun, Tak berselang lama, Aura memanggil Raka dari belakang. “Raka!” ucap Aura. “Kenapa?” jawab Raka dengan nada dingin sambil menoleh kebelakang. “Nanti sore jangan dulu pulang ya, kumpul dulu eskul musik!” Kata Aura, Raka tak menjawab apapun dan pergi meninggalkan Aura tanpa sepatah kata pun. Hanya satu yang ada diotak Raka saat itu, Pulang.
-
-
-Setelah mengikuti seluruh kegiatan pembelajaran di Sekolah, Raka pun bersemangat untuk pulang, namun Aura sudah mengetahui bahwa Raka tidak akan mengikuti kumpul Ekskul.
-
-
-“Akhirnya pulang juga.” Kata Raka sambil berjalan keluar kelas, “Mau kemana Ka?, Kumpul dulu.” Dihadangnya Raka didepan pintu kelasnya oleh Aura. Alih alih melawan seperti biasanya, Raka malah memilih untuk menturuti apa yang Aura perintah, “Iya iya ini juga mau ra, ngapain sih lo pake ngehadang hadang segala.” Kata Raka, “Ya biar lo ga kabur lah!, gua udah tau ya lo bakalan kabur.” Jawab Aura.
-
-
-Sesampainya diruangan di lantai 3, Mereka langsung bergabung bersama teman teman lainnya untuk mengikuti kumpul ekskul, tanpa Aura ketahui, ternyata dia baru saja menarik perhatian dari Raka, seorang yang tidak terlalu perduli dengan percintaan.
-
-
-“Eh pulangnya bikin video dulu yuk!” Kata Aura ke teman teman yang lainnya, banyak yang setuju namun berbeda dengan Raka. “Ah, ngapain sih?!, gua pengen pulang cepet, ngapain harus bikin video segala sih?!” Jawab Raka dengan nada sedikit emosi. “Sebentar doang Ka elah!, ga bikin lo miskin juga bikin video gini!” Jawab Aura dengan muka kesal. Lalu akhirnya Raka menturuti apa kata Aura. Akhirnya, setelah membuat video bersama teman temannya, Raka dan Aura pun pulang kerumahnya masing masing.
-
-
-Sesampainya dirumah, Raka langsung terbayang bayang oleh cantik dan baiknya Aura, namun Raka tidak terlalu memperdulikannya karna tujuan dia hanya ingin segera lulus dari sekolah itu.
-
-
-Sesampainya dirumah, Raka langsung terbayang bayang oleh cantik dan baiknya Aura, namun Raka tidak terlalu memperdulikannya karna tujuan dia hanya ingin segera lulus dari sekolah itu.
-
-
-Aura : P, Ini Rakha?
-
-
-Raka : Iya, Siapa ya?
-
-
-Aura : Save Aura Yaa!
-
-
-Raka : Oh lo, kirain siapa.
-
-
-Aura : Emang kenapa?
-
-
-Raka : Gapapa si, Tumben aja malem malem hp gua bunyi wkwk
-
-
-Aura : HAHAHA, keliatan banget kesepiannya..
-
-
-Raka : Hahaha, bisa aja lo, eh btw, nama gua Raka, Gapake H
-
-
-Aura : Oh salah ya.. Sorry
-
-
-Raka : Oke aman aja gapapa
-
-
-Seperti itulah awal mula mereka bertemu. Tak lama kemudian, Raka pun mulai membuka topik untuk menarik perhatian Aura yang telah menjadi seseorang yang disukai oleh Raka.
-
-
-Keesokan harinya, Raka bertemu Aura disekolah saat Les Inggris, dan Raka pun mulai terlihat aktif ketika bertemu Aura.
-
-
-Keesokan harinya, Raka bertemu Aura disekolah saat Les Inggris, dan Raka pun mulai terlihat aktif ketika bertemu Aura.
-
-
-Beberapa hari berlalu, Raka dan Aura semakin dekat, Mereka seringkali terlihat mengobrol ketika pulang sekolah, terkadang Raka terlihat mengantar pulang Aura, namun satu hal dihati Raka yang masih menjadi pertanyaan.
-
-
-Suatu hari, Raka sudah tidak tahan menahan rasa penasarannya, ia pun memberanikan diri dengan menanyakan hal ini kepada Aura. “Ra, sebenernya kita ini apasih?” Kata Raka, “Kita? Yaa kita kan temen ka?, Emangnya kenapa?” Jawab Aura, hati Raka langsung terasa pecah berkeping keping, namun setelah mendengar jawaban tersebut, bukannya Raka pergi meninggalkan Aura, namun Raka semakin memperkuat “Effort” nya agar dapat menjadi “Pacar” dari Aura.
-
-
-Setelah beberapa minggu menjalani hubungan “Justfriend” itu, Aura menyadari bahwa Raka lah yang terbaik untuk dirinya, Akhirnya tanpa gengsi Aura memberikan jawaban pasti kepada Raka bahwa dirinya bersedia menjadi Pacar dari dirinya.
-
-\jedahias
-
-\chapter{Cangkang Kosong}
-\penulis{Wisam Yassar Mahardika}
-
-\awalcerpen{S}{etiap pagi}, Rio terbangun tepat pada pukul enam. Ia melihat apartemennya yang terlihat sangat steril, dingin, dan tenggelam dalam kesunyiannya. Ia tidak memiliki hubungan dengan siapapun dan juga tidak memiliki satupun hewan peliharaan. Ia kemudian menonton TV untuk melihat berita yang dia juga tidak pernah suka, sekadar mengisi ruang hampa di ruangan itu.
-
-
-``Inflasi mata uang kita meningkat 0.5\%''
-
-
-Ia melihat berita tersebut sembari menyeduh kopi instan dan juga menunggu mie instan matang. ``Rasa rendang enak kayaknya buat mie,'' ucap Rio sembari matanya fokus kepada berita tersebut. Dia mencoba untuk peduli terhadap berita tersebut, namun akhirnya, sebuah rasa pahit menghantamnya: dia sadar bahwa dia memang tidak terlalu peduli tentang apapun lagi.
-
-
-Jam pun menunjuk pada angka tujuh. Dia sadar bahwa dia harus bekerja sekarang. Dia pun berjalan menuju halte bis. ``Langit lumayan cerah. Kayaknya harinya bakal bagus,'' ucap Rio sembari berjalan melihat langit. Walaupun dia berkata seperti itu, hampir tidak ada harapan bahwa harinya memang akan bagus. Itu hanya mekanisme koping, sebuah kebohongan kecil untuk membuat hari-harinya yang hampa terasa lebih menarik.
-
-
-Rio pun pergi bekerja. Dia adalah seorang \textit{software engineer} yang berfokus pada \textit{web development}. Dulu ia sempat memiliki cita-cita untuk menjadi seseorang yang membuat alat yang bisa membantu orang banyak. Akan tetapi, sekarang, mimpinya terkubur jauh di dalam lautan \textit{meeting} dan birokrasi yang dia pun tidak tahu tujuannya kemana. Walaupun pekerjaannya memiliki gaji yang lumayan besar, dia hanya bisa memikirkan tentang betapa payahnya dia karena mengorbankan masa mudanya untuk pekerjaan yang membunuh gairahnya.
-
-
-``Kenapa saya memilih untuk melakukan ini...'' gumam Rio sambil memegang kepalanya dengan kedua tangan. Dia tidak sedang melakukan hal yang rumit, tetapi dikarenakan dia memang tidak memiliki gairah lagi untuk melakukan apapun.
-
-
-Setelah beberapa jam bergulat dengan pekerjaannya, dia dipanggil oleh manajernya untuk keluar dari kubikelnya. ``Hey! Kamu! Rio kan? Kenapa performamu turun belakangan ini?'' ucap manajernya. ``Oh kayaknya cuman fluktuasi \textit{mood} Pak.. Maaf ya jika kurang memuaskan. Saya akan berusaha untuk memperbaikinya,'' jawab Rio. ``Kamu.. Gak kenapa kenapa kan?'' tanya manajernya yang kelihatan khawatir. ``Gapapa Pak,'' jawab Rio.
-
-
-Beberapa jam pun berlalu dan Rio melakukan pekerjaannya hanya sebagai formalitas semata. Dia menatap jam sambil terlihat sangat bosan dengan hidupnya, sambil kadang kadang menghitung detik hanya untuk mengisi waktu luang. ``1.. 2.. 3.. 4.. 5.. 6.. 7.. 8.. 9.. 10..'' adalah kata yang sering terdengar di kubikel Rio.
-
-
-Walaupun Rio terlihat sangat ingin pulang. Dia tidak tahu dan tidak pernah punya rencana setelah pulang. Tidak ada banyak orang yang kenal dengan dia. Tetapi dia sudah terbiasa dengan itu.
-
-
-Akhirnya jam pulang pun tiba. Rio pergi pulang melewati sebuah kursi taman. Dia pergi menoleh ke belakang dan bergumam, ``Duduk sebentar disini kayaknya lumayan.'' Dia pun duduk di kursi taman itu.
-
-
-Rio melihat orang lalu lalang lalu teringat masa kuliahnya. Dulu dia adalah seseorang yang ingin mengubah dunia pada masa kuliah. Mungkin mimpinya terlalu naif, tetapi ada rasa nostalgia yang sangat erat dan menyengat pada itu. ``Andai saya melakukan hal itu,'' Rio berkata sambil menyeringai getir.
-
-
-Tetapi, pertahanannya perlahan runtuh. Rio pun mulai menangis. Bukan tangisan yang penuh penderitaan, tetapi tangisan yang penuh penyesalan yang mendalam. Dia bergumam, ``Kenapa.. kenapa harus saya..'' sambil mencoba menahan tangisannya di kursi taman tersebut.
-
-
-Suasana pada taman itu menenangkan. Akan tetapi ironisnya, ketika orang lain mungkin bahagia dan merasa tenang pada tempat itu, Rio malah menangisi kehidupannya yang sungguh penuh penyesalan dan tanpa seorangpun di sisinya.
-
-
-Rio mengusap air matanya dan berjalan ke apartemennya sendirian. Karena dia tahu.. bahwa tidak akan ada seorangpun, yang akan menyelamatkan dia dari hidupnya yang penuh penyesalan ini.
-
-
-Rio pun pergi pulang ke apartemennya dan kembali tidur. Semua ini sudah terasa biasa baginya. Dia memejamkan mata sembari berharap besok akan lebih baik. ``Besok semoga akan berubah..'' ucap Rio. Sebuah kalimat yang sudah tidak memiliki arti.
-
-\jedahias
-
+\vspace{0.3cm}
+
+\begin{multicols}{2}
+  \setlist[enumerate,1]{leftmargin=*,label=\arabic*.}
+  \setlist[enumerate,2]{leftmargin=*,label=\Alph*.}
+  
+  \begin{enumerate}
+    \item Peristiwa yang menjadi \textit{asbabun nuzul} (sebab turunnya) QS. Ali Imran ayat 190-191 berkaitan dengan...
+    \begin{enumerate}
+      \item Pertanyaan kaum Yahudi mengenai ruh
+      \item Permintaan kaum Quraisy kepada Nabi agar mengubah bukit Safa menjadi emas sebagai mukjizat
+      \item Perintah hijrah ke Madinah
+      \item Teguran kepada pasukan pemanah saat perang Uhud
+      \item Larangan memakan riba berlipat ganda
+    \end{enumerate}
+
+    \item Kandungan dari penggalan lafal \textit{"\dots wakhtilāfil-laili wan-nahāri\dots"} dalam QS. Ali Imran ayat 190 adalah tentang...
+    \begin{enumerate}
+      \item Penciptaan bumi dan gunung
+      \item Ciri-ciri orang yang berakal
+      \item Pergantian malam dan siang
+      \item Penciptaan langit bersap-sap
+      \item Siksa api neraka
+    \end{enumerate}
+
+    \item Lanjutan hafalan lafal ayat tentang penciptaan alam semesta dalam QS. Ali Imran ayat 190 \textit{"Inna fī khalqis-samawāti wal-arḍi\dots"} adalah...
+    \begin{enumerate}
+      \item wakhtilāfil-laili wan-nahāri
+      \item rabbanā mā khalaqta hāzā bāṭila
+      \item la’āyātil li’ulil-albāb
+      \item qiyāmaw wa qu‘ūdaw 
+      \item fa qinā ‘azāban-nār
+    \end{enumerate}
+
+    \item Lanjutan hafalan lafal doa berlindung dari azab neraka pada QS. Ali Imran ayat 191 \textit{"\dots rabbanā mā khalaqta hāzā bāṭila, subḥānaka\dots"} adalah...
+    \begin{enumerate}
+      \item innal-‘ahda kāna mas’ūlā
+      \item la’azīdannakum
+      \item fatahlikū
+      \item fa qinā ‘azāban-nār
+      \item wa aufū bil-‘ahdi
+    \end{enumerate}
+
+    \item Hukum bacaan tajwid yang terdapat pada lafal \textit{"\dots s-samawāti"} dalam ayat \textit{"Inna fī khalqis-samawāti"} adalah...
+    \begin{enumerate}
+      \item Alif Lam Qamariyah
+      \item Alif Lam Syamsiyah
+      \item Izhar Halqi
+      \item Idgham Bighunnah
+      \item Ikhfa Syafawi
+    \end{enumerate}
+
+    \item Pada lafal \textit{"qiyāmaw wa"} dalam kalimat \textit{"Allazīna yazkurūnallāha qiyāmaw wa qu‘ūdaw"}, terdapat hukum bacaan...
+    \begin{enumerate}
+      \item Izhar Syafawi
+      \item Idgham Bilaghunnah
+      \item Iqlab
+      \item Idgham Bighunnah
+      \item Ikhfa Hakiki
+    \end{enumerate}
+
+    \item Pada huruf Nun berharakat dhammah di lafal \textit{"junūbihim"} (dalam penggalan \textit{wa qu‘ūdaw wa ‘alā junūbihim}), hukum bacaannya adalah...
+    \begin{enumerate}
+      \item Mad Thabi'i
+      \item Mad Jaiz Munfasil
+      \item Izhar Halqi
+      \item Ikhfa Syafawi
+      \item Iqlab
+    \end{enumerate}
+
+    \item Lafal dalam QS. Ali Imran ayat 191 yang menunjukkan ciri-ciri aktivitas \textit{ulil albab} (orang yang berakal) adalah...
+    \begin{enumerate}
+      \item Inna fī khalqis-samawāti wal-arḍi
+      \item Tafakkarū fī khalqillāhi wa lā tafakkarū fī żātillāhi
+      \item Allazīna yazkurūnallāha qiyāmaw wa qu‘ūdaw wa ‘alā junūbihim
+      \item yatafakkarūna fī khalqis-samawāti wal-arḍ
+      \item Yā ma‘syaral-jinni wal-insi inistaṭa‘tum
+    \end{enumerate}
+
+    \item Lengkapilah hafalan lafal hadits tentang larangan memikirkan Dzat Allah berikut: \textit{"Tafakkarū fī khalqillāhi wa lā \dots"}
+    \begin{enumerate}
+      \item yaqbiḍul-‘ilma biqabḍil-‘ulamā’i
+      \item tafakkarū fī żātillāhi fatahlikū
+      \item yasykurin-nāsa lā yasykurillāh
+      \item yaqul khairan au liyaṣmut
+      \item lā tanfużūna illā bisulṭān
+    \end{enumerate}
+
+    \item Bagaimana relasi antara iman, ilmu, dan amal berdasarkan kandungan QS. Ar-Rahman ayat 33?
+    \begin{enumerate}
+      \item Ilmu hanya wajib dituntut oleh para ulama
+      \item Amal ibadah jauh lebih utama sehingga ilmu tidak diperlukan
+      \item Jin lebih diutamakan dalam menuntut ilmu dibanding manusia
+      \item Kecanggihan ilmu pengetahuan (IPTEK) harus semakin menumbuhkan keimanan kepada Allah
+      \item Ilmu pengetahuan digunakan murni untuk mencari keuntungan materi
+    \end{enumerate}
+
+    \item Hukum tajwid pada lafal \textit{"wal-insi"} dalam QS. Ar-Rahman ayat 33 (huruf Nun sukun bertemu Sin) adalah...
+    \begin{enumerate}
+      \item Idgham Bighunnah
+      \item Ikhfa Hakiki
+      \item Iqlab
+      \item Izhar Halqi
+      \item Idgham Bilaghunnah
+    \end{enumerate}
+
+    \item Hukum tajwid pada akhir ayat lafal \textit{"\dots illā bisulṭān"} apabila diwaqafkan (diberhentikan) adalah...
+    \begin{enumerate}
+      \item Mad Arid Lissukun
+      \item Mad Wajib Muttasil
+      \item Mad Jaiz Munfasil
+      \item Mad Iwad
+      \item Mad Badal
+    \end{enumerate}
+
+    \item Lanjutan hafalan lafal hadits tentang dicabutnya ilmu \textit{"Innallāha lā yaqbiḍul-‘ilma-ntizā‘an yantazi‘uhū minal-‘ibādi, wa lākin \dots"} adalah...
+    \begin{enumerate}
+      \item falyaqul khairan au liyaṣmut
+      \item fa qinā ‘azāban-nār
+      \item innal-‘ahda kāna mas’ūlā
+      \item yaqbiḍul-‘ilma biqabḍil-‘ulamā’i
+      \item uḥillat lakum bahīmatul-an‘āmi
+    \end{enumerate}
+
+    \item Kandungan QS. Ar-Rahman ayat 33 menegaskan bahwa manusia dan jin tidak mampu menembus penjuru langit dan bumi kecuali dengan \textit{sulṭān}, yang bermakna...
+    \begin{enumerate}
+      \item Harta kekayaan yang melimpah
+      \item Kekuatan militer yang besar
+      \item Kekuatan / Penguasaan ilmu pengetahuan
+      \item Izin dari para rasul
+      \item Restu dari malaikat penjaga langit
+    \end{enumerate}
+
+    \item Contoh penerapan sikap berpikir kritis yang tepat bagi seorang pelajar di sekolah adalah...
+    \begin{enumerate}
+      \item Mengabaikan tugas kelompok yang diberikan guru
+      \item Menerima semua informasi dari teman tanpa bertanya ulang
+      \item Menghafal teori tanpa mau memahami maknanya
+      \item Berani mempertanyakan materi pelajaran yang belum dipahami secara sopan
+      \item Sering membolos karena merasa pelajaran terlalu sulit
+    \end{enumerate}
+
+    \item Cara menerapkan sikap berpikir kritis ketika menerima berita atau informasi dari media sosial adalah...
+    \begin{enumerate}
+      \item Langsung membagikan tautan berita tersebut ke grup lain
+      \item Menyimpulkan isi berita hanya dari judulnya saja
+      \item Mempercayai sepenuhnya karena berita tersebut sedang viral
+      \item Menghapus dan memblokir pengirim tanpa alasan
+      \item Melakukan klarifikasi (\textit{tabayyun}) sumber dan kebenaran isi berita
+    \end{enumerate}
+
+    \item Contoh penerapan berpikir kritis dalam mengamati fenomena alam di lingkungan sekitar adalah...
+    \begin{enumerate}
+      \item Meneliti penyebab terjadinya banjir bandang untuk mencari solusi pencegahan
+      \item Membuang sampah di sungai karena merasa sudah biasa
+      \item Menikmati keindahan alam sembari merusaknya perlahan
+      \item Menganggap setiap bencana sebagai hal yang wajar tanpa perlu diantisipasi
+      \item Acuh tak acuh terhadap perubahan cuaca di lingkungan rumah
+    \end{enumerate}
+
+    \item Bentuk penerapan sikap berpikir kritis pada saat harus mengambil sebuah keputusan penting adalah...
+    \begin{enumerate}
+      \item Mengikuti pendapat mayoritas agar aman, meskipun salah
+      \item Memilih keputusan secara acak agar masalah cepat selesai
+      \item Mempertimbangkan dampak baik dan buruk secara objektif sebelum memutuskan
+      \item Menghindari tanggung jawab dari hasil keputusannya sendiri
+      \item Meminta orang lain untuk memikirkan keputusannya
+    \end{enumerate}
+
+    \item Secara istilah, pengertian memenuhi janji adalah...
+    \begin{enumerate}
+      \item Mengucapkan kata-kata yang disenangi oleh banyak orang
+      \item Melaksanakan sesuatu sesuai dengan kesanggupan yang telah diucapkan
+      \item Memberikan hadiah kepada teman dekat secara sembunyi-sembunyi
+      \item Menjaga amanah agar tidak diketahui oleh musuh
+      \item Mengikuti semua keinginan orang tua tanpa membantah
+    \end{enumerate}
+
+    \item Lanjutan terjemahan hadits \textit{"Tanda-tanda orang munafik itu ada 3: jika berbicara ia berdusta, jika berjanji ia mengingkari, dan \dots"} adalah...
+    \begin{enumerate}
+      \item jika bersaksi ia palsu
+      \item jika meminjam ia tidak mengembalikan
+      \item jika berdagang ia curang
+      \item jika diberi amanat ia berkhianat
+      \item jika marah ia merusak
+    \end{enumerate}
+
+    \item Salah satu ciri utama orang yang selalu berusaha menepati janjinya adalah...
+    \begin{enumerate}
+      \item Mudah mengobral janji di setiap kesempatan
+      \item Mencari-cari alasan agar terbebas dari tuntutan janji
+      \item Menghindar saat ditagih janjinya oleh orang lain
+      \item Berpikir terlebih dahulu mengenai kemampuannya sebelum berjanji
+      \item Suka membatalkan janjinya secara sepihak
+    \end{enumerate}
+
+    \item Lanjutan hafalan lafal dalil Al-Quran tentang janji pada QS. Al-Isra ayat 34 \textit{"\dots wa aufū bil-‘ahdi, innal-‘ahda \dots"} adalah...
+    \begin{enumerate}
+      \item kāna mas’ūlā
+      \item mā yurīd
+      \item la’azīdannakum
+      \item qaulan sadīdā
+      \item raqībun ‘atīd
+    \end{enumerate}
+
+    \item Sikap yang seharusnya dilakukan apabila seseorang mengalami kendala di luar kendalinya sehingga tidak mampu memenuhi janji adalah...
+    \begin{enumerate}
+      \item Memutus kontak dengan orang yang telah diberi janji
+      \item Berpura-pura lupa bahwa ia pernah membuat janji
+      \item Bertanggung jawab dengan cara meminta maaf dan menjelaskan keadaannya
+      \item Mencari kambing hitam atas kesalahannya tersebut
+      \item Menunggu ditagih, lalu berpura-pura marah
+    \end{enumerate}
+
+    \item Contoh kasus nyata bentuk memenuhi janji seorang hamba kepada Allah SWT adalah...
+    \begin{enumerate}
+      \item Datang tepat waktu saat kerja bakti warga
+      \item Membayar utang uang kepada pihak bank
+      \item Melaksanakan salat 5 waktu dan menunaikan nazar berpuasa
+      \item Mengembalikan buku perpustakaan sesuai batas peminjaman
+      \item Mengerjakan tugas sekolah dengan teliti
+    \end{enumerate}
+
+    \item Contoh kasus perilaku menepati janji antar sesama manusia di lingkungan masyarakat adalah...
+    \begin{enumerate}
+      \item Melaksanakan ibadah kurban pada Hari Raya Idul Adha
+      \item Membaca basmalah sebelum mulai bekerja
+      \item Bersedekah di kotak amal masjid setiap salat Jumat
+      \item Membayar barang pinjaman atau utang tepat waktu sesuai kesepakatan
+      \item Menjauhi sikap iri dan dengki terhadap tetangga
+    \end{enumerate}
+
+    \item Definisi dari mensyukuri nikmat secara istilah adalah...
+    \begin{enumerate}
+      \item Merasa puas dengan apa yang ada dan berhenti berusaha
+      \item Berbangga diri atas kekayaan yang dimiliki dan memamerkannya
+      \item Menganggap kesuksesan yang didapat murni dari kerja keras diri sendiri
+      \item Sikap menyadari bahwa segala nikmat berasal dari Allah dan menggunakannya sesuai kehendak-Nya
+      \item Berbagi kekayaan untuk mendapat pujian masyarakat sekitar
+    \end{enumerate}
+
+    \item Lanjutan hafalan lafal dalil Al-Quran tentang bersyukur pada QS. Ibrahim ayat 7 \textit{"Wa iź ta’ażżana rabbukum la’in syakartum \dots"} adalah...
+    \begin{enumerate}
+      \item wa la’in kafartum
+      \item inna ‘azābī lasyadīd
+      \item kāna mas’ūlā
+      \item lā yasykurillāh
+      \item la’azīdannakum
+    \end{enumerate}
+
+    \item Penerapan sikap mensyukuri nikmat kesehatan yang telah diberikan oleh Allah SWT dilakukan dengan cara...
+    \begin{enumerate}
+      \item Berolahraga berat dan ekstrem tanpa memperdulikan kelelahan
+      \item Bekerja keras siang dan malam tanpa waktu istirahat
+      \item Menjaga pola makan, berolahraga, dan menggunakan tenaga untuk ibadah
+      \item Mengonsumsi segala jenis makanan tanpa batasan asalkan enak
+      \item Membiarkan tubuh kurang tidur demi bermain \textit{game}
+    \end{enumerate}
+
+    \item Cara dan penerapan sikap yang benar dalam mensyukuri nikmat harta benda adalah...
+    \begin{enumerate}
+      \item Menghamburkan uang untuk membeli berbagai koleksi barang mewah
+      \item Menyimpan seluruh hartanya sendiri dan tidak mau bersedekah (bakhil)
+      \item Mencari harta dengan segala cara, termasuk cara yang tidak halal
+      \item Membelanjakan harta secukupnya, bersedekah, dan membantu yang membutuhkan
+      \item Merusak barang yang masih bagus hanya karena bosan
+    \end{enumerate}
+
+    \item Secara istilah, definisi dari sikap menjaga lisan adalah...
+    \begin{enumerate}
+      \item Berhati-hati dalam berbicara dengan memilih ucapan yang baik, benar, bermanfaat, dan tidak menyakiti
+      \item Memilih diam (tidak berbicara sama sekali) sepanjang hari
+      \item Berani membicarakan keburukan orang lain secara terang-terangan
+      \item Membela teman dekat dalam perdebatan meskipun teman tersebut bersalah
+      \item Berkata jujur dengan bahasa yang sarkas dan menyinggung perasaan
+    \end{enumerate}
+  \end{enumerate}
+\end{multicols}
 \end{document}
