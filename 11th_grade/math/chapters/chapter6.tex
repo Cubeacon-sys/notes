@@ -1,31 +1,55 @@
 \subsection{Fungsi Invers}
 \begin{definition}[Fungsi Invers]
-  Fungsi invers adalah fungsi yang ``Membalik'' fungsi asalnya.
+  Fungsi invers adalah fungsi yang ``membalikkan'' pemetaan dari fungsi asalnya.
   \begin{itemize}
-  \item Jika fungsi asal memetakan $x \implies y$.
-  \item Maka fungsi invers memetakan $y \implies q$.
+  \item Jika fungsi asal memetakan $x \implies y$,
+  \item Maka fungsi invers memetakan $y \implies x$.
   \end{itemize}
   Notasi fungsi invers adalah:
   \[ f^{-1}(x) \]
-  Bukan pangkat negatif tapi lambang kebalikan. Dibaca ``$f$ invers dari $x$''.
+  Notasi ini bukan berarti pangkat negatif, melainkan lambang kebalikan/invers. Dibaca ``$f$ invers dari $x$''.
 \end{definition}
 
-\subsubsection{Menetukan Fungsi Invers}
+\subsubsection{Menentukan Fungsi Invers}
 \begin{enumerate}
-\item Misalkan $y = f(x)$
-\item Tukar Posisi $x$ dan $y$. ($x = f(y)$).
-\item Ubah kembali ke $y$ = $f^{-1}(x)$.
+\item Misalkan $y = f(x)$.
+\item Pindah ruaskan persamaan sedemikian rupa untuk menyatakan $x$ dalam fungsi $y$ (sehingga menjadi $x = f^{-1}(y)$).
+\item Ubah kembali variabel $y$ menjadi $x$ untuk mendapatkan $f^{-1}(x)$.
 \end{enumerate}
 
-\begin{example}[Fungsi Invers]
+\begin{example}[Fungsi Invers Linear]
   \hfill \\
-  Tentukan fungsi invers dari fungsi
-  \[ f(x) = 2x + 3 \]
-  $f(x) = 2x + 3$ \\
-  $y = 2x + 3$ \\
-  $-2x = -y + 3$ \\
-  $2x = y - 3$ \\
-  $x = \frac{y - 3}{2}$ \\
-  $f(y) = \frac{y - 3}{2}$ \\
-  $f^{-1}(x) = \frac{x - 3}{2}$
+  Tentukan fungsi invers dari fungsi:
+  \[f(x) = 2x + 3\]
+  
+  \textbf{Penyelesaian:}
+  \[\begin{aligned}     y &= 2x + 3 \\     -2x &= -y + 3 \quad \text{(pindah ruas)} \\     2x &= y - 3 \\     x &= \frac{y - 3}{2}   \end{aligned}\]
+  Sehingga, fungsi inversnya adalah:
+  \[f^{-1}(x) = \frac{x - 3}{2}\]
+\end{example}
+
+\begin{example}[Fungsi Invers Pecahan Rasional]
+  \hfill \\
+  Tentukan fungsi invers dari fungsi:
+  \[f(x) = \frac{2x + 1}{x - 3}, \quad x \ne 3\]
+  
+  \textbf{Penyelesaian:}
+  \[\begin{aligned}     y &= \frac{2x + 1}{x - 3} \\     y(x - 3) &= 2x + 1 \\     xy - 3y &= 2x + 1 \\     xy - 2x &= 3y + 1 \quad \text{(kumpulkan suku yang memiliki variabel } x \text{)} \\     x(y - 2) &= 3y + 1 \\     x &= \frac{3y + 1}{y - 2}   \end{aligned}\]
+  Sehingga, fungsi inversnya adalah:
+  \[f^{-1}(x) = \frac{3x + 1}{x - 2}, \quad x \ne 2\]
+\end{example}
+
+\begin{example}[Invers dari Fungsi Komposisi]
+  \hfill \\
+  Diketahui $f(x) = 3x - 2$ dan $g(x) = x + 5$. Tentukan invers dari fungsi komposisi $(f \circ g)(x)$!
+  
+  \textbf{Penyelesaian:}
+  \\ Langkah 1: Tentukan hasil $(f \circ g)(x)$ terlebih dahulu.
+  \[\begin{aligned}     (f \circ g)(x) &= f(g(x)) \\                    &= 3(x + 5) - 2 \\                    &= 3x + 15 - 2 \\                    &= 3x + 13   \end{aligned}\]
+  \\ Langkah 2: Cari invers dari hasil komposisi tersebut.
+  \[\begin{aligned}     y &= 3x + 13 \\     -3x &= -y + 13 \\     3x &= y - 13 \\     x &= \frac{y - 13}{3}   \end{aligned}\]
+  Sehingga, fungsi invers dari komposisinya adalah:
+  \[(f \circ g)^{-1}(x) = \frac{x - 13}{3}\]
+  
+  \textit{Catatan: Anda juga bisa menggunakan sifat invers fungsi komposisi yaitu $(f \circ g)^{-1}(x) = (g^{-1} \circ f^{-1})(x)$.}
 \end{example}

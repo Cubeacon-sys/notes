@@ -1,37 +1,60 @@
 \subsection{Mencari Fungsi Asal pada Fungsi Komposisi}
-\begin{definition}[Kasus 1]
-  Diketahui $g(x)$ dan $f \circ g(x) \implies$ dicari $f(x)$ misalkan $g(x) = ax + b$ dan $f \circ g(x) = \text{rumus yang diketahui}$.
+\begin{definition}[Kasus 1: Mencari Fungsi Luar]
+  Diketahui fungsi dalam $g(x)$ dan hasil komposisi $(f \circ g)(x)$, lalu dicari fungsi luar $f(x)$. Misalkan $g(x) = ax + b$ dan $(f \circ g)(x)$ adalah rumus yang diketahui.
 \end{definition}
 
 \begin{example}[Kasus 1]
-  \[f \circ g(x) = 4x^2 + 2x - 5\]
-  \[g(x) = 2x + 1\]
-  Tentukan $f(x)$! \\
-  $f \circ g(x) = 4x^2 + 2x - 5$ \\
-  $f(g(x)) = 4x^2 + 2x - 5$ \\
-  $f(2x + 1) = 4x^2 + 2x - 5$ \\
-  $\text{Misalkan } 2x + 1 = y$ \\
-  $2x + 1 = y$ \\
-  $2x = y - 1$ \\
-  $x = \frac{y - 1}{2}$ \\
-  $f(y) = 4 \left(\frac{y - 1}{2}\right)^2 + 2\left(\frac{y - 1}{2}\right) - 5$ \\
-  $4 \left(\frac{y^2 - 2y + 1}{4}\right) + y - 1 - 5$ \\
-  $y^2 - 2y + 1 + y - 6$ \\
-  $y^2 - y - 5 \implies \text{ubah y menjadi x}$ \\
-  $f(x) = x^2 - x - 5$
+  \hfill \\
+  Diketahui:
+  \[ (f \circ g)(x) = 4x^2 + 2x - 5 \]
+  \[ g(x) = 2x + 1 \]
+  Tentukan $f(x)$!
+  
+  \textbf{Penyelesaian:}
+  \[
+  \begin{aligned}
+    f(g(x)) &= 4x^2 + 2x - 5 \\
+    f(2x + 1) &= 4x^2 + 2x - 5
+  \end{aligned}
+  \]
+  Misalkan $2x + 1 = y$, maka:
+  \[
+  \begin{aligned}
+    2x &= y - 1 \\
+    x &= \frac{y - 1}{2}
+  \end{aligned}
+  \]
+  Substitusikan nilai $x$ tersebut ke dalam persamaan fungsi:
+  \[
+  \begin{aligned}
+    f(y) &= 4 \left(\frac{y - 1}{2}\right)^2 + 2\left(\frac{y - 1}{2}\right) - 5 \\
+    &= 4 \left(\frac{y^2 - 2y + 1}{4}\right) + (y - 1) - 5 \\
+    &= (y^2 - 2y + 1) + y - 6 \\
+    &= y^2 - y - 5
+  \end{aligned}
+  \]
+  Ubah kembali variabel $y$ menjadi $x$:
+  \[ f(x) = x^2 - x - 5 \]
 \end{example}
 
-\begin{definition}[Kasus 2]
-  Diketahui $f(x)$ dan $f \circ g(x) \implies$ dicari $g(x)$. Misalkan $g(x) = ax + b$, masukan ke dalam rumus $f$ lalu samakan dengan $f \circ g(x)$ yang diketahui. lalu cari nilai $a$ dan $b$.
+\begin{definition}[Kasus 2: Mencari Fungsi Dalam]
+  Diketahui fungsi luar $f(x)$ dan hasil komposisi $(f \circ g)(x)$, lalu dicari fungsi dalam $g(x)$. Masukkan $g(x)$ ke dalam rumus $f(x)$, lalu samakan dengan $(f \circ g)(x)$ yang diketahui.
 \end{definition}
 
 \begin{example}[Kasus 2]
-  \[f \circ g(x) = x^2 - 2x + 3\]
-  \[f(x) = x - 4\]
-  Tentukan $g(x)$! \\
-  $f \circ g(x) = x^2 - 2x + 3$ \\
-  $f(g(x)) = x^2 - 2x + 3$ \\
-  $g(x) - 4 = x^2 - 2x + 3$ \\
-  $g(x) = x^2 - 2x + 3 + 4$ \\
-  $g(x) = x^2 - 2x + 7$
+  \hfill \\
+  Diketahui:
+  \[ (f \circ g)(x) = x^2 - 2x + 3 \]
+  \[ f(x) = x - 4 \]
+  Tentukan $g(x)$!
+  
+  \textbf{Penyelesaian:}
+  \[
+  \begin{aligned}
+    f(g(x)) &= x^2 - 2x + 3 \\
+    g(x) - 4 &= x^2 - 2x + 3 \\
+    g(x) &= x^2 - 2x + 3 + 4 \\
+    g(x) &= x^2 - 2x + 7
+  \end{aligned}
+  \]
 \end{example}

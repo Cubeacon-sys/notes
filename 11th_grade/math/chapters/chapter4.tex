@@ -1,42 +1,64 @@
 \subsection{Komposisi Fungsi}
 \begin{definition}[Komposisi Fungsi]
   Komposisi dari fungsi $f$ dan $g$ didefinisikan sebagai berikut:
-  \[(f \circ g)(x) = f(g(x))\]
-  \[(g \circ f)(x) = g(f(x))\]
-  \textit{(Menggabungkan 2 fungsi, memasukkan fungsi pertama ke fungsi ke dua)}
+  \[ (f \circ g)(x) = f(g(x)) \]
+  \[ (g \circ f)(x) = g(f(x)) \]
+  \textit{(Menggabungkan 2 fungsi dengan cara memasukkan fungsi yang satu ke dalam variabel fungsi yang lain)}
 \end{definition}
 
 \begin{example}[Komposisi Fungsi]
-  \[f(x) = x^2 + 3x - 2\]
-  \[g(x) = x - 1\]
+  \hfill \\
+  Misalkan $f(x) = x^2 + 3x - 2$ dan $g(x) = x - 1$:
   \begin{enumerate}
-  \item $f \circ g(x) = (x - 1)^2 + 3(x - 1) - 2$ \\
-    $(x - 1) (x - 1) + 3x - 3 - 2$ \\
-    $(x^2 - x - x + 1) + 3x - 5$ \\
-    $x^2 - 2x + 1 + 3x - 5$ \\
-    $x^2 + x - 4$ 
-  \item $g \circ f(x) = (x^2 + 3x - 2) - 1$ \\
-    $x^2 + 3x - 2 - 1$ \\
-    $x^2 + 3x - 3$
+  \item Menentukan $(f \circ g)(x)$:
+    \[
+    \begin{aligned}
+      (f \circ g)(x) &= f(g(x)) \\
+      &= (x - 1)^2 + 3(x - 1) - 2 \\
+      &= (x^2 - 2x + 1) + 3x - 3 - 2 \\
+      &= x^2 + x - 4
+    \end{aligned}
+    \]
+  \item Menentukan $(g \circ f)(x)$:
+    \[
+    \begin{aligned}
+      (g \circ f)(x) &= g(f(x)) \\
+      &= (x^2 + 3x - 2) - 1 \\
+      &= x^2 + 3x - 3
+    \end{aligned}
+    \]
   \end{enumerate}
 \end{example}
 
 \subsection{Komposisi dari 3 Fungsi}
 \begin{definition}[Komposisi dari 3 Fungsi]
-  \[(f \circ g) \circ h = f \circ (g \circ h)\]
+  Sifat asosiatif berlaku pada komposisi fungsi:
+  \[ (f \circ g) \circ h = f \circ (g \circ h) \]
 \end{definition}
 
 \begin{example}[Komposisi dari 3 Fungsi]
-  \[f(x) = x - 1\]
-  \[g(x) = x^2 - 3x - 2\]
-  \[h(x) = x + 5\]
-  $(f \circ g)(x) = f(g(x))$ \\
-  $(x^2 + 3x - 2) - 1$ \\
-  $x + 3x - 2 - 1$ \\
-  $x + 3x - 3$ \\
-  $(f \circ g) \circ h(x) = f \circ g(h(x))$ \\
-  $(x + 5)^2 + 3(x + 5) - 3$ \\
-  $(x + 5) (x + 5) + 3 (x + 5) - 3$ \\
-  $x^2 + 5x + 5x + 25 + 3x + 15 - 3$ \\
-  $x^2 + 13x + 37$ \\
+  \hfill \\
+  Misalkan:
+  \[ f(x) = x - 1 \]
+  \[ g(x) = x^2 + 3x - 2 \]
+  \[ h(x) = x + 5 \]
+  
+  Langkah 1: Tentukan $(f \circ g)(x)$:
+  \[
+  \begin{aligned}
+    (f \circ g)(x) &= f(g(x)) \\
+    &= (x^2 + 3x - 2) - 1 \\
+    &= x^2 + 3x - 3
+  \end{aligned}
+  \]
+  
+  Langkah 2: Tentukan $((f \circ g) \circ h)(x)$:
+  \[
+  \begin{aligned}
+    ((f \circ g) \circ h)(x) &= (f \circ g)(h(x)) \\
+    &= (x + 5)^2 + 3(x + 5) - 3 \\
+    &= (x^2 + 10x + 25) + 3x + 15 - 3 \\
+    &= x^2 + 13x + 37
+  \end{aligned}
+  \]
 \end{example}
