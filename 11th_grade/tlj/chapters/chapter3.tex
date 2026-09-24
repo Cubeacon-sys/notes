@@ -1,25 +1,35 @@
-\section{Teknologi Komunikasi Data}
-\subsection{Pengertian}
-Teknologi komunikasi data adalah keseluruhan perangkat keras, perangkat lunak, metode, dan infrastruktur yang digunakan untuk mendukung proses pengiriman dan penerimaan data antar-perangkat, baik dalam jarak dekat maupun jarak jauh.
+\section{Model Transmisi Data}
+\subsection{Pengertian Sinyal Dalam Komunikasi Data}
+Representasi fisik dari data yang dapat merambat melalui media transmisi, baik berupa listrik, cahaya, maupun gelombang elektromagnetik.
 
-\subsection{Peran Teknologi Komunikasi Data}
+
+Ada 2 jenis utama yaitu:
 \begin{enumerate}
-\item Mendukung komunikasi jarak jauh secara real time.
-\item Menjadi tulang punggung (backbone) dunia bisnis dan ekonomi digital.
-\item Mendukung penyebaran informasi dan pendidikan secara luas melalui internet.
-\item Menjadi fondasi bagi perkembangan teknologi lain yang lebih kompleks.
+\item \textbf{Sinyal Analog} \\
+  Nilainya berubah secara kontinu (bersambung/tidak terputus-putus) mengikuti besaran fisik aslinya. Sinyal analog dapat memiliki nilai berapapun dalam suatu rentang tertentu, sehingga bentuk gelombangnya tampak halus dan berkesinambungan.
+\item \textbf{Sinyal Digital} \\
+  Sinyal yang nilainya berupa data diskrit (terputus-putus) umumnya hanya terdiri atas 2 kondisi (0 dan 1) yang direpresentasikan sebagai 2 level tegangan berbeda, misalnya ``Tinggi'' dan ``Rendah''.
 \end{enumerate}
 
-\subsection{Perkembangan Teknologi Komunikasi Data}
-\subsubsection{Era Telegraf (1837)}
-Telegraf merupakan salah satu teknologi jarak jauh pertama yang memanfaatkan sinyal listrik, dikembangkan oleh Samuel Morse bersama kode Morse-nya yang terkenal. Pesan dikirimkan dalam bentuk rangkaian sinyal pendek dan panjang (titik dan garis) melalui kabel listrik antar stasiun telegraf.
-\subsubsection{Era Telepon Analog (1876)}
-Alexander Graham Bell menemukan telepon, memungkinkan komunikasi suara secara langsung melalui sinyal listrik analog. Penemuan ini menjadi tonggak penting karena untuk pertama kalinya manusia dapat berbicara langsung dengan orang lain yang berada di lokasi berbeda secara real time.
-\subsubsection{Era Jaringan Komputer Awal (1969)}
-ARPANET, jaringan komputer yang dikembangkan oleh Departemen Pertahanan Amerika Serikat, menjadi cikal bakal internet modern. Awalnya hanya menghubungkan beberapa universitas untuk keperluan penelitian, ARPANET menjadi fondasi bagi pengembangan protokol TCP/IP yang hingga kini menjadi standar komunikasi data di internet.
-\subsubsection{World Wide Web (1990-an)}
-Tim Berners-Lee mengembangkan World Wide Web (WWW) pada awal 1990-an, yang membuat internet menjadi lebih mudah diakses dan digunakan oleh masyarakat umum, tidak hanya kalangan akademisi dan militer. Sejak saat itu, penggunaan internet berkembang pesat ke seluruh dunia.
-\subsubsection{Internet Broadband dan Mobile}
-Perkembangan teknologi broadband serta jaringan seluler generasi ketiga dan keempah (3G/4G) membuat akses internet menjadi jauh lebih cepat dan dapat diakses langsung melalui perangkat mobile seperti smartphone, mendorong lahirnya berbagai aplikasi dan layanan digital yang kita gunakan sehari hari saat ini.
-\subsubsection{Internet Cepat Saat Ini (5G, Fiber, Cloud)}
-Saat ini, teknologi komunikasi data terus berkembang dengan hadirnya jaringan 5G, koneksi fiber optik hingga ke rumah-rumah (FTTH), serta layanan berbasis komputasi awan (cloud computing), yang memungkinkan komunikasi data berlangsung dengan kecepatan sangat tinggi dan hampir tanpa jeda (near real-time), mendukung teknologi terkini seperti IoT dan kecerdasan buatan.
+\subsection{Sinyal ADC (Analog to Digital Converter)}
+ADC adalah proses/komponen yang berfungsi mengubah sinyal analog menjadi sinyal digital, agar data tersebut dapat diproses, disimpan,, atau dikirimkan oleh perangkat digital seperti komputer.
+
+\subsection{DAC (Digital to Analog Converter)}
+DAC adalah proses/komponen yang berfungsi mengubah kembali sinyal digital menjadi sinyal analog, agar data tersebut dapat dipahami/dirasakan oleh manusia melalui perangkat output analog.
+
+\subsection{Perbandingan Antara Transmisi Analog dan Digital}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \textbf{Parameter Perbandingan} & \textbf{Transmisi Analog} & \textbf{Transmisi Digital} \\
+    \midrule
+    Bentuk Sinyal & Gelombang kontinu (terus-menerus) & Sinyal diskrit (biner 0 dan 1) \\
+    Ketahanan terhadap Noise & Rendah (mudah terpengaruh gangguan) & Tinggi (lebih tahan dan bisa diperbarui) \\
+    Keandalan \& Kualitas & Rentan atenuasi dan distorsi jarak jauh & Kualitas tetap jernih dan stabil \\
+    Penggunaan Bandwidth & Lebih hemat bandwidth & Membutuhkan bandwidth yang lebih besar \\
+    Fleksibilitas \& Pemrosesan & Sulit dimodifikasi dan disimpan & Sangat mudah diproses oleh komputer \\
+    Contoh Penggunaan & Radio FM/AM, TV analog lama & Komputer, internet, TV digital \\
+    \bottomrule
+  \end{tabular}
+\end{table}
