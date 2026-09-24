@@ -1,0 +1,187 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fourier}
+
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+  \textbf{\Large Soal Latihan TLJ}
+\end{center}
+
+\begin{multicols}{2}
+\setlist[enumerate,1]{leftmargin=*,label=\arabic*.}
+\setlist[enumerate,2]{leftmargin=*,label=\Alph*.}
+
+\begin{enumerate}
+    \item Sebuah perusahaan mengirimkan dokumen rahasia melalui jaringan publik. Agar data yang dikirim oleh \emph{sender} tidak dapat dibaca atau dimanipulasi oleh pihak ketiga sebelum sampai ke \emph{receiver}, komponen komunikasi data yang harus disesuaikan pada tingkat aturan dan keamanan adalah \dots
+    \begin{enumerate}
+        \item Media Transmisi
+        \item \textbf{Protokol}
+        \item Modulasi
+        \item Bandwidth
+    \end{enumerate}
+
+    \item Sebuah sistem pengawasan lalu lintas menggunakan kamera CCTV yang mengirimkan tayangan video \emph{live} ke pusat kontrol, sementara pusat kontrol dapat mengirimkan instruksi gerakan kamera (\emph{pan/tilt/zoom}) secara bersamaan tanpa jeda. Jenis aliran data pada sistem tersebut adalah \dots
+    \begin{enumerate}
+        \item Simplex
+        \item Half-duplex
+        \item \textbf{Full-duplex}
+        \item Asymmetric Simplex
+    \end{enumerate}
+
+    \item Mengapa sistem \emph{walkie-talkie} (HT) dikategorikan sebagai \emph{half-duplex}, padahal kedua pengguna dapat saling mendengar dan berbicara?
+    \begin{enumerate}
+        \item Karena transmisi data menggunakan gelombang digital biner
+        \item \textbf{Karena saluran media transmisi yang digunakan sama sehingga proses kirim dan terima harus bergantian}
+        \item Karena perangkat HT tidak memiliki komponen \emph{receiver}
+        \item Karena sinyal audio pada HT diubah terlebih dahulu menjadi kode Morse
+    \end{enumerate}
+
+    \item Saat transmisi data analog menempuh jarak yang sangat jauh, sinyal akan mengalami pelemahan (atenuasi) dan rentan terhadap \emph{noise}. Jika sinyal tersebut dikuatkan menggunakan amplifier biasa, dampak buruk yang terjadi adalah \dots
+    \begin{enumerate}
+        \item Sinyal analog otomatis berubah menjadi sinyal digital
+        \item \textbf{\emph{Noise} atau gangguan ikut terkuatkan bersama sinyal asli}
+        \item Frekuensi sinyal akan turun menjadi 0 Hz
+        \item Data secara otomatis terenkripsi
+    \end{enumerate}
+
+    \item Proses konversi sinyal analog ke digital (ADC) melibatkan tahap \emph{sampling}, \emph{quantizing}, dan \emph{encoding}. Apabila frekuensi \emph{sampling} yang digunakan terlalu rendah, dampak yang akan terjadi pada data hasil konversi adalah \dots
+    \begin{enumerate}
+        \item Ukuran berkas menjadi sangat besar
+        \item \textbf{Gelombang rekonstruksi data digital kehilangan detail dan mengalami distorsi (\emph{aliasing})}
+        \item Sinyal digital berubah menjadi sinyal optik
+        \item Kecepatan transmisi data meningkat dua kali lipat
+    \end{enumerate}
+
+    \item Ketika mendengar lagu berformat WAV (digital) melalui headphone nirkabel Bluetooth, urutan konversi sinyal yang benar dari penyimpanan hingga terdengar oleh telinga adalah \dots
+    \begin{enumerate}
+        \item Analog $\rightarrow$ ADC $\rightarrow$ Digital $\rightarrow$ DAC $\rightarrow$ Suara
+        \item \textbf{Data Digital $\rightarrow$ Pemrosesan Bluetooth $\rightarrow$ DAC $\rightarrow$ Sinyal Analog (Gelombang Suara)}
+        \item Sinyal Analog $\rightarrow$ DAC $\rightarrow$ Sinyal Digital $\rightarrow$ Speaker
+        \item Data Digital $\rightarrow$ ADC $\rightarrow$ Sinyal Analog $\rightarrow$ Speaker
+    \end{enumerate}
+
+    \item Mengapa transmisi data digital jauh lebih unggul dalam penyimpanan dan pengolahan data jangka panjang dibandingkan transmisi analog?
+    \begin{enumerate}
+        \item Sinyal digital tidak memerlukan media fisik sama sekali
+        \item \textbf{Sinyal digital menggunakan nilai diskrit (0 dan 1) sehingga mudah diperbaiki (\emph{error correction}) saat terganggu \emph{noise}}
+        \item Sinyal digital memiliki nilai amplitudo tak terbatas
+        \item Sinyal digital tidak terikat oleh hukum fisika
+    \end{enumerate}
+
+    \item Sebuah pabrik memiliki banyak mesin las listrik bertenaga tinggi yang memancarkan medan elektromagnetik kuat. Jenis kabel jaringan lokal yang paling tepat dipasang agar data tidak terganggu interferensi adalah \dots
+    \begin{enumerate}
+        \item Kabel UTP Cat5e
+        \item Kabel UTP Cat6
+        \item \textbf{Kabel STP (\emph{Shielded Twisted Pair})}
+        \item Kabel Coaxial Unshielded
+    \end{enumerate}
+
+    \item Jalur komunikasi antar-pulau di Indonesia sebagian besar memanfaatkan jaringan kabel Fiber Optik bawah laut. Alasan utama penggunaan Fiber Optik ketimbang kabel tembaga untuk jarak jauh adalah \dots
+    \begin{enumerate}
+        \item Biaya pembuatan kabel serat kaca jauh lebih murah dari tembaga
+        \item \textbf{Fiber Optik menggunakan sinar cahaya sehingga memiliki \emph{bandwidth} sangat besar dan bebas interferensi elektromagnetik}
+        \item Fiber Optik sangat mudah disambung secara manual jika putus
+        \item Fiber Optik dapat mentransmisikan arus listrik untuk menghidupkan perangkat di ujung jaringan
+    \end{enumerate}
+
+    \item Dalam suatu jaringan kantor bertopologi Star, tiba-tiba salah satu komputer kinerjanya lambat dan tidak dapat terhubung ke server. Komputer lain di ruangan yang sama tetap berjalan normal. Langkah \emph{troubleshooting} awal yang paling tepat adalah \dots
+    \begin{enumerate}
+        \item Mengganti seluruh kabel utama (\emph{backbone}) kantor
+        \item \textbf{Memeriksa koneksi kabel UTP/port RJ-45 yang terhubung khusus ke komputer bermasalah tersebut}
+        \item Mengubah seluruh topologi jaringan menjadi topologi Mesh
+        \item Mematikan seluruh Switch pusat
+    \end{enumerate}
+
+    \item Topologi Mesh memiliki tingkat \emph{redundancy} dan \emph{fault tolerance} paling tinggi, namun jarang diterapkan pada jaringan skala besar seperti sekolah atau perkantoran. Penyebab utamanya adalah \dots
+    \begin{enumerate}
+        \item Tingkat keamanan data pada topologi Mesh sangat rendah
+        \item Jika satu node rusak, seluruh jaringan dipastikan mati total
+        \item \textbf{Pemborosan kabel (\emph{costly}) serta kerumitan instalasi dan konfigurasi port yang sangat tinggi}
+        \item Topologi Mesh tidak mendukung penggunaan sinyal digital
+    \end{enumerate}
+
+    \item Perhatikan skenario: \emph{``Sebuah perusahaan memiliki kantor pusat di Jakarta dan kantor cabang di Surabaya serta Medan. Semua kantor terhubung ke jaringan internal perusahaan untuk sinkronisasi database secara real-time.''} Berdasarkan skala geografisnya, jaringan perusahaan tersebut dikategorikan sebagai \dots
+    \begin{enumerate}
+        \item LAN (\emph{Local Area Network})
+        \item PAN (\emph{Personal Area Network})
+        \item MAN (\emph{Metropolitan Area Network})
+        \item \textbf{WAN (\emph{Wide Area Network})}
+    \end{enumerate}
+
+    \item Pada awal perkembangan teknologi komunikasi data, telegraf menggunakan sinyal listrik terputus-putus untuk mengirimkan Kode Morse. Ditinjau dari konsep modern, karakteristik pengiriman Kode Morse (titik dan garis / \emph{dot and dash}) memiliki kemiripan konsep dengan \dots
+    \begin{enumerate}
+        \item Sinyal Analog Kontinu
+        \item \textbf{Sinyal Digital Biner (0 dan 1)}
+        \item Gelombang Radio FM
+        \item Sistem Fiber Optik Multimode
+    \end{enumerate}
+
+    \item ARPANET yang dibangun pada tahun 1969 memperkenalkan teknologi \emph{Packet Switching}. Keunggulan utama \emph{Packet Switching} dibandingkan \emph{Circuit Switching} (sistem telepon kabel lama) dalam komunikasi data adalah \dots
+    \begin{enumerate}
+        \item Jalur komunikasi harus disewa secara eksklusif selama percakapan berlangsung
+        \item \textbf{Data dipecah menjadi paket-paket kecil yang dapat menempuh berbagai rute berbeda secara efisien}
+        \item \emph{Packet Switching} tidak membutuhkan protokol komunikasi
+        \item \emph{Packet Switching} hanya bisa digunakan untuk mentransmisikan data suara
+    \end{enumerate}
+
+    \item Kombinasi topologi yang menghubungkan beberapa topologi Star melalui sebuah jalur kabel utama (\emph{backbone}) dinamakan topologi Tree. Titik lemah utama (\emph{single point of failure}) dari topologi ini berada pada \dots
+    \begin{enumerate}
+        \item Kabel \emph{patch} yang terhubung ke komputer klien
+        \item \textbf{Kabel utama (\emph{backbone}) yang menghubungkan hub/switch antar tingkatan}
+        \item Perangkat komputer klien di tingkat paling bawah
+        \item Jenis sistem operasi yang digunakan klien
+    \end{enumerate}
+
+    \item Sebuah sekolah ingin merancang laboratorium komputer baru dengan 30 unit PC. Diinginkan biaya kabel yang efisien, kemudahan deteksi lokasi kabel yang rusak, serta tidak mengganggu PC lain jika ada satu perangkat yang mati. Rekomendasi rancangan yang paling ideal adalah \dots
+    \begin{enumerate}
+        \item Topologi Bus menggunakan kabel Coaxial
+        \item \textbf{Topologi Star menggunakan Switch dan kabel UTP}
+        \item Topologi Ring menggunakan kabel STP
+        \item Topologi Mesh menggunakan kabel Fiber Optik pada setiap PC
+    \end{enumerate}
+
+    \item Apabila sebuah sinyal digital berkecepatan tinggi dikirimkan melalui media kabel UTP yang melebihi batas panjang standar ($> 100$ meter) tanpa penguat (\emph{repeater}), masalah teknis yang paling utama muncul adalah \dots
+    \begin{enumerate}
+        \item Kabel akan terbakar akibat arus listrik tinggi
+        \item \textbf{Terjadi pelemahan sinyal (\emph{attenuation}) dan pembiasan gelombang yang menyebabkan data \emph{corrupt/packet loss}}
+        \item Topologi jaringan otomatis berubah menjadi topologi Bus
+        \item Sinyal digital otomatis berubah menjadi sinyal analog FM
+    \end{enumerate}
+
+    \item Mengapa perkembangan World Wide Web (WWW) yang dikembangkan Tim Berners-Lee pada awal 1990-an menjadi pemicu utama meledaknya penggunaan internet di seluruh dunia?
+    \begin{enumerate}
+        \item Karena WWW menggantikan seluruh kabel jaringan di dunia dengan satelit
+        \item \textbf{Karena WWW menyediakan antarmuka dokumen hypertext (HTML) berbasis grafis yang mudah diakses dan dihubungkan via browser}
+        \item Karena WWW membuat kecepatan internet menjadi tidak terbatas
+        \item Karena WWW menghapus kebutuhan akan IP Address dan nama domain
+    \end{enumerate}
+
+    \item Penurunan kualitas sinyal audio atau video pada aplikasi panggilan rapat daring (\emph{video conference}) yang ditandai dengan suara patah-patah akibat adanya variasi keterlambatan waktu penerimaan paket data dinamakan \dots
+    \begin{enumerate}
+        \item Bandwidth
+        \item Latency
+        \item \textbf{Jitter}
+        \item Throughput
+    \end{enumerate}
+
+    \item Seorang teknisi jaringan mengamati bahwa sinyal Wi-Fi di area perpustakaan sering terputus ketika oven microwave di kantin sebelah dinyalakan. Fenomena gangguan tersebut dalam komunikasi data nirkabel dikenal sebagai \dots
+    \begin{enumerate}
+        \item \emph{Cross-talk}
+        \item \textbf{Interferensi Gelombang/Noise}
+        \item Atenuasi Kabel
+        \item Distortion DAC
+    \end{enumerate}
+\end{enumerate}
+
+\end{multicols}
+
+\end{document}
