@@ -1,0 +1,179 @@
+\section{Sentential Logic}
+\subsection{Deductive Reasoning and Logical Connectives}
+\subsubsection{Exercises:}
+\begin{enumerate}
+\item Analyze the logical forms of the following statements:
+  \begin{enumerate}
+  \item We'll have either a reading assignment or a homework problems, but we won't have both homework problems and a test.
+  \item You won't go skiing or you will and there won't be any snow.
+  \item $\sqrt{7} \nleq 2$.
+  \end{enumerate}
+\item Analyze the logical forms of the following statements:
+  \begin{enumerate}
+  \item Either John and Bill are both telling the truth, or neither of them is.
+  \item I'll have either fish or chicken, but I won't have both fish and mashed potatoes.
+  \item 3 is a common divisor of 6, 9 and 15.
+  \end{enumerate}
+\item Analyze the logical forms of the following statements
+  \begin{enumerate}
+  \item Alice and Bob are not both in the room.
+  \item Alice and Bob are both not in the room.
+  \item Either Alice or Bob is not in the room.
+  \item Neither Alice nor Bob is in the room.
+  \end{enumerate}
+\item Which of the following expressions are well-formed formulas?
+  \begin{enumerate}
+  \item $\neg(\neg P \lor \neg \neg R)$.
+  \item $\neg(P, Q, \land R)$.
+  \item $P \land \neg P$.
+  \item $(P \land Q)(P \lor R)$.
+  \end{enumerate}
+\item Let $P$ stand for the statement ``I will buy the pants'' and $S$ for the statement ``I will buy the shirt.'' What English sentences are represented by the following expressions?
+  \begin{enumerate}
+  \item $\neg(P \land \neg S)$.
+  \item $\neg P \land \neg S$.
+  \item $\neg P \lor \neg S$.
+  \end{enumerate}
+\item Let $S$ stand for the statement ``Steve is happy'' and $G$ for ``George is happy.'' What English sentences are represented by the following expressions?
+  \begin{enumerate}
+  \item $(S \lor G) \land (\neg S \lor \neg G)$.
+  \item $[S \lor (G \land \neg S)] \lor \neg G$.
+  \item $S \lor [G \land (\neg s \lor \neg G)]$.
+  \end{enumerate}
+\item Identify the premises and conclusions of the following deductive arguments and analyze their logical forms. Do you think the reasoning is valid? (Although you will have only your intuition to guide you in answering this last question, in the next section we will develop some techniques for determining the validity of arguments.)
+  \begin{enumerate}
+  \item Jane and Pete won't both win the math prize. Pete will win either the math prize or the chemistry prize. Jane will win the math prize. Therefore, Pete will win the chemistry prize.
+  \item The main course will be either beef or fish. The vegetable will be either peas or corn. We will not have both fish as a main course and corn as a vegetable. Therefore, we will not have both beef as a main course and peas as a vegetable.
+  \item Either John or Bill is telling the truth. Either Sam or Bill is lying. Therefore, either John is telling the truth or Sam is lying.
+  \item Either sales will go up and the boss will be happy, or expenses will go up and the boss won't be happy. Therefore, sales and expenses will not both go up.
+  \end{enumerate}
+\end{enumerate}
+\subsubsection{Solutions:}
+\begin{enumerate}
+\item Logical Forms:
+  \begin{enumerate}    
+  \item \textbf{Statement:} We'll have either a reading assignment or a homework problem, but we won't have both homework problems and a test. \\ 
+    \textbf{Atomic Statements: } Let $R$ denote ``We'll have a reading assignment,'' $H$ denote ``We'll have homework problems,'' and $T$ denote ``We'll have a test.'' \\
+    \textbf{Logical Form:} $(R \lor H) \land \neg(H \land T)$ \\
+    \textbf{Reasoning:} ``Either $R$ or $H$'' is represented by $(R \lor H)$. The connective ``but'' functions as a logical conjunction ($\land$). ``Not both $H$ and $T$'' translates to $\neg(H \land T)$.
+    
+  \item \textbf{Statement:} You won't go skiing or you will and there won't be any snow. \\
+    \textbf{Atomic Statements:} Let $S$ denote ``You will go skiing,'' and $N$ denote ``There will be snow.'' \\
+    \textbf{Logical Form:} $\neg S \lor (S \land \neg N)$ \\
+    \textbf{Reasoning:} ``You won't go skiing'' is $\neg S$. The main connective is ``or'' ($\lor$). The second clause ``you will go skiing and there won't be any snow'' combines $S$ and $\neg N$ with an ``and'' ($\land$).
+    
+  \item \textbf{Statement:} $\sqrt{7} \nleq 2$. \\
+    \textbf{Atomic Statement:} Let $P$ denote $\sqrt{7} \le 2$. \\
+    \textbf{Logical Form:} $\neg P$ \\
+    \textbf{Reasoning:} The symbol $\nleq$ directly negates the relation $\le$.
+  \end{enumerate}
+  
+\item Logical Forms:
+  \begin{enumerate}
+  \item \textbf{Statement:} Either John and Bill are both telling the truth, or neither of them is. \\
+    \textbf{Atomic Statements:} Let $J$ denote ``John is telling the truth,'' and $B$ denote ``Bill is telling the truth.'' \\
+    \textbf{Logical Form:} $(J \land B) \lor (\neg J \land \neg B)$ \\
+    \textbf{Reasoning:} ``Both telling the truth'' is $(J \land B)$. ``Neither is telling the truth'' means John is not telling the truth and Bill is not telling the truth ($\neg J \land \neg B$). These two possibilities are joined by ``either $\dots$ or'' ($\lor$).
+
+  \item \textbf{Statement:} I'll have either fish or chicken, but I won't have both fish and mashed potatoes. \\
+    \textbf{Atomic Statements:} Let $F$ denote ``I'll have fish,'' $C$ denote ``I'll have chicken,''  and $M$ denote ``I'll have mashed potatoes.'' \\
+    \textbf{Logical Form:} $(F \lor C) \land \neg(F \land M)$ \\
+    \textbf{Reasoning:} ``Either fish or chicken'' if $(F \lor C)$. ``But'' represents conjunction ($\land$). ``Not both fish and mashed potatoes'' represents $\neg(F \land M)$.
+
+  \item \textbf{Statement:} 3 is a common divisor of 6, 9 and 15. \\
+    \textbf{Atomic Statements:} Let $D_1$ denote ``3 is a divisor of 6,'' $D_2$ denote ``3 is a divisor of 9,'' and $D_3$ denote ``3 is a divisor of 15.'' \\
+    \textbf{Logical Form:} $D_1 \land D_2 \land D_3$ \\
+    \textbf{Reasoning:} Stating that 3 is a common divisor means 3 divides 6 \emph{and} 3 divides 9 \emph{and} 3 divides 15.
+  \end{enumerate}
+
+\item Comparing Logical Forms: \\
+  Let $A$ stand for ``Alice is in the room'' and $B$ stand for ``Bob is in the room.''
+  \begin{enumerate}
+  \item \textbf{Statement:} Alice and Bob are not both in the room. \\
+    \textbf{Logical Form:} $\neg(A \land B)$  \\
+    \textbf{Reasoning:} Negates the conjunction that both Alice and Bob are in the room.
+
+  \item \textbf{Statement:} Alice and Bob are both not in the room. \\
+    \textbf{Logical Form:} $\neg A \land \neg B$ \\
+    \textbf{Reasoning:} Asserts that Alice is not in the room \emph{and} Bob is not in the room.
+
+  \item \textbf{Statement:} Either Alice or Bob is not in the room. \\
+    \textbf{Logical Form:} $\neg A \lor \neg B$ \\
+    \textbf{Reasoning:} Asserts that at least one of them is absent.
+
+  \item \textbf{Statement:} Neither Alice nor Bob is in the room. \\
+    \textbf{Logical Form:} $\neg(A \lor B)$ \\
+    \textbf{Reasoning:} Denies that either Alice or Bob is in the room.
+  \end{enumerate}
+
+\item Well Formed Formulas:
+  \begin{enumerate}
+  \item \textbf{Formula:} $\neg(\neg P \lor \neg \neg R)$ \\
+    \textbf{Answer:} Yes, Well-Formed Formula (WFF). \\
+    \textbf{Reasoning:} $P$ and $R$ are atomic formulas. $\neg P$ and $\neg \neg R$ are well-formed, connected properly by $\lor$, and overall negated by $\neg$.
+
+  \item \textbf{Formula:} $\neg(P, Q, \land R)$ \\
+    \textbf{Answer:} No, not a WFF. \\
+    \textbf{Reasoning:} Commas are not logical connectives, and the binary operator $\land$ lacks a let operand inside the comma list.
+
+  \item \textbf{Formula:} $P \land \neg P$ \\
+    \textbf{Answer:} Yes, Well-Formed Formula (WFF). \\
+    \textbf{Reasoning:} Standard binary conjunction connecting atomic formula $P$ and well-formed formula $\neg P$.
+
+  \item \textbf{Formula:} $(P \land Q) (P \lor R)$ \\
+    \textbf{Answer:} No, not a WFF. \\
+    \textbf{Reasoning:} Two parenthesized formulas are juxtaposed without a binary logical operator connecting them.
+  \end{enumerate}
+
+\item English Translations: \\
+  Let $P$ stand for ``I will buy the pants'' and $S$ for ``I will buy the shirt.''
+  \begin{enumerate}
+  \item \textbf{Expression:} $\neg(P \land \neg S)$ \\
+    \textbf{Literal Translation:} It is not the case that i will buy the pants and not buy the shirt. \\
+    \textbf{Natural English:} I won't buy the pants without buying the shirt.
+
+  \item \textbf{Expression:} $\neg P \land \neg S$ \\
+    \textbf{Literal Translation:} I will not buy the pants and i will not buy the shirt. \\
+    \textbf{Natural English:} I will buy neither the pants nor the shirt.
+
+  \item \textbf{Expression:} $\neg P \lor \neg S$ \\
+    \textbf{Literal Translation:} I will not buy the pants or i will not buy the shirt. \\
+    \textbf{Natural English:} I won't buy both the pants and the shirt.
+  \end{enumerate}
+
+\item English Translation: \\
+  Let $S$ stand for ``Steve is happy'' and $G$ for ``George is happy.''
+  \begin{enumerate}
+  \item \textbf{Expression:} $(S \lor G) \land (\neg S \lor \neg G)$ \\
+    \textbf{Translation:} Either Steve or George is happy, but they are not both happy.
+
+  \item \textbf{Expression:} $[S \lor (G \land \neg S)] \lor \neg G$ \\
+    \textbf{Translation:} Steve is happy, or George is happy and Steve is not happy, or George is not happy.
+
+  \item \textbf{Expression:} $S \lor [G \land (\neg S \lor \neg G)]$ \\
+    \textbf{Translation:} Steve is happy, or George is happy and either Steve or George is not happy.
+  \end{enumerate}
+
+\item Argument Structure \& Validity Analysis
+  \begin{enumerate}
+  \item \textbf{Premises:} $\neg(J_M \land P_M)$, $P_M \lor P_C$, $J_M$ \\
+    \textbf{Conclusion:} $P_C$ \\
+    \textbf{Validity:} Valid. \\
+    \textbf{Reasoning:} Since $J_M$ is True, $\neg(J_M \land P_M)$ implies $P_M$ must be False. Since $P_M \lor P_C$ is True and $P_M$ is False, $P_C$ must be true.
+
+  \item \textbf{Premises:} $B \lor F$, $P \lor C$, $\neg(F \land C)$ \\
+    \textbf{Conclusion:} $\neg(B \land P)$ \\
+    \textbf{Validity:} Invalid. \\
+    \textbf{Reasoning:} Consider $B = \text{True}, F = \text{False}, P = \text{True}, C = \text{False}$. All premises are true ($B \lor F$ is True, $P \lor C$ is True, $\neg(F \land C)$ is True), but the conclusion $\neg(B \land P)$ is False because both $B$ and $P$ are True.
+
+  \item \textbf{Premises:} $J \lor B$, $\neg S \lor \neg B$ \\
+    \textbf{Conclusion:} $J \lor \neg S$ \\
+    \textbf{Validity:} Valid. \\
+    \textbf{Reasoning:} If $B$ is False, then $J$ must be True from $J \lor B$. If $B$ is True, then $\neg S$ must be True from $\neg S \lor \neg B$. In either case, $J \lor \neg S$ is True.
+
+  \item \textbf{Premises:} $(S \land H) \lor (E \land \neg H)$ \\
+    \textbf{Conclusion:} $\neg(S \land E)$ \\
+    \textbf{Validity:} Invalid. \\
+    \textbf{Reasoning:} Consider $S = \text{True}, E = \text{True}, H = \text{True}$. The premise $(S \land H) \lor (E \land \neg H)$ is True because $S \land H$ is True. However, both $S$ and $E$ are True, so $S \land E$ is True, making the conclusion $\neg(S \land E)$ False.
+  \end{enumerate}
+\end{enumerate}
