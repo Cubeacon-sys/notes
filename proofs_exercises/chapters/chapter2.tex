@@ -1,0 +1,534 @@
+\subsection{Truth Tables}
+\subsubsection{Exercises:}
+\begin{enumerate}
+\item Make truth tables for the following formulas:
+  \begin{enumerate} 
+  \item $\neg P \lor Q$.
+  \item $(S \lor G) \land (\neg S \lor \neg G)$.
+  \end{enumerate}
+  
+\item Make truth tables for the following formulas:
+  \begin{enumerate}
+  \item $\neg [P \land (Q \lor \neg P)]$.
+  \item $(P \lor Q) \land (\neg P \lor R)$.
+  \end{enumerate}
+
+\item In this exercise we will use the symbol $+$ to mean \emph{exclusive or}. In other words, $P + Q$ means ``$P$ or $Q$, but not both.''
+  \begin{enumerate}
+  \item Make a truth table for $P + Q$.
+  \item Find a formula using only the connectives $\land$, $\lor$, and $\neg$ that is equivalent to $P + Q$. Justify your answer with a truth table.
+  \end{enumerate}
+
+\item Find a formula using only the connectives $\land$ and $\neg$ that is equivalent to $P \lor Q$. Justify your answer with a truth table.
+
+\item Some mathematicians use the symbol $\downarrow$ to mean \emph{nor}. In other words $P \downarrow Q$ means ``neither P nor Q.''
+  \begin{enumerate}
+  \item Make a truth table for $P \downarrow Q$.
+  \item Find a formula using only the connectives $\land$, $\lor$, and $\neg$ that is equivalent to $P \downarrow Q$.
+  \item Find formulas using only the connective $\downarrow$ that are equivalent to $\neg P$, $P \lor Q$, and $P \land Q$.
+  \end{enumerate}
+
+\item Some mathematicians write $P \mid Q$ to mean ``$P$ and $Q$ are not both true.'' (This connective is called \emph{nand}, and is used in the study of circuits in computer science.)
+  \begin{enumerate}
+  \item Make a truth table for $P \mid Q$.
+  \item Find a formula using only the connective $\land$, $\lor$, and $\neg$ that is equivalent to $P \mid Q$.
+  \item Find formulas using only the connective $\mid$ that are equivalent to $\neg P$, $P \lor Q$, and $P \land Q$.
+  \end{enumerate}
+
+\item Use truth tables to determine whether or not the arguments in exercise $7$ of Section $1.1$ are valid.
+  
+\item Use truth tables to determine which of the following formulas are equivalent to each other:
+  \begin{enumerate}
+  \item $(P \land Q) \lor (\neg P \land \neg Q)$.
+  \item $\neg P \land Q$.
+  \item $(P \lor \neg Q) \land (Q \lor \neg P)$.
+  \item $\neg (P \lor Q)$.
+  \item $(Q \land P) \lor \neg P$.
+  \end{enumerate}
+
+\item Use truth tables to determine which of these statements are tautologies, which are contradictions, and which are neither:
+  \begin{enumerate}
+  \item $(P \lor Q) \land (\neg P \lor \neg Q)$.
+  \item $(P \lor Q) \land (\neg P \land \neg Q)$.
+  \item $(P \lor Q) \lor (\neg P \lor \neg Q)$.
+  \item $[P \land (Q \lor \neg R)] \lor (\neg P \lor R)$.
+  \end{enumerate}
+
+\item Use truth tables to check these laws:
+  \begin{enumerate}
+  \item The second DeMorgan's law. (The first was checked in the text.)
+  \item The distributive laws.
+  \end{enumerate}
+
+\item Use the laws stated in the text to find simpler formulas equivalent to these formulas. (See Examples $1.2.5$ and $1.2.7$.)
+  \begin{enumerate}
+  \item $\neg (\neg P \land \neg Q)$.
+  \item $(P \land Q) \lor (P \land \neg Q)$.
+  \item $\neg (P \land \neg Q) \lor (\neg P \land Q)$.
+  \end{enumerate}
+
+\item Use the laws stated in the text to find simpler formulas equivalent to these formulas. (See examples $1.2.5$ and $1.2.7$.)
+  \begin{enumerate}
+  \item $\neg (\neg P \lor Q) \lor (P \land \neg R)$.
+  \item $\neg (\neg P \land Q) \lor (P \lor \neg R)$.
+  \item $(P \land R) \lor [\neg R \land (P \lor Q)]$.
+  \end{enumerate}
+
+\item Use the first DeMorgan's law and the double negation law to derive the second DeMorgan's law.
+
+\item Note that the associative laws say only that parentheses are unecessary when combining \emph{three} statements with $\land$ or $\lor$. In fact, these laws can be used to justify leaving parentheses out when more than three statements are combined. Use associative laws to show that $[P \land (Q \land R)] \land S$ is equivalent to $(P \land Q) \land (R \land S)$.
+
+\item How many lines will there be in the truth table for a statement containing $n$ letters?
+
+\item Find a formula involving the connectives $\land$, $\lor$, and $\neg$ that has the following truth table:
+  \begin{center}
+    \begin{tabular}{ccc}
+      $P$ & $Q$ & $???$ \\
+      \midrule
+      F & F & T \\
+      F & T & F \\
+      T & F & T \\
+      T & T & T
+    \end{tabular}
+  \end{center}
+
+\item Find a formula involving the connectives $\land$, $\lor$, and $\neg$ that has the following truth table:
+  \begin{center}
+    \begin{tabular}{ccc}
+      $P$ & $Q$ & $???$ \\
+      \midrule
+      F & F & F \\
+      F & T & T \\
+      T & F & T \\
+      T & T & F
+    \end{tabular}
+  \end{center}
+
+\item Suppose the conclusion of an argument is a tautology. What can you conclude about the validity of the argument? What if the conclusion is a contradiction? What if one of the premises is either a tautology or a contradiction?
+\end{enumerate}
+
+\subsubsection{Solutions:}
+\begin{enumerate}
+\item Truth Tables:
+  \begin{enumerate}
+  \item \textbf{Formula:} $\neg P \lor Q$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccc}
+        $P$ & $Q$ & $\neg P$ & $\neg P \lor Q$ \\
+        \midrule
+        T & T & F & T \\
+        T & F & F & F \\
+        F & T & T & T \\
+        F & F & T & T
+      \end{tabular}
+    \end{center}
+    
+  \item \textbf{Formula:} $(S \lor G) \land (\neg S \lor \neg G)$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{ccccc}
+        $S$ & $G$ & $S \lor G$ & $\neg S \lor \neg G$ & $(S \lor G) \land (\neg S \lor \neg G)$ \\
+        \midrule
+        T & T & T & F & F \\
+        T & F & T & T & T \\
+        F & T & T & T & T \\
+        F & F & F & T & F 
+      \end{tabular}
+    \end{center}
+  \end{enumerate}
+
+\item Truth Tables:
+  \begin{enumerate}
+  \item \textbf{Formula:} $\neg [P \land (Q \lor \neg P)]$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccc}
+        $P$ & $Q$ & $\neg P$ & $Q \lor \neg P$ & $P \land (Q \lor \neg P)$ & $\neg[P \land (Q \lor \neg P)]$ \\
+        \midrule
+        T & T & F & T & T & F \\ 
+        T & F & F & F & F & T \\
+        F & T & T & T & F & T \\ 
+        F & F & T & T & F & T 
+      \end{tabular}
+    \end{center}
+
+  \item \textbf{Formula:} $(P \lor Q) \land (\neg P \lor R)$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccc}
+        $P$ & $Q$ & $R$ & $P \lor Q$ & $\neg P \lor R$ & $(P \lor Q) \land (\neg P \lor R)$ \\
+        \midrule
+        T & T & T & T & T & T \\
+        T & T & F & T & F & F \\
+        T & F & T & T & T & T \\
+        T & F & F & T & F & F \\
+        F & T & T & T & T & T \\ 
+        F & T & F & T & T & T \\
+        F & F & T & F & T & F \\
+        F & F & F & F & T & F
+      \end{tabular}
+    \end{center}
+  \end{enumerate}
+
+\item Exclusive Or ($+$):
+  \begin{enumerate}
+  \item \textbf{Truth Table for } $P + Q$:
+    \begin{center}
+      \begin{tabular}{ccc}
+        $P$ & $Q$ & $P + Q$ \\
+        \midrule
+        T & T & F \\
+        T & F & T \\
+        F & T & T \\
+        F & F & F
+      \end{tabular}
+    \end{center}
+
+  \item \textbf{Equivalent Formula:} $(P \lor Q) \land \neg (P \land Q)$. \\
+    \textbf{Reasoning:} ``$P$ or $Q$'' translates to $(P \lor Q)$, and ``but not both'' translates to $\land \neg (P \land Q)$.
+  \end{enumerate}
+
+\item Equivalent to $P \lor Q$ Using Only $\land$ and $\neg$: \\
+  \textbf{Formula:} $\neg (\neg P \land \neg Q)$. \\
+  \textbf{Truth Table}:
+  \begin{center}
+    \begin{tabular}{cccc}
+      $P$ & $Q$ & $P \lor Q$ & $\neg (\neg P \land \neg Q)$ \\
+      \midrule
+      T & T & T & T \\
+      T & F & T & T \\
+      F & T & T & T \\
+      F & F & F & F 
+    \end{tabular}
+  \end{center}
+  \textbf{Reasoning:} By DeMorgan's laws, negating the conjunction of two negated variables yields the disjunction of the original variables.
+
+\item Nor $(P \downarrow Q)$:
+  \begin{enumerate}
+  \item \textbf{Truth Table for} $P \downarrow Q$:
+    \begin{center}
+      \begin{tabular}{ccc}
+        $P$ & $Q$ & $P \downarrow Q$ \\
+        \midrule
+        T & T & F \\
+        T & F & F \\
+        F & T & F \\
+        F & F & T 
+      \end{tabular}
+    \end{center}
+  \item \textbf{Equivalent Formula:} $\neg (P \lor Q)$.
+  \item \textbf{Equivalent Formulas Using Only $\downarrow$}:
+    \begin{itemize}
+    \item $\neg P \equiv P \downarrow P$.
+    \item $P \lor Q \equiv (P \downarrow Q) \downarrow (P \downarrow Q)$.
+    \item $P \land Q \equiv (P \downarrow P) \downarrow (Q \downarrow Q)$.
+    \end{itemize}
+    \textbf{Reasoning:} ``Neither $P$ nor $Q$'' is the exact negation of ``$P$ or $Q$''.
+  \end{enumerate}
+
+\item Nand $(P \mid Q)$:
+  \begin{enumerate}
+  \item \textbf{Truth Table for} $P \mid Q$:
+    \begin{center}
+      \begin{tabular}{ccc}
+        $P$ & $Q$ & $P \mid Q$ \\
+        \midrule
+        T & T & F \\
+        T & F & T \\
+        F & T & T \\
+        F & F & T 
+      \end{tabular}
+    \end{center}
+
+  \item \textbf{Equivalent Formula:} $\neg (P \land Q)$.
+    
+  \item \textbf{Equivalent Formulas Using Only $\mid$:}
+    \begin{itemize}
+    \item $\neg P \equiv P \mid P$.
+    \item $P \lor Q \equiv (P \mid P) \mid (Q \mid Q)$.
+    \item $P \land Q \equiv (P \mid Q) \mid (P \mid Q)$.
+    \end{itemize}
+    \textbf{Reasoning:} ``Not both true'' is the direct negation of the conjunction.
+  \end{enumerate}
+
+\item Validity Analysis via Truth Tables:
+  \begin{enumerate}
+  \item Argument (a):
+    \textbf{Premises:} $\neg (J_M \land P_M), P_M \lor P_C, J_M$. \\
+    \textbf{Conclusion:} $P_C$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $J_M$ & $P_M$ & $P_C$ & $J_M \land P_M$ & $\neg (J_M \land P_M)$ & $P_M \lor P_C$ & $J_M$ & $P_C$ \\
+        \midrule
+        T & T & T & T & F & T & T & T \\
+        T & T & F & T & F & T & T & F \\
+        T & F & T & F & T & T & T & T \\
+        T & F & F & F & T & F & T & F \\ 
+        F & T & T & F & T & T & F & T \\
+        F & T & F & F & T & T & F & F \\
+        F & F & T & F & T & T & F & T \\
+        F & F & F & F & T & F & F & F
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} \emph{Valid}. In the only row where all three premises are True (Row 3). the conclusion $(P_C)$ is also True.
+
+  \item Argument (b): \\
+    \textbf{Premises:} $B \lor F, P \lor C, \neg(F \land C)$. \\
+    \textbf{Conclusion:} $\neg(B \land P)$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $B$ & $F$ & $P$ & $C$ & $B \lor F$ & $P \lor C$ & $\neg(F \land C)$ & $\neg(B \land P)$ \\
+        \midrule
+        T & T & T & T & T & T & F & F \\
+        T & T & T & F & T & T & T & F \\
+        T & T & F & T & T & T & F & T \\
+        T & T & F & F & T & F & T & T \\
+        T & F & T & T & T & T & T & F \\
+        T & F & T & F & T & T & T & F \\
+        T & F & F & T & T & T & T & T \\
+        T & F & F & F & T & F & T & T \\
+        F & T & T & T & T & T & F & T \\
+        F & T & T & F & T & T & T & T \\
+        F & T & F & T & T & T & F & T \\
+        F & T & F & F & T & F & T & T \\
+        F & F & T & T & F & T & T & T \\
+        F & F & T & F & F & T & T & T \\
+        F & F & F & T & F & T & T & T \\
+        F & F & F & F & F & F & T & T 
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} \emph{Invalid}. In the 2nd, 5th, and 6th rows, all three premises are True, but the conclusion is False.
+
+  \item Argument (c): \\
+    \textbf{Premises:} $J \lor B, \neg S \lor \neg B$. \\
+    \textbf{Conclusion:} $J \lor \neg S$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $J$ & $B$ & $S$ & $\neg B$ & $\neg S$ & $J \lor B$ & $\neg S \lor \neg B$ & $J \lor \neg S$ \\
+        \midrule
+        T & T & T & F & F & T & F & T \\
+        T & T & F & F & T & T & T & T \\
+        T & F & T & T & F & T & T & T \\
+        T & F & F & T & T & T & T & T \\
+        F & T & T & F & F & T & F & F \\
+        F & T & F & F & T & T & T & T \\
+        F & F & T & T & F & F & T & F \\
+        F & F & F & T & T & F & T & T
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} \emph{Valid}. In every row where both premises are True (Rows 2, 3, 4, and 6), the conclusion is also True.
+
+  \item Argument (d): \\
+    \textbf{Premises:} $(S \land H) \lor (E \land \neg H)$. \\
+    \textbf{Conclusion:} $\neg(S \land E)$. \\
+    \textbf{Truth Table:}
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $S$ & $E$ & $H$ & $S \land H$ & $E \land \neg H$ & $(S \land H) \lor (E \land \neg H)$ & $S \land E$ & $\neg(S \land E)$ \\
+        \midrule
+        T & T & T & T & F & T & T & F \\
+        T & T & F & F & T & T & T & F \\
+        T & F & T & T & F & T & F & T \\
+        T & F & F & F & F & F & F & T \\
+        F & T & T & F & F & F & F & T \\
+        F & T & F & F & T & T & F & T \\
+        F & F & T & F & F & F & F & T \\
+        F & F & F & F & F & F & F & T
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} \emph{Invalid}. In the 1st and 2nd rows, the premise is True, but the conclusion is False.
+  \end{enumerate}
+
+\item Equivalence Analysis via Truth Tables: \\
+  \textbf{Truth Table:}
+  \begin{center}
+    \begin{tabular}{ccccccc}
+      $P$ & $Q$ & $(P \land Q) \lor (\neg P \land \neg Q)$ & $\neg P \land Q$ & $(P \lor \neg Q) \land (Q \lor \neg P)$ & $\neg (P \lor Q)$ & $(Q \land P) \lor \neg P$ \\
+      \midrule
+      T & T & T & F & T & F & T \\
+      T & F & F & F & F & F & F \\
+      F & T & F & T & F & F & T \\
+      F & F & T & F & T & T & T 
+    \end{tabular}
+  \end{center}
+  \textbf{Result:} The colums $(P \land Q) \lor (\neg P \land \neg Q)$ and $(P \lor \neg Q) \land (Q \lor \neg P)$ have the exact same truth values in every row, Therefore $(P \land Q) \lor (\neg P \land \neg Q) \equiv (P \lor \neg Q) \land (Q \lor \neg P)$.
+
+\item Tautology, Contradiction, or Neither:
+  \begin{enumerate}
+  \item[(a)] $(P \lor Q) \land (\neg P \lor \neg Q)$
+  \item[(b)] $(P \lor Q) \land (\neg P \land \neg Q)$
+  \item[(c)] $(P \lor Q) \lor (\neg P \lor \neg Q)$
+  \item[(d)] $[P \land (Q \lor \neg R)] \lor (\neg P \lor R)$
+  \end{enumerate}
+  \textbf{Truth Table:}
+  \begin{center}
+    \begin{tabular}{ccccccc}
+      $P$ & $Q$ & $R$ & (a) & (b) & (c) & (d) \\
+      \midrule
+      T & T & T & F & F & T & T \\
+      T & T & F & F & F & T & T \\
+      T & F & T & T & F & T & T \\
+      T & F & F & T & F & T & T \\
+      F & T & T & T & F & T & T \\
+      F & T & F & T & F & T & T \\
+      F & F & T & F & F & T & T \\
+      F & F & F & F & F & T & T
+    \end{tabular}
+  \end{center}
+  \textbf{Result:}
+  \begin{itemize}
+  \item (a) is \emph{Neither} (True in some rows, False in others).
+  \item (b) is a \emph{Contradiction} (False in all rows).
+  \item (c) is a \emph{Tautology} (True in all rows).
+  \item (d) is a \emph{Tautology} (True in all rows).
+  \end{itemize}
+
+\item Checking Laws:
+  \begin{enumerate}
+  \item \textbf{The second DeMorgan's law:} ($\neg(P \land Q) \equiv \neg P \lor \neg Q$)
+    \begin{center}
+      \begin{tabular}{ccccccc}
+        $P$ & $Q$ & $P \land Q$ & $\neg(P \land Q)$ & $\neg P$ & $\neg Q$ & $\neg P \lor \neg Q$ \\
+        \midrule
+        T & T & T & \textbf{F} & F & F & \textbf{F} \\
+        T & F & F & \textbf{T} & F & T & \textbf{T} \\
+        F & T & F & \textbf{T} & T & F & \textbf{T} \\
+        F & F & F & \textbf{T} & T & T & \textbf{T}
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} The column values for $\neg(P \land Q)$ and $\neg P \lor \neg Q$ match perfectly, proving the law.
+
+    \item \textbf{The Distributive Laws} \\
+    \textit{Law 1:} $P \land (Q \lor R) \equiv (P \land Q) \lor (P \land R)$
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $P$ & $Q$ & $R$ & $Q \lor R$ & $P \land (Q \lor R)$ & $P \land Q$ & $P \land R$ & $(P \land Q) \lor (P \land R)$ \\
+        \midrule
+        T & T & T & T & \textbf{T} & T & T & \textbf{T} \\
+        T & T & F & T & \textbf{T} & T & F & \textbf{T} \\
+        T & F & T & T & \textbf{T} & F & T & \textbf{T} \\
+        T & F & F & F & \textbf{F} & F & F & \textbf{F} \\
+        F & T & T & T & \textbf{F} & F & F & \textbf{F} \\
+        F & T & F & T & \textbf{F} & F & F & \textbf{F} \\
+        F & F & T & T & \textbf{F} & F & F & \textbf{F} \\
+        F & F & F & F & \textbf{F} & F & F & \textbf{F}
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} The values match perfectly, proving the first distributive law.
+
+    \textit{Law 2:} $P \lor (Q \land R) \equiv (P \lor Q) \land (P \lor R)$
+    \begin{center}
+      \begin{tabular}{cccccccc}
+        $P$ & $Q$ & $R$ & $Q \land R$ & $P \lor (Q \land R)$ & $P \lor Q$ & $P \lor R$ & $(P \lor Q) \land (P \lor R)$ \\
+        \midrule
+        T & T & T & T & \textbf{T} & T & T & \textbf{T} \\
+        T & T & F & F & \textbf{T} & T & T & \textbf{T} \\
+        T & F & T & F & \textbf{T} & T & T & \textbf{T} \\
+        T & F & F & F & \textbf{T} & T & T & \textbf{T} \\
+        F & T & T & T & \textbf{T} & T & T & \textbf{T} \\
+        F & T & F & F & \textbf{F} & T & F & \textbf{F} \\
+        F & F & T & F & \textbf{F} & F & T & \textbf{F} \\
+        F & F & F & F & \textbf{F} & F & F & \textbf{F}
+      \end{tabular}
+    \end{center}
+    \textbf{Result:} The values match perfectly, proving the second distributive law.
+  \end{enumerate}
+
+\item Simpler Formulas:
+  \begin{enumerate}
+  \item $\neg (\neg P \land \neg Q)$ 
+    \begin{align*}
+      \neg (\neg P \land \neg Q) &\equiv \neg \neg P \lor \neg \neg Q \quad \text{DeMorgan's law} \\ 
+      &\equiv P \lor Q \quad \text{double negation law}
+    \end{align*}
+
+  \item $(P \land Q) \lor (P \land \neg Q)$ \\
+    \begin{align*}
+      (P \land Q) \lor (P \land \neg Q) &\equiv P \land (Q \lor \neg Q) \quad \text{Distributive law} \\
+      &\equiv P \land True \quad \text{tautology law} \\
+      &\equiv P \quad \text{identity law}
+    \end{align*}
+
+  \item $\neg (P \land \neg Q) \lor (\neg P \land Q)$ \\
+    \begin{align*}
+      \neg (P \land \neg Q) \lor (\neg P \land Q) &\equiv (\neg P \lor \neg \neg Q) \lor (\neg P \land Q) \quad \text{DeMorgan's law} \\
+      &\equiv (\neg P \lor Q) \lor (\neg P \land Q) \quad \text{double negation law} \\
+      &\equiv \neg P \lor (Q \lor (\neg P \land Q)) \quad \text{associative law} \\
+      &\equiv \neg P \lor ((Q \lor \neg P) \land (Q \lor Q)) \quad \text{distributive law} \\
+      &\equiv \neg P \lor ((Q \lor \neg P) \land Q) \quad \text{idempotent law} \\
+      &\equiv \neg P \lor Q \quad \text{absorption law}
+    \end{align*}
+  \end{enumerate}
+
+\item Simpler Formulas:
+  \begin{enumerate}
+  \item $\neg (\neg P \lor Q) \lor (P \land \neg R)$ \\
+    \begin{align*}
+      \neg (\neg P \lor Q) \lor (P \land \neg R) &\equiv (\neg \neg P \land \neg Q) \lor (P \lor \neg R) \quad \text{DeMorgan's law} \\
+      &\equiv (P \land \neg Q) \lor (P \land \neg R) \quad \text{double negation law} \\
+      &\equiv P \land (\neg Q \lor \neg R) \quad \text{distributive law} \\
+      &\equiv P \land \neg(Q \land R) \quad \text{DeMorgan's law}
+    \end{align*}
+
+  \item $\neg (\neg P \land Q) \lor (P \lor \neg R)$ \\
+    \begin{align*}
+      \neg (\neg P \land Q) \lor (P \lor \neg R) &\equiv (\neg \neg P \lor \neg Q) \lor (P \lor \neg R) \quad \text{DeMorgan's law} \\
+      &\equiv (P \lor \neg Q) \lor (P \lor \neg R) \quad \text{double negation law} \\
+      &\equiv (P \lor P) \lor (\neg Q \lor \neg R) \quad \text{associative and commutative laws} \\
+      &\equiv P \lor (\neg Q \lor \neg R) \quad \text{idempotent law} \\ 
+      &\equiv P \lor \neg (Q \land R) \quad \text{DeMorgan's law}
+    \end{align*}
+
+  \item $(P \land R) \lor [\neg R \land (P \lor Q)]$ \\
+    \begin{align*}
+      (P \land R) \lor [\neg R \land (P \lor Q) &\equiv (P \land R) \lor [(\neg R \land P) \lor (\neg R \land Q)] \quad \text{distributive law} \\
+        &\equiv [(P \land R) \lor (\neg R \land P)] \lor (\neg R \land Q) \quad \text{associative law} \\
+        &\equiv [(R \land P) \lor (\neg R \land P)] \lor (\neg R \land Q) \quad \text{commutative law} \\
+        &\equiv [(R \lor \neg R) \land P] \lor (\neg R \land Q) \quad \text{distributive law} \\
+        &\equiv [True \land P] \lor (\neg R \land Q) \quad \text{tautology law} \\
+        &\equiv P \lor (\neg R \land Q) \quad \text{identity law}
+    \end{align*}
+  \end{enumerate}
+
+  \item \textbf{Deriving the Second DeMorgan's Law:} \\
+  Start with the negation of a conjunction, $\neg(P \land Q)$. \\
+  By the double negation law ($P \equiv \neg\neg P$), we can rewrite the inner variables $P$ and $Q$:
+  \[ \neg(P \land Q) \equiv \neg(\neg\neg P \land \neg\neg Q) \]
+  Applying the first DeMorgan's law, $\neg(A \land B) \equiv \neg A \lor \neg B$, to the terms inside the outer negation:
+  \[ \neg(\neg\neg P \land \neg\neg Q) \equiv \neg\neg(\neg P \lor \neg Q) \]
+  Finally, applying the double negation law again removes the two outermost negations:
+  \[ \neg\neg(\neg P \lor \neg Q) \equiv \neg P \lor \neg Q \]
+  Therefore, $\neg(P \land Q) \equiv \neg P \lor \neg Q$.
+
+  \item \textbf{Associative Laws for Multiple Statements:} \\
+  By the associative law for conjunction, $A \land (B \land C) \equiv (A \land B) \land C$. \\
+  Applying this to the inner expression with $A=P$, $B=Q$, and $C=R$:
+  \[ [P \land (Q \land R)] \land S \equiv [(P \land Q) \land R] \land S \]
+  Now, applying the associative law a second time treating $A=(P \land Q)$, $B=R$, and $C=S$:
+  \[ [(P \land Q) \land R] \land S \equiv (P \land Q) \land (R \land S) \]
+
+  \item \textbf{Truth Table Lines:} \\
+  There will be $2^n$ lines. Since each distinct letter has exactly 2 possible truth values (True or False), the total number of combinations for $n$ variables is $2 \times 2 \times \dots \times 2$ ($n$ times).
+
+  \item \textbf{Formula from Truth Table:}
+  The formula evaluates to False in exactly one case: when $P$ is False and $Q$ is True. In all other cases, it is True. \\
+  A logical statement that is true whenever $P$ is true OR whenever $Q$ is false matches this perfectly. \\
+  Therefore, the equivalent formula is: $P \lor \neg Q$.
+
+  \item \textbf{Formula from Truth Table:}
+  This truth table represents the exclusive OR (XOR) operation, which evaluates to True if and only if exactly one of $P$ or $Q$ is True. \\
+  Using standard connectives, this means "$P$ or $Q$, but not both $P$ and $Q$". \\
+  The equivalent formula is: $(P \lor Q) \land \neg(P \land Q)$.
+
+  \item \textbf{Analyzing Argument Conclusions and Premises:} \\
+  \begin{itemize}
+    \item \textbf{If the conclusion is a tautology:} The argument is unconditionally valid. An argument is only invalid if it's possible for the premises to be true while the conclusion is false. Since a tautology is always true, this scenario is impossible.
+    \item \textbf{If the conclusion is a contradiction:} The argument is valid if and only if the conjunction of all premises is also a contradiction. Otherwise, there would be a case where all premises are true but the conclusion is false (since a contradiction is always false).
+    \item \textbf{If one of the premises is a tautology:} The tautology is always true and thus imposes no restrictions on the truth values. The validity of the argument depends entirely on the remaining premises.
+    \item \textbf{If one of the premises is a contradiction:} The argument is vacuously valid. Because a contradiction is always false, it is impossible for all premises to be true simultaneously. Hence, you can never have the invalidating condition of "true premises and a false conclusion."
+  \end{itemize}
+\end{enumerate}

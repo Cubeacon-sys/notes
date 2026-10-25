@@ -1,8 +1,9 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[indonesian]{babel}
-\usepackage{times}
+\usepackage{times} % Times New Roman simulation
 \usepackage{microtype}
 
+% Word-like margins (Skripsi Standard: Top 4cm, Left 4cm, Right 3cm, Bottom 3cm)
 \usepackage[top=4cm, left=4cm, right=3cm, bottom=3cm]{geometry}
 
 \usepackage{setspace}
@@ -11,6 +12,32 @@
 \onehalfspacing
 
 \setlength{\parindent}{1cm}
+
+
+% Format headings to look like plain Times New Roman bold text instead of giant LaTeX fonts
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% -------------------------------------------------------------
+% WORD-STYLE TABLE OF CONTENTS
+% -------------------------------------------------------------
+\usepackage[titles]{tocloft}
+
+% 1. Add dot leaders to sections (LaTeX leaves them blank for sections by default; Word uses them everywhere)
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% 2. Remove LaTeX's default bolding from Section entries and page numbers in the TOC
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+% 3. Set the spacing/indentation to be uniform and clean, resembling Word's list levels
+\setlength{\cftsecindent}{0pt}         % Section left margin
+\setlength{\cftsubsecindent}{20pt}     % Subsection indent
+\setlength{\cftsecnumwidth}{24pt}      % Space for section numbers (e.g., "1.1 ")
+\setlength{\cftsubsecnumwidth}{30pt}   % Space for subsection numbers
+
+% -------------------------------------------------------------
 
 \begin{document}
 
