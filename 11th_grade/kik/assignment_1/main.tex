@@ -1,0 +1,187 @@
+\documentclass[12pt, a4paper]{article}
+
+% Pengaturan bahasa dan font
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{mathptmx} % Font Times New Roman
+\usepackage[T1]{fontenc}
+
+% Pengaturan margin
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
+% Pengaturan paragraf dan spasi
+\usepackage{setspace}
+\onehalfspacing % Spasi 1.5 baris seperti standar Word
+\usepackage{indentfirst} % Paragraf pertama menjorok ke dalam
+
+% Gambar
+\usepackage{graphicx}
+
+% Pengaturan judul Bab agar rapi dan tidak terlalu besar
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries\centering}{BAB \Roman{section}}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Pengaturan Daftar Isi agar menggunakan titik-titik (dot leaders)
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\contentsname}{\hfill \Large\bfseries DAFTAR ISI \hfill}
+
+\begin{document}
+
+% ================= COVER =================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Large \textbf{PROPOSAL BISNIS IoT}}\\[0.5cm]
+    {\Large \textbf{Smart Server Room Monitor (SSRM)}}\\[1cm]
+    
+    \includegraphics[width=10cm]{images.png}\\[1cm]
+    
+    {\normalsize \textbf{Disusun Oleh Kelompok:}}\\[0.5cm]
+    
+    \begin{tabular}{ll}
+        1. & Wisam Yassar Mahardika \\
+        2. & Devant Fadhillah \\
+        3. & Sandika Eka Permadi\\
+        4. & Rafli Saeful Rukmana\\
+        5. & Aliif Abdu Mukti Al-Ghifari \\
+    \end{tabular}
+    
+    \vfill
+    
+    {\normalsize \textbf{SMK Plus Pratama Adi}}\\
+    {\normalsize \textbf{TAHUN 2026}}
+\end{titlepage}
+
+\newpage
+
+% ================= KATA PENGANTAR =================
+\section*{KATA PENGANTAR}
+\addcontentsline{toc}{section}{KATA PENGANTAR}
+
+Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya sehingga proposal bisnis \textit{Internet of Things} (IoT) yang berjudul "Smart Server Room Monitor" ini dapat diselesaikan.
+
+Proposal ini disusun untuk menjabarkan rencana bisnis terkait produk pemantauan suhu dan keamanan fisik untuk ruang server atau rak jaringan berskala kecil hingga menengah. Kami menyadari bahwa infrastruktur jaringan komputer (TKJ) membutuhkan lingkungan yang stabil, sehingga produk ini dirancang sebagai solusi yang praktis dan ekonomis.
+
+Kami mengucapkan terima kasih kepada semua pihak yang telah memberikan dukungan dalam penyusunan proposal ini. Kami berharap proposal ini dapat memberikan gambaran yang jelas mengenai potensi bisnis yang kami tawarkan.
+
+\vspace{2cm}
+\begin{flushright}
+Penyusun, \\
+\vspace{1.5cm}
+Kelompok 4
+\end{flushright}
+
+\newpage
+
+% ================= DAFTAR ISI =================
+\tableofcontents
+\newpage
+
+% ================= BAB I =================
+\section{PENDAHULUAN}
+
+\subsection{Latar Belakang}
+Peralatan jaringan dan komputer seperti \textit{server}, \textit{router}, dan \textit{switch} membutuhkan suhu ruangan yang terjaga untuk dapat beroperasi dengan optimal. Panas berlebih (\textit{overheating}) sering kali menjadi penyebab utama kerusakan perangkat keras yang berakibat pada berhentinya layanan jaringan (\textit{downtime}). Sayangnya, sistem pemantauan ruang server berstandar industri biasanya membutuhkan biaya investasi yang sangat mahal.
+
+\subsection{Rumusan Masalah}
+Berdasarkan latar belakang tersebut, rumusan masalah dalam bisnis ini adalah bagaimana merancang dan menyediakan sistem pemantauan suhu, kelembapan, dan keamanan ruang server secara \textit{real-time} yang harganya terjangkau bagi instansi menengah ke bawah.
+
+\subsection{Tujuan}
+Tujuan utama bisnis ini adalah memproduksi dan memasarkan "Smart Server Room Monitor", yaitu sebuah sistem IoT yang mampu memantau kondisi ruang server dari jarak jauh secara otomatis dan memberikan peringatan dini kepada administrator jaringan.
+
+\subsection{Manfaat}
+Produk ini bermanfaat untuk mencegah kerusakan perangkat keras akibat panas berlebih, meningkatkan efisiensi biaya pemeliharaan IT, serta mempermudah teknisi jaringan dalam memantau infrastruktur mereka dari mana saja.
+
+% ================= BAB II =================
+\section{PROFIL USAHA}
+
+\subsection{Nama Usaha}
+Nama usaha kami adalah \textbf{NusaMonitor Tech}. Nama ini mencerminkan identitas kami sebagai penyedia solusi pemantauan berbasis teknologi yang andal di lingkup lokal maupun nasional.
+
+\subsection{Logo dan Makna}
+Logo usaha kami menggunakan elemen visual yang dapat dilihat pada gambar sampul. Logo tersebut merepresentasikan konektivitas perangkat, keamanan, serta integrasi data melalui teknologi \textit{cloud}.
+
+\subsection{Visi dan Misi}
+Visi kami adalah menjadi penyedia solusi manajemen perangkat IT yang terjangkau bagi UMKM dan sekolah. 
+Misi kami meliputi:
+\begin{enumerate}
+    \item Menciptakan produk IoT yang mudah diinstalasi.
+    \item Memberikan layanan purnajual yang responsif.
+    \item Mengedukasi pelanggan mengenai pentingnya perlindungan aset IT.
+\end{enumerate}
+
+\subsection{Target Pasar}
+Target pasar utama produk ini adalah sekolah yang memiliki lab komputer, perusahaan UMKM berskala menengah, serta instansi pemerintahan daerah yang memiliki ruang server atau \textit{network rack} mandiri namun belum dilengkapi dengan sistem pemantauan otomatis.
+
+% ================= BAB III =================
+\section{PRODUK/JASA}
+
+\subsection{Deskripsi Produk}
+Smart Server Room Monitor adalah sistem pemantauan lingkungan IT yang menggunakan arsitektur jaringan \textit{master-slave}. Sistem ini memanfaatkan \textit{microcontroller} ESP32 sebagai pusat data (\textit{gateway}) dan beberapa Arduino sebagai titik sensor (\textit{node}) yang diletakkan di berbagai sudut rak server.
+
+\subsection{Keunggulan}
+Keunggulan produk ini antara lain kemampuannya untuk beroperasi selama 24 jam penuh, mengirimkan notifikasi secara \textit{real-time} ke perangkat telepon genggam milik administrator, dan harganya yang jauh lebih murah dibandingkan produk pabrikan korporat.
+
+\subsection{Proses Pelayanan}
+Layanan kami tidak hanya menjual perangkat, melainkan meliputi: survei lokasi pemasangan, perakitan perangkat sesuai kebutuhan luas ruangan, instalasi kabel ke rak server, hingga pengaturan *dashboard* di ponsel pengguna.
+
+\subsection{Kebutuhan Alat dan Bahan}
+Perangkat keras utama yang digunakan meliputi 1 buah modul ESP32, 2 buah Arduino (Uno/Nano), sensor suhu dan kelembapan, modul kabel penghubung, adaptor daya, serta boks pelindung perangkat (akrilik atau cetak 3D).
+
+% ================= BAB IV =================
+\section{PERLINDUNGAN KI (KEKAYAAN INTELEKTUAL)}
+
+\subsection{Identifikasi KI}
+Kekayaan Intelektual (KI) yang melekat pada bisnis ini meliputi Hak Cipta atas baris kode program (\textit{source code}) yang mengatur komunikasi antara sensor dan \textit{cloud}, serta Merek Dagang untuk nama "NusaMonitor Tech" beserta logonya.
+
+\subsection{Dasar Hukum}
+Perlindungan KI ini didasarkan pada Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta dan Undang-Undang Nomor 20 Tahun 2016 tentang Merek dan Indikasi Geografis.
+
+\subsection{Strategi Perlindungan}
+Kami akan merahasiakan sistem arsitektur pengkodean utama dari publik dan berencana mendaftarkan nama produk ke Direktorat Jenderal Kekayaan Intelektual (DJKI) ketika skala penjualan sudah mencapai target minimum.
+
+\subsection{Risiko Pelanggaran}
+Risiko utama adalah kemungkinan kompetitor meniru topologi perangkat keras menggunakan komponen bebas jual yang sama di pasaran. Oleh karena itu, kekuatan produk kami akan difokuskan pada desain antarmuka aplikasi serta pelayanan instalasi yang sulit ditiru.
+
+% ================= BAB V =================
+\section{ANALISIS EKONOMI}
+
+\subsection{Modal}
+Modal awal mencakup pembelian perangkat keras utama (ESP32, Arduino, sensor), biaya pendaftaran \textit{server hosting} ringan, dan biaya perlengkapan instalasi dengan estimasi yang sangat terjangkau karena menggunakan basis \textit{open-source hardware}.
+
+\subsection{Biaya dan Harga}
+Harga jual ditetapkan dalam bentuk paket. Satu paket dasar (1 Gateway, 2 Sensor Node, dan biaya instalasi jaringan) akan dijual dengan margin keuntungan sekitar 40\% hingga 50\% dari total harga pokok produksi.
+
+\subsection{Proyeksi Pendapatan}
+Dengan target penjualan minimal dua paket per bulan pada tahun pertama, usaha ini diproyeksikan akan mencapai titik balik modal (\textit{Break Even Point}) dalam waktu kurang dari enam bulan operasi.
+
+\subsection{Manfaat KI terhadap Ekonomi}
+Merek dagang yang didaftarkan akan meningkatkan kepercayaan pelanggan (terutama institusi resmi seperti sekolah atau dinas) dan memberikan nilai tambah sehingga produk tidak dipandang sebagai barang rakitan sembarangan.
+
+% ================= BAB VI =================
+\section{PENUTUP}
+
+\subsection{Kesimpulan}
+Bisnis Smart Server Room Monitor menawarkan solusi nyata bagi masalah pengelolaan perangkat keras jaringan. Dengan berbekal keahlian di bidang Teknik Komputer dan Jaringan, produk IoT ini memiliki peluang yang sangat menjanjikan dengan pasar yang jelas dan modal awal yang minim.
+
+\subsection{Saran}
+Diperlukan riset lanjutan mengenai stabilitas sensor dalam jangka waktu yang sangat panjang, serta pengembangan antarmuka dasbor agar lebih ramah bagi pengguna awam.
+
+\newpage
+
+% ================= DAFTAR PUSTAKA =================
+\section*{DAFTAR PUSTAKA}
+\addcontentsline{toc}{section}{DAFTAR PUSTAKA}
+
+\begin{itemize}
+    \item Undang-Undang Republik Indonesia Nomor 28 Tahun 2014 tentang Hak Cipta.
+    \item Undang-Undang Republik Indonesia Nomor 20 Tahun 2016 tentang Merek dan Indikasi Geografis.
+    \item Modul Pembelajaran Teknik Komputer dan Jaringan (Materi Administrasi Server dan Pemograman).
+\end{itemize}
+
+\newpage
+
+\end{document}
