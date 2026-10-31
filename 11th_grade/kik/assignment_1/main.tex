@@ -25,7 +25,10 @@
 % Pengaturan Daftar Isi agar menggunakan titik-titik (dot leaders)
 \usepackage{tocloft}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\contentsname}{\hfill \Large\bfseries DAFTAR ISI \hfill}
+
+\addto\captionsindonesian{%
+    \renewcommand{\contentsname}{\centerline{\Large\bfseries DAFTAR ISI}}%
+}
 
 \begin{document}
 
@@ -35,11 +38,13 @@
     \vspace*{2cm}
     
     {\Large \textbf{PROPOSAL BISNIS IoT}}\\[0.5cm]
-    {\Large \textbf{Smart Server Room Monitor (SSRM)}}\\[1cm]
+    {\Large \textbf{Smart Server Room Monitor (SSRM)}}\\[0.5cm]
+    {\Large \textbf{NusaMonitor Tech}}\\[1cm]
     
+    % Pastikan file images.png ada di folder yang sama, atau hapus baris ini jika tidak menggunakan gambar
     \includegraphics[width=10cm]{images.png}\\[1cm]
     
-    {\normalsize \textbf{Disusun Oleh Kelompok:}}\\[0.5cm]
+    {\normalsize \textbf{Disusun Oleh Kelompok 4:}}\\[0.5cm]
     
     \begin{tabular}{ll}
         1. & Wisam Yassar Mahardika \\
@@ -47,9 +52,10 @@
         3. & Sandika Eka Permadi\\
         4. & Rafli Saeful Rukmana\\
         5. & Aliif Abdu Mukti Al-Ghifari \\
-    \end{tabular}
+    \end{tabular} \\[0.4cm]
     
     \vfill
+    
     
     {\normalsize \textbf{SMK Plus Pratama Adi}}\\
     {\normalsize \textbf{TAHUN 2026}}
@@ -61,7 +67,7 @@
 \section*{KATA PENGANTAR}
 \addcontentsline{toc}{section}{KATA PENGANTAR}
 
-Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya sehingga proposal bisnis \textit{Internet of Things} (IoT) yang berjudul "Smart Server Room Monitor" ini dapat diselesaikan.
+Puji syukur kami panjatkan ke hadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya sehingga proposal bisnis \textit{Internet of Things} (IoT) yang berjudul ``Smart Server Room Monitor'' ini dapat diselesaikan.
 
 Proposal ini disusun untuk menjabarkan rencana bisnis terkait produk pemantauan suhu dan keamanan fisik untuk ruang server atau rak jaringan berskala kecil hingga menengah. Kami menyadari bahwa infrastruktur jaringan komputer (TKJ) membutuhkan lingkungan yang stabil, sehingga produk ini dirancang sebagai solusi yang praktis dan ekonomis.
 
@@ -71,7 +77,7 @@ Kami mengucapkan terima kasih kepada semua pihak yang telah memberikan dukungan 
 \begin{flushright}
 Penyusun, \\
 \vspace{1.5cm}
-Kelompok 4
+Kelompok 4 - Smart Server Room Monitor
 \end{flushright}
 
 \newpage
@@ -90,7 +96,7 @@ Peralatan jaringan dan komputer seperti \textit{server}, \textit{router}, dan \t
 Berdasarkan latar belakang tersebut, rumusan masalah dalam bisnis ini adalah bagaimana merancang dan menyediakan sistem pemantauan suhu, kelembapan, dan keamanan ruang server secara \textit{real-time} yang harganya terjangkau bagi instansi menengah ke bawah.
 
 \subsection{Tujuan}
-Tujuan utama bisnis ini adalah memproduksi dan memasarkan "Smart Server Room Monitor", yaitu sebuah sistem IoT yang mampu memantau kondisi ruang server dari jarak jauh secara otomatis dan memberikan peringatan dini kepada administrator jaringan.
+Tujuan utama bisnis ini adalah memproduksi dan memasarkan ``Smart Server Room Monitor'', yaitu sebuah sistem IoT yang mampu memantau kondisi ruang server dari jarak jauh secara otomatis dan memberikan peringatan dini kepada administrator jaringan.
 
 \subsection{Manfaat}
 Produk ini bermanfaat untuk mencegah kerusakan perangkat keras akibat panas berlebih, meningkatkan efisiensi biaya pemeliharaan IT, serta mempermudah teknisi jaringan dalam memantau infrastruktur mereka dari mana saja.
@@ -101,8 +107,11 @@ Produk ini bermanfaat untuk mencegah kerusakan perangkat keras akibat panas berl
 \subsection{Nama Usaha}
 Nama usaha kami adalah \textbf{NusaMonitor Tech}. Nama ini mencerminkan identitas kami sebagai penyedia solusi pemantauan berbasis teknologi yang andal di lingkup lokal maupun nasional.
 
-\subsection{Logo dan Makna}
-Logo usaha kami menggunakan elemen visual yang dapat dilihat pada gambar sampul. Logo tersebut merepresentasikan konektivitas perangkat, keamanan, serta integrasi data melalui teknologi \textit{cloud}.
+\subsection{Logo}
+Logo usaha kami menggunakan elemen visual yang dapat dilihat pada gambar sampul. 
+
+\subsection{Makna Logo}
+Logo tersebut merepresentasikan konektivitas perangkat, keamanan, serta integrasi data melalui teknologi \textit{cloud}.
 
 \subsection{Visi dan Misi}
 Visi kami adalah menjadi penyedia solusi manajemen perangkat IT yang terjangkau bagi UMKM dan sekolah. 
@@ -119,17 +128,17 @@ Target pasar utama produk ini adalah sekolah yang memiliki lab komputer, perusah
 % ================= BAB III =================
 \section{PRODUK/JASA}
 
-\subsection{Deskripsi Produk}
-Smart Server Room Monitor adalah sistem pemantauan lingkungan IT yang menggunakan arsitektur jaringan \textit{master-slave}. Sistem ini memanfaatkan \textit{microcontroller} ESP32 sebagai pusat data (\textit{gateway}) dan beberapa Arduino sebagai titik sensor (\textit{node}) yang diletakkan di berbagai sudut rak server.
+\subsection{Deskripsi}
+Smart Server Room Monitor adalah sistem pemantauan lingkungan IT terpusat. Sistem ini memanfaatkan \textit{microcontroller} ESP32 D1 R32 sebagai unit pemroses utama dan pembaca sensor yang diletakkan di dalam rak server.
 
 \subsection{Keunggulan}
 Keunggulan produk ini antara lain kemampuannya untuk beroperasi selama 24 jam penuh, mengirimkan notifikasi secara \textit{real-time} ke perangkat telepon genggam milik administrator, dan harganya yang jauh lebih murah dibandingkan produk pabrikan korporat.
 
 \subsection{Proses Pelayanan}
-Layanan kami tidak hanya menjual perangkat, melainkan meliputi: survei lokasi pemasangan, perakitan perangkat sesuai kebutuhan luas ruangan, instalasi kabel ke rak server, hingga pengaturan *dashboard* di ponsel pengguna.
+Layanan kami tidak hanya menjual perangkat, melainkan meliputi: survei lokasi pemasangan, perakitan perangkat sesuai kebutuhan luas ruangan, instalasi kabel ke rak server, hingga pengaturan \textit{dashboard} di ponsel pengguna.
 
 \subsection{Kebutuhan Alat dan Bahan}
-Perangkat keras utama yang digunakan meliputi 1 buah modul ESP32, 2 buah Arduino (Uno/Nano), sensor suhu dan kelembapan, modul kabel penghubung, adaptor daya, serta boks pelindung perangkat (akrilik atau cetak 3D).
+Perangkat keras utama yang digunakan meliputi 1 buah modul ESP32 D1 R32, sensor suhu dan kelembapan, modul kabel penghubung, adaptor daya, serta boks pelindung perangkat (akrilik atau cetak 3D).
 
 % ================= BAB IV =================
 \section{PERLINDUNGAN KI (KEKAYAAN INTELEKTUAL)}
@@ -150,15 +159,18 @@ Risiko utama adalah kemungkinan kompetitor meniru topologi perangkat keras mengg
 \section{ANALISIS EKONOMI}
 
 \subsection{Modal}
-Modal awal mencakup pembelian perangkat keras utama (ESP32, Arduino, sensor), biaya pendaftaran \textit{server hosting} ringan, dan biaya perlengkapan instalasi dengan estimasi yang sangat terjangkau karena menggunakan basis \textit{open-source hardware}.
+Modal awal mencakup pembelian perangkat keras utama (ESP32 D1 R32, sensor), biaya pendaftaran \textit{server hosting} ringan, dan biaya perlengkapan instalasi dengan estimasi yang sangat terjangkau karena menggunakan basis \textit{open-source hardware}.
 
-\subsection{Biaya dan Harga}
-Harga jual ditetapkan dalam bentuk paket. Satu paket dasar (1 Gateway, 2 Sensor Node, dan biaya instalasi jaringan) akan dijual dengan margin keuntungan sekitar 40\% hingga 50\% dari total harga pokok produksi.
+\subsection{Biaya}
+Biaya operasional mencakup ongkos perakitan dan operasional server yang difokuskan untuk ditekan seminimal mungkin agar kompetitif.
+
+\subsection{Harga}
+Harga jual ditetapkan dalam bentuk paket. Satu paket dasar (1 Unit Pemantau Utama dan biaya instalasi jaringan) akan dijual dengan margin keuntungan sekitar 40\% hingga 50\% dari total harga pokok produksi.
 
 \subsection{Proyeksi Pendapatan}
 Dengan target penjualan minimal dua paket per bulan pada tahun pertama, usaha ini diproyeksikan akan mencapai titik balik modal (\textit{Break Even Point}) dalam waktu kurang dari enam bulan operasi.
 
-\subsection{Manfaat KI terhadap Ekonomi}
+\subsection{Manfaat KI}
 Merek dagang yang didaftarkan akan meningkatkan kepercayaan pelanggan (terutama institusi resmi seperti sekolah atau dinas) dan memberikan nilai tambah sehingga produk tidak dipandang sebagai barang rakitan sembarangan.
 
 % ================= BAB VI =================
@@ -183,5 +195,27 @@ Diperlukan riset lanjutan mengenai stabilitas sensor dalam jangka waktu yang san
 \end{itemize}
 
 \newpage
+
+% ================= LAMPIRAN =================
+\section*{LAMPIRAN}
+\addcontentsline{toc}{section}{LAMPIRAN}
+
+\subsection*{1. Desain Logo}
+\begin{center}
+  \includegraphics[width=10cm]{images.png}
+\end{center}
+
+\subsection*{2. Sketsa Produk}
+\begin{center}
+  \includegraphics[width=10cm]{wokwi.png}
+\end{center}
+\subsection*{3. Pembagian Tugas}
+\begin{itemize}
+    \item \textbf{Wisam Yassar Mahardika}: Manajemen Proyek \& Pengembang Sistem (Programmer)
+    \item \textbf{Devant Fadhillah}: Teknisi Perangkat Keras (Hardware Engineer)
+    \item \textbf{Sandika Eka Permadi}: Desainer Antarmuka \& Dasbor Pengguna (UI/UX)
+    \item \textbf{Rafli Saeful Rukmana}: Analis Sistem \& Jaringan
+    \item \textbf{Aliif Abdu Mukti Al-Ghifari}: Pemasaran \& Keuangan
+\end{itemize}
 
 \end{document}
